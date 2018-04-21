@@ -1,0 +1,662 @@
+make  all-recursive
+make[1]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1'
+Making all in data
+make[2]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/data'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/data'
+Making all in docs
+make[2]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/docs'
+Making all in html
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/docs/html'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/docs/html'
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/docs'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/docs'
+make[2]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/docs'
+Making all in include
+make[2]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/include'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/include'
+Making all in include/++dfb
+make[2]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/include/++dfb'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/include/++dfb'
+Making all in lib
+make[2]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib'
+Making all in direct
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib/direct'
+Making all in os
+make[4]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib/direct/os'
+Making all in linux/glibc
+make[5]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib/direct/os/linux/glibc'
+  CC       clock.lo
+  CC       deprecated.lo
+  CC       filesystem.lo
+  CC       log.lo
+  CC       mem.lo
+  CC       mutex.lo
+  CC       signals.lo
+  CC       system.lo
+  CC       thread.lo
+  CC       util.lo
+  CCLD     libdirect_os_linux_glibc.la
+make[5]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib/direct/os/linux/glibc'
+make[5]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib/direct/os'
+make[5]: Nothing to be done for `all-am'.
+make[5]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib/direct/os'
+make[4]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib/direct/os'
+make[4]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib/direct'
+  CXX      String.lo
+  CC       clock.lo
+  CC       conf.lo
+  CC       debug.lo
+  CC       direct.lo
+  CC       direct_result.lo
+  CC       fastlz.lo
+  CC       fifo.lo
+  CC       flz.lo
+  CC       hash.lo
+  CC       init.lo
+  CC       interface.lo
+  CC       list.lo
+  CC       log.lo
+  CC       log_domain.lo
+  CC       map.lo
+  CC       mem.lo
+  CC       memcpy.lo
+  CC       messages.lo
+  CC       modules.lo
+  CC       perf.lo
+  CC       print.lo
+  CC       processor.lo
+  CC       result.lo
+  CC       serial.lo
+  CC       signals.lo
+  CC       stream.lo
+  CC       system.lo
+  CC       trace.lo
+  CC       tree.lo
+  CC       thread.lo
+  CC       utf8.lo
+  CC       util.lo
+  CC       uuid.lo
+  CXXLD    libdirect.la
+make[4]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib/direct'
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib/direct'
+Making all in fusion
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib/fusion'
+Making all in shm
+make[4]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib/fusion/shm'
+  CC       fake.lo
+  CCLD     libfusion_shm.la
+make[4]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib/fusion/shm'
+make[4]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib/fusion'
+  CXX      Debug.lo
+  CC       arena.lo
+  CC       call.lo
+  CC       fusion.lo
+  CC       lock.lo
+  CC       object.lo
+  CC       property.lo
+  CC       reactor.lo
+  CC       ref.lo
+  CC       conf.lo
+  CC       hash.lo
+  CC       init.lo
+  CC       shmalloc.lo
+  CC       vector.lo
+  CXXLD    libfusion.la
+make[4]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib/fusion'
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib/fusion'
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib'
+make[2]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib'
+Making all in src
+make[2]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src'
+Making all in core
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src/core'
+  CXX      CoreDFB.lo
+  CXX      CoreDFB_real.lo
+  CXX      CoreSlave.lo
+  CXX      CoreSlave_real.lo
+  CXX      CoreGraphicsState.lo
+  CXX      CoreGraphicsState_real.lo
+  CXX      CoreGraphicsStateClient.lo
+  CXX      CoreInputDevice.lo
+  CXX      CoreInputDevice_real.lo
+  CXX      CoreLayer.lo
+  CXX      CoreLayer_real.lo
+  CXX      CoreLayerContext.lo
+  CXX      CoreLayerContext_real.lo
+  CXX      CoreLayerRegion.lo
+  CXX      CoreLayerRegion_real.lo
+  CXX      CorePalette.lo
+  CXX      CorePalette_real.lo
+  CXX      CoreScreen.lo
+  CXX      CoreScreen_real.lo
+  CXX      CoreSurface.lo
+  CXX      CoreSurface_real.lo
+  CXX      CoreSurfaceClient.lo
+  CXX      CoreSurfaceClient_real.lo
+  CXX      CoreWindow.lo
+  CXX      CoreWindow_real.lo
+  CXX      CoreWindowStack.lo
+  CXX      CoreWindowStack_real.lo
+  CXX      Debug.lo
+  CXX      DisplayTask.lo
+  CXX      Interface.lo
+  CXX      Renderer.lo
+  CXX      SurfaceTask.lo
+  CXX      Task.lo
+  CXX      TaskManager.lo
+  CXX      TaskThreadsQ.lo
+  CXX      Util.lo
+  CC       clipboard.lo
+  CC       colorhash.lo
+  CC       core.lo
+  CC       core_parts.lo
+  CC       fonts.lo
+  CC       gfxcard.lo
+  CC       graphics_state.lo
+  CC       input.lo
+  CC       input_hub.lo
+  CC       layer_context.lo
+  CC       layer_control.lo
+  CC       layer_region.lo
+  CC       layers.lo
+  CC       local_surface_pool.lo
+  CC       palette.lo
+  CC       prealloc_surface_pool.lo
+  CC       prealloc_surface_pool_bridge.lo
+  CC       screen.lo
+  CC       screens.lo
+  CC       shared_secure_surface_pool.lo
+  CC       shared_surface_pool.lo
+  CC       state.lo
+  CC       surface.lo
+  CXX      surface_allocation.lo
+  CC       surface_buffer.lo
+  CC       surface_client.lo
+  CC       surface_core.lo
+  CC       surface_pool.lo
+  CC       surface_pool_bridge.lo
+  CC       system.lo
+  CC       windows.lo
+  CC       windowstack.lo
+  CC       wm.lo
+  CXXLD    libdirectfb_core.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src/core'
+Making all in display
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src/display'
+  CC       idirectfbpalette.lo
+  CC       idirectfbsurface.lo
+  CC       idirectfbsurface_layer.lo
+  CC       idirectfbsurface_window.lo
+  CC       idirectfbdisplaylayer.lo
+  CC       idirectfbscreen.lo
+  CCLD     libdirectfb_display.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src/display'
+Making all in windows
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src/windows'
+  CC       idirectfbwindow.lo
+  CCLD     libdirectfb_windows.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src/windows'
+Making all in gfx
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src/gfx'
+Making all in generic
+make[4]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src/gfx/generic'
+  CXX      GenefxEngine.lo
+  CC       generic.lo
+  CC       generic_fill_rectangle.lo
+  CC       generic_draw_line.lo
+  CC       generic_blit.lo
+  CC       generic_stretch_blit.lo
+  CC       generic_texture_triangles.lo
+  CC       generic_util.lo
+  CXXLD    libdirectfb_generic.la
+make[4]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src/gfx/generic'
+make[4]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src/gfx'
+  CC       clip.lo
+  CXX      util.lo
+  CC       convert.lo
+  CXXLD    libdirectfb_gfx.la
+make[4]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src/gfx'
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src/gfx'
+Making all in input
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src/input'
+  CC       idirectfbinputdevice.lo
+  CC       idirectfbinputbuffer.lo
+  CCLD     libdirectfb_input.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src/input'
+Making all in media
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src/media'
+make  all-am
+make[4]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src/media'
+  CC       idirectfbdatabuffer_client.lo
+  CC       idirectfbfont.lo
+  CC       idirectfbimageprovider.lo
+  CC       idirectfbimageprovider_client.lo
+  CC       idirectfbvideoprovider.lo
+  CXX      DataBuffer.lo
+  CXX      DataBuffer_real.lo
+  CXX      ImageProvider.lo
+  CXX      ImageProvider_real.lo
+  CC       idirectfbdatabuffer.lo
+  CC       idirectfbdatabuffer_file.lo
+  CC       idirectfbdatabuffer_memory.lo
+  CC       idirectfbdatabuffer_streamed.lo
+  CXXLD    libdirectfb_media.la
+make[4]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src/media'
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src/media'
+Making all in misc
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src/misc'
+  CC       gfx_util.lo
+  CC       conf.lo
+  CC       util.lo
+  CCLD     libdirectfb_misc.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src/misc'
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src'
+  CC       idirectfb.lo
+  CC       directfb.lo
+  CC       directfb_result.lo
+  CXX      dummy.lo
+  CC       init.lo
+  CXXLD    libdirectfb.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src'
+make[2]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/src'
+Making all in lib/++dfb
+make[2]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib/++dfb'
+  CXX      ppdfb.lo
+  CXX      idirectfb.lo
+  CXX      idirectfbdatabuffer.lo
+  CXX      idirectfbdisplaylayer.lo
+  CXX      idirectfbeventbuffer.lo
+  CXX      idirectfbfont.lo
+  CXX      idirectfbimageprovider.lo
+  CXX      idirectfbinputdevice.lo
+  CXX      idirectfbpalette.lo
+  CXX      idirectfbscreen.lo
+  CXX      idirectfbsurface.lo
+  CXX      idirectfbvideoprovider.lo
+  CXX      idirectfbwindow.lo
+  CXXLD    lib++dfb.la
+make[2]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/lib/++dfb'
+Making all in tools
+make[2]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/tools'
+  CC       dfbdump.o
+  CCLD     dfbdump
+  CC       dfbdumpinput.o
+  CCLD     dfbdumpinput
+  CC       dfbinput.o
+  CCLD     dfbinput
+  CC       directfb-csource.o
+  CCLD     directfb-csource
+  CC       dfbfx.o
+  CCLD     dfbfx
+  CC       dfbg.o
+  CCLD     dfbg
+  CC       dfbinfo.o
+  CCLD     dfbinfo
+  CC       dfbinspector.o
+  CCLD     dfbinspector
+  CC       dfblayer.o
+  CCLD     dfblayer
+  CC       dfbmaster.o
+  CCLD     dfbmaster
+  CC       dfbscreen.o
+  CCLD     dfbscreen
+  CC       dfbpenmount.o
+  CCLD     dfbpenmount
+  CC       mkdfiff.o
+  CCLD     mkdfiff
+  CXX      mkdgifft.o
+  CXXLD    mkdgifft
+  CC       mkdgiff.o
+  CCLD     mkdgiff
+  CC       fusion_bench.o
+  CCLD     fusion_bench
+  CC       raw15toraw24.o
+  CCLD     raw15toraw24
+  CC       raw16toraw24.o
+  CCLD     raw16toraw24
+  CC       raw32toraw24.o
+  CCLD     raw32toraw24
+make[2]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/tools'
+Making all in systems
+make[2]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/systems'
+Making all in android
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/systems/android'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/systems/android'
+Making all in dummy
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/systems/dummy'
+  CC       dummy.lo
+  CCLD     libdirectfb_dummy.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/systems/dummy'
+Making all in devmem
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/systems/devmem'
+  CC       devmem.lo
+  CC       devmem_surface_pool.lo
+  CC       surfacemanager.lo
+  CCLD     libdirectfb_devmem.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/systems/devmem'
+Making all in fbdev
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/systems/fbdev'
+  CC       agp.lo
+  CC       fbdev.lo
+  CC       fbdev_surface_pool.lo
+  CC       surfacemanager.lo
+  CC       vt.lo
+  CCLD     libdirectfb_fbdev.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/systems/fbdev'
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/systems'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/systems'
+make[2]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/systems'
+Making all in wm
+make[2]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/wm'
+Making all in default
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/wm/default'
+  CC       default.lo
+  CCLD     libdirectfbwm_default.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/wm/default'
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/wm'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/wm'
+make[2]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/wm'
+Making all in interfaces
+make[2]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces'
+Making all in ICoreResourceManager
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/ICoreResourceManager'
+  CC       icoreresourcemanager_test.lo
+  CC       icoreresourcemanager_test_client.lo
+  CCLD     libicoreresourcemanager_test.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/ICoreResourceManager'
+Making all in IDirectFBFont
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IDirectFBFont'
+  CC       idirectfbfont_ft2.lo
+  CCLD     libidirectfbfont_ft2.la
+  CC       idirectfbfont_dgiff.lo
+  CCLD     libidirectfbfont_dgiff.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IDirectFBFont'
+Making all in IDirectFBGL
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IDirectFBGL'
+Making all in EGL
+make[4]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IDirectFBGL/EGL'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IDirectFBGL/EGL'
+make[4]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IDirectFBGL'
+make[4]: Nothing to be done for `all-am'.
+make[4]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IDirectFBGL'
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IDirectFBGL'
+Making all in IDirectFBImageProvider
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IDirectFBImageProvider'
+Making all in mpeg2
+make[4]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IDirectFBImageProvider/mpeg2'
+  CC       getbits.lo
+  CC       getblk.lo
+  CC       gethdr.lo
+  CC       getpic.lo
+  CC       getvlc.lo
+  CC       idct.lo
+  CC       idctref.lo
+  CC       motion.lo
+  CC       mpeg2dec.lo
+  CC       recon.lo
+  CC       store.lo
+  CC       systems.lo
+  CCLD     libmpeg2decode.la
+make[4]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IDirectFBImageProvider/mpeg2'
+make[4]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IDirectFBImageProvider'
+  CC       idirectfbimageprovider_dfiff.lo
+  CCLD     libidirectfbimageprovider_dfiff.la
+  CC       idirectfbimageprovider_gif.lo
+  CCLD     libidirectfbimageprovider_gif.la
+  CC       idirectfbimageprovider_jpeg.lo
+  CCLD     libidirectfbimageprovider_jpeg.la
+  CC       idirectfbimageprovider_png.lo
+  CCLD     libidirectfbimageprovider_png.la
+  CC       idirectfbimageprovider_pnm.lo
+  CCLD     libidirectfbimageprovider_pnm.la
+  CC       idirectfbimageprovider_bmp.lo
+  CCLD     libidirectfbimageprovider_bmp.la
+  CC       idirectfbimageprovider_jpeg2000.lo
+  CCLD     libidirectfbimageprovider_jpeg2000.la
+  CC       idirectfbimageprovider_mpeg2.lo
+  CCLD     libidirectfbimageprovider_mpeg2.la
+make[4]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IDirectFBImageProvider'
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IDirectFBImageProvider'
+Making all in IDirectFBVideoProvider
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IDirectFBVideoProvider'
+make[4]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IDirectFBVideoProvider'
+  CC       idirectfbvideoprovider_gif.lo
+  CCLD     libidirectfbvideoprovider_gif.la
+  CC       idirectfbvideoprovider_v4l.lo
+  CCLD     libidirectfbvideoprovider_v4l.la
+make[4]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IDirectFBVideoProvider'
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IDirectFBVideoProvider'
+Making all in IDirectFBWindows
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IDirectFBWindows'
+  CC       idirectfbwindows_default.lo
+  CCLD     libidirectfbwindows_default.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IDirectFBWindows'
+Making all in IWater
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IWater'
+  CC       elements.lo
+  CC       iwater_default.lo
+  CC       transform.lo
+  CC       util.lo
+  CCLD     libiwater_default.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces/IWater'
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces'
+make[2]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/interfaces'
+Making all in inputdrivers
+make[2]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers'
+Making all in input_hub
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/input_hub'
+  CC       input_hub_driver.lo
+  CCLD     libdirectfb_input_hub.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/input_hub'
+Making all in joystick
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/joystick'
+  CC       joystick.lo
+  CCLD     libdirectfb_joystick.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/joystick'
+Making all in keyboard
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/keyboard'
+  CC       keyboard.lo
+  CCLD     libdirectfb_keyboard.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/keyboard'
+Making all in linux_input
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/linux_input'
+  CC       linux_input.lo
+  CCLD     libdirectfb_linux_input.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/linux_input'
+Making all in lirc
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/lirc'
+  CC       lirc.lo
+  CCLD     libdirectfb_lirc.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/lirc'
+Making all in mutouch
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/mutouch'
+  CC       mutouch.lo
+  CCLD     libdirectfb_mutouch.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/mutouch'
+Making all in zytronic
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/zytronic'
+  CC       zytronic.lo
+  CCLD     libdirectfb_zytronic.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/zytronic'
+Making all in penmount
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/penmount'
+  CC       penmount.lo
+  CCLD     libdirectfb_penmount.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/penmount'
+Making all in ps2mouse
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/ps2mouse'
+  CC       ps2mouse.lo
+  CCLD     libdirectfb_ps2mouse.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/ps2mouse'
+Making all in serialmouse
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/serialmouse'
+  CC       serialmouse.lo
+  CCLD     libdirectfb_serialmouse.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/serialmouse'
+Making all in sonypi
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/sonypi'
+  CC       sonypi.lo
+  CCLD     libdirectfb_sonypi.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/sonypi'
+Making all in wm97xx_ts
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/wm97xx_ts'
+  CC       wm97xx_ts.lo
+  CCLD     libdirectfb_wm97xx_ts.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers/wm97xx_ts'
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers'
+make[2]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/inputdrivers'
+Making all in gfxdrivers
+make[2]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers'
+Making all in ati128
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/ati128'
+  CC       ati128.lo
+  CC       ati128_overlay.lo
+  CC       ati128_state.lo
+  CCLD     libdirectfb_ati128.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/ati128'
+Making all in ep9x
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/ep9x'
+  CC       ep9x.lo
+  CCLD     libdirectfb_ep9x.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/ep9x'
+Making all in i810
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/i810'
+  CC       i810.lo
+  CC       i810_overlay.lo
+  CCLD     libdirectfb_i810.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/i810'
+Making all in i830
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/i830'
+  CC       i830.lo
+  CC       i830_overlay.lo
+  CCLD     libdirectfb_i830.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/i830'
+Making all in mach64
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/mach64'
+  CC       mach64.lo
+  CC       mach64_state.lo
+  CC       mach64_overlay.lo
+  CCLD     libdirectfb_mach64.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/mach64'
+Making all in matrox
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/matrox'
+  CC       matrox.lo
+  CC       matrox_3d.lo
+  CC       matrox_bes.lo
+  CC       matrox_crtc2.lo
+  CC       matrox_maven.lo
+  CC       matrox_screen_crtc2.lo
+  CC       matrox_spic.lo
+  CC       matrox_state.lo
+  CCLD     libdirectfb_matrox.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/matrox'
+Making all in neomagic
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/neomagic'
+  CC       neomagic.lo
+  CC       neo_overlay.lo
+  CC       neo2200.lo
+  CCLD     libdirectfb_neomagic.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/neomagic'
+Making all in nsc
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/nsc'
+Making all in include
+make[4]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/nsc/include'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/nsc/include'
+make[4]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/nsc'
+  CC       nsc.lo
+  CC       nsc_galfns.lo
+  CCLD     libdirectfb_nsc.la
+make[4]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/nsc'
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/nsc'
+Making all in nvidia
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/nvidia'
+  CC       nvidia.lo
+  CC       nvidia_state.lo
+  CC       nvidia_2d.lo
+  CC       nvidia_3d.lo
+  CC       nvidia_primary.lo
+  CC       nvidia_overlay.lo
+  CCLD     libdirectfb_nvidia.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/nvidia'
+Making all in pxa3xx
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/pxa3xx'
+  CC       pxa3xx.lo
+  CC       pxa3xx_blt.lo
+  CCLD     libdirectfb_pxa3xx.la
+  CC       pxa3xx_dump.o
+  CCLD     pxa3xx_dump
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/pxa3xx'
+Making all in sis315
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/sis315'
+  CC       sis315.lo
+  CC       sis315_accel.lo
+  CC       sis315_mmio.lo
+  CC       sis315_state.lo
+  CCLD     libdirectfb_sis315.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/sis315'
+Making all in tdfx
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/tdfx'
+  CC       tdfx.lo
+  CCLD     libdirectfb_tdfx.la
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers/tdfx'
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers'
+make[2]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/gfxdrivers'
+Making all in examples/++dfb
+make[2]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/examples/++dfb'
+Making all in tests
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/examples/++dfb/tests'
+Making all in data
+make[4]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/examples/++dfb/tests/data'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/examples/++dfb/tests/data'
+make[4]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/examples/++dfb/tests'
+  CXX      images.o
+  CXXLD    images
+make[4]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/examples/++dfb/tests'
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/examples/++dfb/tests'
+make[3]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/examples/++dfb'
+  CXX      dfbapp.o
+  CXX      dfbimage.o
+  CXX      dfbshow.o
+  CXXLD    dfbshow
+  CXX      dfbswitch.o
+  CXXLD    dfbswitch
+  CXX      dfbplay.o
+  CXXLD    dfbplay
+  CXX      simple.o
+  CXXLD    simple
+make[3]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/examples/++dfb'
+make[2]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/examples/++dfb'
+Making all in patches
+make[2]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/patches'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/patches'
+Making all in rules
+make[2]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/rules'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/rules'
+Making all in build-android
+make[2]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/build-android'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1/build-android'
+make[2]: Entering directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1'
+make[2]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1'
+make[1]: Leaving directory `/home/nayeem/Desktop/DirectFB/DirectFB-1.7.1'

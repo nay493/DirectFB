@@ -1,0 +1,429 @@
+commit 0531fb20b5f7396ae24e455d7d1783bc90ac3095
+Merge: 9d71552 b0bcc4f
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Nov 1 22:49:31 2010 +0100
+
+    Merge branch 'master' of git+ssh://git.directfb.org/git/directfb/extras/++DFB
+
+commit 9d71552c5a1fa76136aaee36a3cd1e117d40a18f
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Nov 1 22:48:41 2010 +0100
+
+    license: added proper COPYING file!
+
+commit b0bcc4febf9b52e8553cba77e3aa247154f6991e
+Author: dok <dok@debian.directfb.home>
+Date:   Tue Mar 2 23:13:49 2010 +0100
+
+    ++DFB: Introduced convenient classes for DFBDimension, DFBPoint, DFBRectangle, DFBRegion
+
+commit 7589b85d0eb881dc8430df81dd2fb1606039b3e5
+Author: Niels Roest <niels@directfb.org>
+Date:   Wed Jan 20 20:43:22 2010 +0100
+
+    added IDirectFBSurface::FillRectangle(DFBRegion)
+
+commit 35240af8598d0ff3ed295d74833cbe58c507c1bd
+Author: Niels Roest <niels@directfb.org>
+Date:   Tue Jan 19 19:53:01 2010 +0100
+
+    IDirectFBSurface: convenience overloaders. add const in SetClip.
+
+commit 8d60d916d519a1f58095b051c0ab022912097990
+Author: Denis Oliver Kropp <dok@cyto.(none)>
+Date:   Mon Oct 19 18:53:02 2009 +0200
+
+    IDirectFBSurface: Added Read() and Write().
+
+commit bcb3a5ea095711068c820eb73a30808064ad644e
+Author: Denis Oliver Kropp <dok@cyto.(none)>
+Date:   Mon Oct 19 18:52:30 2009 +0200
+
+    Bumped version to 1.4.2.
+
+commit 197a4873371f86e58076a4626161d526f1cc7b5d
+Author: Denis Oliver Kropp <dok@cyto.(none)>
+Date:   Mon Oct 19 18:50:22 2009 +0200
+
+    Replaced all __u8 by u8 etc.
+
+commit 92e15be3b252565502beaaed6cdfeb45fec2a8af
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Mar 12 08:59:59 2007 +0000
+
+    Applied patch from Rolf Ahrenberg to support automake 1.10, thanks!
+
+commit 70ea814f574ff7c8be75914ca2435a95cd908373
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Mar 4 00:01:11 2007 +0000
+
+    1.0.0
+
+commit bfa2fcc55aa563c94dc6f4ec83788200abc0ee75
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Feb 13 20:05:42 2007 +0000
+
+    oops, here it is
+
+commit b4c486a8288c3a4bc3cfce12c446d5f36017f870
+Author: Marcel Siegert <mws@directfb.org>
+Date:   Tue Feb 13 19:52:07 2007 +0000
+
+    removed dfbplay from examples Makefile.am for now
+    reason: source is not present
+    this fixed compiling again
+
+commit f2ec246d4e2877e2ddefc01778622a00b09e6442
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Feb 2 22:02:20 2007 +0000
+
+    distfix
+
+commit 72e448bf40182f64de02d1bf74a0dd9eaf3ef14a
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Feb 2 20:46:45 2007 +0000
+
+    IDirectFBSurface::GetFramebufferOffset()
+
+commit 279ca89a7a7bb79b7c6534f1d44072c31653194c
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Feb 2 20:43:08 2007 +0000
+
+    Update for 1.0.0 and some test stuff I had lying around.
+
+commit db62c69142eefca0fc10a0566d452559403356a5
+Author: Mark Adams <marka@directfb.org>
+Date:   Mon Jan 8 16:01:10 2007 +0000
+
+    Added spec file for building RPM packages.
+
+commit af2790dbc2aa7a0806252405bb12c9400f8379f7
+Author: Marcel Siegert <mws@directfb.org>
+Date:   Sun Dec 17 22:48:07 2006 +0000
+
+    updated cvsignore a bit
+
+commit 1a59753e4e75a421f54bb7c0f59257a0988375bc
+Author: Marcel Siegert <mws@directfb.org>
+Date:   Sun Dec 17 22:29:31 2006 +0000
+
+    fix wrong copy ctor argument;
+    thanks to Phil Endecott for pointing out.
+
+commit babff4f662d6c64110f1b66090acca7522d3ca01
+Author: Marcel Siegert <mws@directfb.org>
+Date:   Sun Oct 1 00:23:12 2006 +0000
+
+    follow up integration of GetStringBreak in DirectFB
+    for testing purposes in ++dfb;
+
+commit 93d212d536892c9888c339994b2223af49c45081
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Jul 8 14:16:06 2006 +0000
+
+    Updated to current DirectFB API.
+
+commit 8d832e06fd844f72fcdf7a5251ff11c371201edb
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat May 20 13:25:32 2006 +0000
+
+    0.9.26 required.
+
+commit 6858859335e898ee0e2827d909bf4591bedcfd85
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat May 20 13:24:52 2006 +0000
+
+    Added IDirectFBWindow::DetachEventBuffer() and IDirectFBInputDevice::DetachEventBuffer().
+
+commit 5cd65419a0e1e64f3f26ae000a48b5974007da32
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun May 7 00:00:35 2006 +0000
+
+    Pass "-l" to get a list of modes.
+
+commit ffe1c6f572d18a2ec8fd1cdac5eff3078e0240e9
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Mar 26 18:56:52 2006 +0000
+
+    Fix autoconf version detection.
+
+commit 6bf901c30c33c3989309704ab512ea3341896a4f
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Jan 15 19:18:02 2006 +0000
+
+    Added IDirectFBVideoProvider::GetStatus().
+
+commit fb7c8255805cc93fbdc363abec041a5948e73cd1
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Jan 15 12:25:59 2006 +0000
+
+    Implemented IDirectFBSurface::GetClip(), IDirectFBEventBuffer::EnableStatistics(),
+    IDirectFBEventBuffer::GetStatistics(), IDirectFBVideoProvider::GetStreamDescription().
+
+commit fdaf57fdaff44c8f8997ce78b14dc1339c4b801e
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Nov 4 09:43:41 2005 +0000
+
+    Version 0.9.25.
+
+commit 0df6ce54b2034e925ad372b83aa842e543375860
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Oct 30 18:34:44 2005 +0000
+
+    IDirectFBVideoProvider::SendEvent().
+
+commit f12293eeb705349a047264285e332c4d8ebc46b2
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Oct 26 16:30:06 2005 +0000
+
+    Updated ChangeLog.
+
+commit dc5980a73945fba4f366ece43388263ca4296813
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Oct 26 16:29:03 2005 +0000
+
+    Version 0.9.24.
+
+commit 84c39d360cded872133eaa1eea97b2fcf9b9030b
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Oct 26 16:28:28 2005 +0000
+
+    Follow recent API changes.
+
+commit 5887fae984572ecb954391a86f9c5b4b06509cbc
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Sep 14 14:28:42 2005 +0000
+
+    Thanks again to Mark Adams <mark147m@gmail.com>!
+    
+    He changed WaitForEventWithTimeout() so that it doesn't throw an
+    exception when a timeout occurs, which is a normal circumstance.
+    
+    Instead it returns true if events are available or false after a timeout.
+
+commit 8d1eff0aee87798d0d8a36c2a903d40bbb810a0e
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Sep 14 14:05:27 2005 +0000
+
+    Fixed SetColorAdjustment(), thanks to Mark Adams <mark147m@gmail.com>!
+
+commit ce3aa045276af71b8e10bceece228db4fbb0ca3b
+Author: Marcel Siegert <mws@directfb.org>
+Date:   Mon Jun 6 19:51:19 2005 +0000
+
+    use c++ style casting;
+
+commit 92cd1029c210d7e38715f1e067d31b9a9d40f7f6
+Author: Marcel Siegert <mws@directfb.org>
+Date:   Wed Jun 1 00:19:13 2005 +0000
+
+    fix wrong template param in copy constructor;
+    more const'ed member functions;
+    fix return type in template copy constructor;
+    
+     ++dfb.h              |    9 +++++----
+     idirectfb.cpp        |   12 ++++++------
+     idirectfb.h          |   16 ++++++++--------
+     idirectfbsurface.cpp |    6 +++---
+     idirectfbsurface.h   |    4 ++--
+     5 files changed, 24 insertions(+), 23 deletions(-)
+
+commit 9c1a1d7bdf205740033aadf0224184b541cb8307
+Author: Marcel Siegert <mws@directfb.org>
+Date:   Mon May 30 21:36:57 2005 +0000
+
+    changed ++DFB class interface from
+    huge #define macro to a template class
+    adapted all clientclasses to be derived;
+    consted some of the idirectfbfont member functions;
+    
+     changed files:
+     ++dfb.h                  |  155 ++++++++++++++++-------------------------------
+     idirectfb.h              |   12 ++-
+     idirectfbdatabuffer.h    |   11 ++-
+     idirectfbdisplaylayer.h  |   11 ++-
+     idirectfbeventbuffer.h   |   11 ++-
+     idirectfbfont.cpp        |   16 ++--
+     idirectfbfont.h          |   27 +++++---
+     idirectfbimageprovider.h |   12 ++-
+     idirectfbinputdevice.h   |   12 ++-
+     idirectfbpalette.h       |   11 ++-
+     idirectfbscreen.h        |   11 ++-
+     idirectfbsurface.h       |   12 ++-
+     idirectfbvideoprovider.h |   12 ++-
+     idirectfbwindow.h        |   11 ++-
+     14 files changed, 178 insertions(+), 146 deletions(-)
+
+commit 4a9ee4da3ccac3a0946eee1e7e7aded01f359498
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Apr 6 21:01:41 2005 +0000
+
+    GetCardCapabilities() -> GetDeviceDescription()
+
+commit 829fcc5216143a379b4e39abcc0dd5cbd85da5c9
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Mar 22 12:46:10 2005 +0000
+
+    Added missing methods.
+
+commit e3d940fa5099a24d6c34a8acf16637eb82a1c7e8
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Mar 11 13:26:08 2005 +0000
+
+    More SetColor() convenience.
+
+commit 4010b68e2a86bef8785240bc4e01616a87d065b0
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Feb 28 10:04:41 2005 +0000
+
+    Added IDirectFBSurface::DisableAcceleration().
+
+commit 8e7d28944841ce65660be87e67409f96b6ad6bc7
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Feb 27 12:14:03 2005 +0000
+
+    Added IDirectFBDisplayLayer::SetScreenRectangle().
+    
+    Added IDirectFBSurface::FillRectangles().
+
+commit 97c8b6c5f78fc65b4850b8a334a011bf498094c8
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Feb 10 15:38:41 2005 +0000
+
+    Added IDirectFBSurface::SetAlphaRamp().
+    
+    Changed default alpha of Clear() from 0xff to 0x00.
+
+commit 063cfbc8ec44e7ad2d7d7dd94c8e2bd79541afde
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Jan 19 23:09:50 2005 +0000
+
+    Fix reference counting by implementing the
+    constructor "Interface( const Interface &other )".
+
+commit d979a4695843832af020a76fc853aa005b12eb1c
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Jan 19 21:30:40 2005 +0000
+
+    Added IDirectFBDisplayLayer::SetScreenPosition().
+
+commit d1e83cfadcaff6a36939e3dd8415d00508f71363
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Jan 19 21:20:37 2005 +0000
+
+    0.9.22
+
+commit ac8816961412f2d17fd4e0dafa1945f747abd901
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Aug 17 20:07:54 2004 +0000
+
+    libfool!
+
+commit 819bf306556cc570ed9d098dc6902485b2ed5319
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Aug 17 19:54:49 2004 +0000
+
+    Forgot some renaming.
+
+commit a6af548d85bfdc3fba5386919d2d4597ffcb1e4c
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Aug 17 19:50:07 2004 +0000
+
+    ++DFB is an advanced version of DFB++
+    
+    It's an incompatible fork with fundamental changes.
+    
+    Applications no longer deal with interface pointers. The classes
+    wrapping around interfaces are used a container for an interface
+    pointer, providing garbage collection the "direct" way 8-)
+    
+    By overwriting certain operators, e.g. '=', the need to care
+    about AddRef() and Release() has been eliminated. These methods
+    aren't even available anymore.
+    
+    All interfaces are released automatically now, either caused by
+    finalization of an object having interface members, or by leaving
+    a stack frame with an interface hold in a local variable.
+    
+    This also eliminates duplication of code caused by the lack of
+    a C++ equivalent to Java's "finally" block.
+    
+    The following code is using DFB++:
+    
+    void DFBImage::Load( std::string filename )
+    {
+    	IDirectFB              *dfb      = NULL;
+    	IDirectFBImageProvider *provider = NULL;
+    	IDirectFBSurface       *surface  = NULL;
+    
+    	try {
+    		DFBSurfaceDescription desc;
+    
+    		dfb = DirectFB::Create();
+    
+    		provider = dfb->CreateImageProvider( filename.data() );
+    
+    		provider->GetSurfaceDescription( &desc );
+    
+    		surface = dfb->CreateSurface( desc );
+    
+    		provider->RenderTo( surface, NULL );
+    	}
+    	/* Work around missing "finally". */
+    	catch (...) {
+    		if (surface)
+    			surface->Release();
+    
+    		if (provider)
+    			provider->Release();
+    
+    		if (dfb)
+    			dfb->Release();
+    
+    		throw;
+    	}
+    
+    	m_surface = surface;	/* Keep pointer to interface object. */
+    
+    	provider->Release();
+    	dfb->Release();
+    }
+    
+    This is how it's looking using ++DFB:
+    
+    void DFBImage::Load( std::string filename )
+    {
+    	IDirectFB              dfb;
+    	IDirectFBImageProvider provider;
+    	IDirectFBSurface       surface;
+    	DFBSurfaceDescription  desc;
+    
+    	dfb = DirectFB::Create();
+    
+    	provider = dfb.CreateImageProvider( filename.data() );
+    
+    	provider.GetSurfaceDescription( &desc );
+    
+    	surface = dfb.CreateSurface( desc );
+    
+    	provider.RenderTo( surface, NULL );
+    
+    	m_surface = surface;
+    }
+    
+    The last line instructs the container object 'm_surface' (member)
+    to take the interface pointer from 'surface' after calling AddRef().
+    
+    Leaving the stack frame due to an exception or a return causes
+    finalization of the local container objects 'dfb', 'provider'
+    and 'surface' calling Release() if they've already been assigned
+    an interface pointer.
+    
+    The suggested way of passing interfaces via parameters
+    is to use C++ references as in this declaration:
+    
+    	void PrepareTarget( IDirectFBSurface &target );
+    
+    Explicitly releasing an interface is as simple as this:
+    
+    	m_surface = NULL;

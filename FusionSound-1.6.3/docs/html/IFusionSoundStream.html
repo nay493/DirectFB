@@ -1,0 +1,63 @@
+<HTML>
+<STYLE>
+  <!--
+    A{textdecoration:none}
+  -->
+</STYLE>
+<STYLE type="text/css">
+  A:link, A:visited, A:active { text-decoration: none; }
+</STYLE>
+<HEAD>
+  <TITLE>IFusionSoundStream [FusionSound Reference Manual]</TITLE>
+</HEAD>
+<BODY bgcolor=#FFFFFF link=#0070FF vlink=#0070FF text=#404040>
+
+<TABLE width=100% bgcolor=black border=0 cellspacing=1 cellpadding=3>
+  <TR><TD width=30%>
+    <A href="http://www.directfb.org"><IMG border=0 src="directfb.png"></A>
+  </TD><TD align=right>
+    &nbsp;&nbsp;    <A href="index.html"><FONT size=+3 color=white>Reference Manual - 1.6.3</FONT></A>
+  </TD></TR>
+  <TR><TD colspan=2 align=center bgcolor=#303030>
+    <TABLE border=0 cellspacing=0 cellpadding=0>
+      <TR><TD nowrap align=right width=50%>
+        <BIG><A href="index.html"><FONT color=#DDDDDD>FusionSound Interfaces</FONT></A>&nbsp;</BIG>
+      </TD><TD nowrap align=left width=50%>
+        <BIG><FONT color=orange>&nbsp;IFusionSoundStream</FONT></BIG>
+      </TD></TR>
+    </TABLE>
+  </TD></TR>
+</TABLE>
+
+<p style="margin-left:3%; margin-right:3%;">      <i><b>IFusionSoundStream</b></i> represents a ring buffer for streamed
+      playback which fairly maps to writing to a sound device. Use it for easy
+      porting of applications that use exclusive access to a sound device.
+    <br><br>
+      <b>Writing</b> to the ring buffer <b>triggers the playback</b> if it's not
+      already running. The method <i>Write()</i> can be called with an <b>arbitrary
+      number of samples</b>. It returns after all samples have been written to the
+      ring buffer and <b>sleeps</b> while the ring buffer is full.
+      Blocking writes are perfect for accurate filling of the buffer,
+      which keeps the ring buffer as full as possible using a very small block
+      size (depending on sample rate, playback pitch and the underlying hardware).
+    <br><br>
+      <b>Waiting</b> for a specific amount of <b>free space</b> in the ring buffer
+      is provided by <i>Wait()</i>. It can be used to <b>avoid blocking</b> of
+      <i>Write()</i> or to <b>finish playback</b> before destroying the interface.
+    <br><br>
+      <b>Status information</b> includes the amount of <b>filled</b> and
+      <b>total</b> space in the ring buffer, along with the current <b>read</b> and
+      <b>write position</b>. It can be retrieved by calling <i>GetStatus()</i> at
+      any time without blocking.
+</p><P>
+  <CENTER><TABLE width=93% border=1 rules=groups cellpadding=2 cellspacing=0>
+    <THEAD>
+      <TR><TH colspan=3>Methods of IFusionSoundStream</TH></TR>
+    </THEAD>
+    <TBODY>
+    </TBODY>
+  </TABLE></CENTER>
+</P>
+
+</BODY>
+</HTML>

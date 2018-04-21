@@ -1,0 +1,677 @@
+<HTML>
+<STYLE>
+  <!--
+    A{textdecoration:none}
+  -->
+</STYLE>
+<STYLE type="text/css">
+  A:link, A:visited, A:active { text-decoration: none; }
+</STYLE>
+<HEAD>
+  <TITLE>Types [FusionSound Reference Manual]</TITLE>
+</HEAD>
+<BODY bgcolor=#FFFFFF link=#0070FF vlink=#0070FF text=#404040>
+
+<TABLE width=100% bgcolor=black border=0 cellspacing=1 cellpadding=3>
+  <TR><TD width=30%>
+    <A href="http://www.directfb.org"><IMG border=0 src="directfb.png"></A>
+  </TD><TD align=right>
+    &nbsp;&nbsp;    <A href="index.html"><FONT size=+3 color=white>Reference Manual - 1.6.3</FONT></A>
+  </TD></TR>
+  <TR><TD colspan=2 align=center bgcolor=#303030>
+    <BIG><FONT color=orange>FusionSound Types</FONT></BIG>
+  </TD></TR>
+</TABLE>
+
+<p>  <a name=FSSoundDriverInfo>  <font color=#70D070 size=+1>FSSoundDriverInfo</font>
+  <br>
+  <TABLE border=0 cellspacing=0 cellpadding=4 bgcolor=#E0E0E0>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      int
+    </TD><TD valign=top>
+      <FONT color=black><B>major;</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Major version. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      int
+    </TD><TD valign=top>
+      <FONT color=black><B>minor;</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Minor version. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      char
+    </TD><TD valign=top>
+      <FONT color=black><B>name[FS_SOUND_DRIVER_INFO_NAME_LENGTH];</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Driver name. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      char
+    </TD><TD valign=top>
+      <FONT color=black><B>vendor[FS_SOUND_DRIVER_INFO_VENDOR_LENGTH];</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Driver vendor. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      char
+    </TD><TD valign=top>
+      <FONT color=black><B>url[FS_SOUND_DRIVER_INFO_URL_LENGTH];</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Driver URL. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      char
+    </TD><TD valign=top>
+      <FONT color=black><B>license[FS_SOUND_DRIVER_INFO_LICENSE_LENGTH];</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Driver license. </font>
+    </TD></TR>
+  </TABLE>
+        Description of the sound driver.
+
+  <br>
+</p>
+<p>  <a name=FSDeviceDescription>  <font color=#70D070 size=+1>FSDeviceDescription</font>
+  <br>
+  <TABLE border=0 cellspacing=0 cellpadding=4 bgcolor=#E0E0E0>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      char
+    </TD><TD valign=top>
+      <FONT color=black><B>name[FS_SOUND_DEVICE_INFO_NAME_LENGTH];</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Device name. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <A href="types.html#FSSoundDriverInfo">FSSoundDriverInfo</A>
+    </TD><TD valign=top>
+      <FONT color=black><B>driver;</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040></font>
+    </TD></TR>
+  </TABLE>
+        Description of the sound device.
+
+  <br>
+</p>
+<p>
+  <a name=FSSampleFormat>
+  <font color=#D07070 size=+1>FSSampleFormat</font>
+  <br>
+  <TABLE border=0 cellspacing=0 cellpadding=4 bgcolor=#F0F0F0>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSSF_UNKNOWN</font>
+    </TD><TD valign=top>
+      <font color=#404040>Unknown or invalid format. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSSF_U8</font>
+    </TD><TD valign=top>
+      <font color=#404040>Unsigned 8 bit. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSSF_S16</font>
+    </TD><TD valign=top>
+      <font color=#404040>Signed 16 bit (native endian). </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSSF_S24</font>
+    </TD><TD valign=top>
+      <font color=#404040>Signed 24 bit (native endian). </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSSF_S32</font>
+    </TD><TD valign=top>
+      <font color=#404040>Signed 32 bit (native endian). </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSSF_FLOAT</font>
+    </TD><TD valign=top>
+      <font color=#404040>Floating-point 32 bit (native endian). </font>
+    </TD></TR>
+  </TABLE>
+        The sample format is the way of storing audible information.
+    <br><br>
+      16, 24 and 32 bit samples are always stored in <b>native endian</b>.
+      This keeps the library and applications simple and clean. 
+      Always access sample buffers like arrays of 8, 16 or 32 bit integers
+      depending on the sample format, unless data is written with endianness
+      being taken care of. This does not excuse from endian conversion
+      that might be necessary when reading data from files.
+
+  <br>
+</p>
+<p>
+  <a name=FSChannelMode>
+  <font color=#D07070 size=+1>FSChannelMode</font>
+  <br>
+  <TABLE border=0 cellspacing=0 cellpadding=4 bgcolor=#F0F0F0>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSCM_UNKNOWN</font>
+    </TD><TD valign=top>
+      <font color=#404040>Unknown or invalid mode. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSCM_MONO</font>
+    </TD><TD valign=top>
+      <font color=#404040>1 Channel (Mono). </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSCM_STEREO</font>
+    </TD><TD valign=top>
+      <font color=#404040>2 Channels (Left Right). </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSCM_STEREO21</font>
+    </TD><TD valign=top>
+      <font color=#404040>3 Channels (Left Right Subwoofer). </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSCM_STEREO30</font>
+    </TD><TD valign=top>
+      <font color=#404040>3 Channels (Left Center Right). </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSCM_STEREO31</font>
+    </TD><TD valign=top>
+      <font color=#404040>4 Channels (Left Center Right Subwoofer). </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSCM_SURROUND30</font>
+    </TD><TD valign=top>
+      <font color=#404040>3 Channels (Left Right Rear). </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSCM_SURROUND31</font>
+    </TD><TD valign=top>
+      <font color=#404040>4 Channels (Left Right Rear Subwoofer). </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSCM_SURROUND40_2F2R</font>
+    </TD><TD valign=top>
+      <font color=#404040>4 Channels (Left Right RearLeft RearRight). </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSCM_SURROUND41_2F2R</font>
+    </TD><TD valign=top>
+      <font color=#404040>5 Channels (Left Right RearLeft RearRight Subwoofer). </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSCM_SURROUND40_3F1R</font>
+    </TD><TD valign=top>
+      <font color=#404040>4 Channels (Left Center Right Rear). </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSCM_SURROUND41_3F1R</font>
+    </TD><TD valign=top>
+      <font color=#404040>5 Channels (Left Center Right Rear Subwoofer). </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSCM_SURROUND50</font>
+    </TD><TD valign=top>
+      <font color=#404040>5 Channels (Left Center Right RearLeft RearRight). </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSCM_SURROUND51</font>
+    </TD><TD valign=top>
+      <font color=#404040>6 Channels (Left Center Right RearLeft RearRight Subwoofer). </font>
+    </TD></TR>
+  </TABLE>
+        The channel mode provides information about the channels configuration.
+    <br><br>
+      The channel mode instructs FusionSound about the channels configuration.
+      Particulary usefull when you have a stream with 3, 4 or 5 channels; in 
+      these cases, if unspecified, FusionSound assumes STEREO30 for 3 channels,
+      SURROUND40_2F2R for 4 and SURROUND50 for 5.
+
+  <br>
+</p>
+<p>
+  <a name=FSBufferDescriptionFlags>
+  <font color=#D07070 size=+1>FSBufferDescriptionFlags</font>
+  <br>
+  <TABLE border=0 cellspacing=0 cellpadding=4 bgcolor=#F0F0F0>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSBDF_NONE</font>
+    </TD><TD valign=top>
+      <font color=#404040>None of these. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSBDF_LENGTH</font>
+    </TD><TD valign=top>
+      <font color=#404040>Buffer length is set. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSBDF_CHANNELS</font>
+    </TD><TD valign=top>
+      <font color=#404040>Number of channels is set. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSBDF_SAMPLEFORMAT</font>
+    </TD><TD valign=top>
+      <font color=#404040>Sample format is set. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSBDF_SAMPLERATE</font>
+    </TD><TD valign=top>
+      <font color=#404040>Sample rate is set. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSBDF_CHANNELMODE</font>
+    </TD><TD valign=top>
+      <font color=#404040>Channel mode is set. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSBDF_ALL</font>
+    </TD><TD valign=top>
+      <font color=#404040>All of these. </font>
+    </TD></TR>
+  </TABLE>
+        Each buffer description flag validates one field of the buffer description.
+
+  <br>
+</p>
+<p>  <a name=FSBufferDescription>  <font color=#70D070 size=+1>FSBufferDescription</font>
+  <br>
+  <TABLE border=0 cellspacing=0 cellpadding=4 bgcolor=#E0E0E0>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <A href="types.html#FSBufferDescriptionFlags">FSBufferDescriptionFlags</A>
+    </TD><TD valign=top>
+      <FONT color=black><B>flags;</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Defines which fields are set. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      int
+    </TD><TD valign=top>
+      <FONT color=black><B>length;</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Buffer length specified as number of samples per channel. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      int
+    </TD><TD valign=top>
+      <FONT color=black><B>channels;</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Number of channels. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <A href="types.html#FSSampleFormat">FSSampleFormat</A>
+    </TD><TD valign=top>
+      <FONT color=black><B>sampleformat;</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Format of each sample. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      int
+    </TD><TD valign=top>
+      <FONT color=black><B>samplerate;</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Number of samples per second. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <A href="types.html#FSChannelMode">FSChannelMode</A>
+    </TD><TD valign=top>
+      <FONT color=black><B>channelmode;</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Channel mode (overrides channels). </font>
+    </TD></TR>
+  </TABLE>
+        The buffer description is used to create static sound buffers.
+
+  <br>
+</p>
+<p>
+  <a name=FSStreamDescriptionFlags>
+  <font color=#D07070 size=+1>FSStreamDescriptionFlags</font>
+  <br>
+  <TABLE border=0 cellspacing=0 cellpadding=4 bgcolor=#F0F0F0>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSSDF_NONE</font>
+    </TD><TD valign=top>
+      <font color=#404040>None of these. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSSDF_BUFFERSIZE</font>
+    </TD><TD valign=top>
+      <font color=#404040>Ring buffer size is set. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSSDF_CHANNELS</font>
+    </TD><TD valign=top>
+      <font color=#404040>Number of channels is set. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSSDF_SAMPLEFORMAT</font>
+    </TD><TD valign=top>
+      <font color=#404040>Sample format is set. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSSDF_SAMPLERATE</font>
+    </TD><TD valign=top>
+      <font color=#404040>Sample rate is set. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSSDF_PREBUFFER</font>
+    </TD><TD valign=top>
+      <font color=#404040>Prebuffer amount is set. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSSDF_CHANNELMODE</font>
+    </TD><TD valign=top>
+      <font color=#404040>Channel mode is set. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSSDF_ALL</font>
+    </TD><TD valign=top>
+      <font color=#404040>All of these. </font>
+    </TD></TR>
+  </TABLE>
+        Each stream description flag validates one field of the stream description.
+
+  <br>
+</p>
+<p>  <a name=FSStreamDescription>  <font color=#70D070 size=+1>FSStreamDescription</font>
+  <br>
+  <TABLE border=0 cellspacing=0 cellpadding=4 bgcolor=#E0E0E0>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <A href="types.html#FSStreamDescriptionFlags">FSStreamDescriptionFlags</A>
+    </TD><TD valign=top>
+      <FONT color=black><B>flags;</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Defines which fields are set. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      int
+    </TD><TD valign=top>
+      <FONT color=black><B>buffersize;</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Ring buffer size specified as a number of samples (per channel). </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      int
+    </TD><TD valign=top>
+      <FONT color=black><B>channels;</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Number of channels. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <A href="types.html#FSSampleFormat">FSSampleFormat</A>
+    </TD><TD valign=top>
+      <FONT color=black><B>sampleformat;</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Format of each sample. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      int
+    </TD><TD valign=top>
+      <FONT color=black><B>samplerate;</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Number of samples per second (per channel). </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      int
+    </TD><TD valign=top>
+      <FONT color=black><B>prebuffer;</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Samples to buffer before starting the playback. A negative value disables auto start of playback. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <A href="types.html#FSChannelMode">FSChannelMode</A>
+    </TD><TD valign=top>
+      <FONT color=black><B>channelmode;</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Channel mode (overrides channels). </font>
+    </TD></TR>
+  </TABLE>
+        The stream description is used to create streaming sound buffers.
+
+  <br>
+</p>
+<p>
+  <a name=FSMusicProviderCapabilities>
+  <font color=#D07070 size=+1>FSMusicProviderCapabilities</font>
+  <br>
+  <TABLE border=0 cellspacing=0 cellpadding=4 bgcolor=#F0F0F0>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FMCAPS_BASIC</font>
+    </TD><TD valign=top>
+      <font color=#404040>Basic ops (PlayTo, Stop).                </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FMCAPS_SEEK</font>
+    </TD><TD valign=top>
+      <font color=#404040>Supports SeekTo.                         </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FMCAPS_RESAMPLE</font>
+    </TD><TD valign=top>
+      <font color=#404040>Supports audio resampling.               </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FMCAPS_HALFRATE</font>
+    </TD><TD valign=top>
+      <font color=#404040>Supports decoding at half original rate. </font>
+    </TD></TR>
+  </TABLE>
+        Information about an IFusionSoundMusicProvider.
+
+  <br>
+</p>
+<p>
+  <a name=FSMusicProviderStatus>
+  <font color=#D07070 size=+1>FSMusicProviderStatus</font>
+  <br>
+  <TABLE border=0 cellspacing=0 cellpadding=4 bgcolor=#F0F0F0>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FMSTATE_UNKNOWN</font>
+    </TD><TD valign=top>
+      <font color=#404040>Unknown status.       </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FMSTATE_PLAY</font>
+    </TD><TD valign=top>
+      <font color=#404040>Provider is playing.  </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FMSTATE_STOP</font>
+    </TD><TD valign=top>
+      <font color=#404040>Playback was stopped. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FMSTATE_FINISHED</font>
+    </TD><TD valign=top>
+      <font color=#404040>Playback is finished. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FMSTATE_ALL</font>
+    </TD><TD valign=top>
+      <font color=#404040></font>
+    </TD></TR>
+  </TABLE>
+        Information about the status of a music provider.
+
+  <br>
+</p>
+<p>
+  <a name=FSMusicProviderPlaybackFlags>
+  <font color=#D07070 size=+1>FSMusicProviderPlaybackFlags</font>
+  <br>
+  <TABLE border=0 cellspacing=0 cellpadding=4 bgcolor=#F0F0F0>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FMPLAY_NOFX</font>
+    </TD><TD valign=top>
+      <font color=#404040>Normal playback.                            </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FMPLAY_LOOPING</font>
+    </TD><TD valign=top>
+      <font color=#404040>Automatically restart playback as soon as the end of the current track is reached. </font>
+    </TD></TR>
+  </TABLE>
+        Flags controlling playback of a music provider.
+
+  <br>
+</p>
+<p>  <a name=FSTrackDescription>  <font color=#70D070 size=+1>FSTrackDescription</font>
+  <br>
+  <TABLE border=0 cellspacing=0 cellpadding=4 bgcolor=#E0E0E0>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      char
+    </TD><TD valign=top>
+      <FONT color=black><B>artist[FS_TRACK_DESC_ARTIST_LENGTH];</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Artist. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      char
+    </TD><TD valign=top>
+      <FONT color=black><B>title[FS_TRACK_DESC_TITLE_LENGTH];</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Title. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      char
+    </TD><TD valign=top>
+      <FONT color=black><B>album[FS_TRACK_DESC_ALBUM_LENGTH];</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Album. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      short
+    </TD><TD valign=top>
+      <FONT color=black><B>year;</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Year. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      char
+    </TD><TD valign=top>
+      <FONT color=black><B>genre[FS_TRACK_DESC_GENRE_LENGTH];</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Genre. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      char
+    </TD><TD valign=top>
+      <FONT color=black><B>encoding[FS_TRACK_DESC_ENCODING_LENGTH];</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Encoding (for example: MPEG Layer-1). </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      int
+    </TD><TD valign=top>
+      <FONT color=black><B>bitrate;</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Bitrate in bits/s. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      float
+    </TD><TD valign=top>
+      <FONT color=black><B>replaygain;</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>ReplayGain level (1.0 by default). </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      float
+    </TD><TD valign=top>
+      <FONT color=black><B>replaygain_album;</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040>Album ReplayGain level. </font>
+    </TD></TR>
+  </TABLE>
+        Description of a track provided by a music provider.
+
+  <br>
+</p>
+<p>  <a name=FSTrackCallback>  <font color=#40A0F0 size=+1>FSTrackCallback</font>
+  <br>
+  <TABLE border=0 cellspacing=0 cellpadding=4 bgcolor=#E0E0E0>
+    <TR><TD colspan=4>
+         <I><FONT color=black>DirectEnumerationResult (*FSTrackCallback) (</FONT></I>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      FSTrackID
+    </TD><TD valign=top>
+      <FONT color=black><B>track_id,</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040></font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <A href="types.html#FSTrackDescription">FSTrackDescription</A>
+    </TD><TD valign=top>
+      <FONT color=black><B>desc,</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040></font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      void
+    </TD><TD valign=top>
+      <FONT color=black><B>*callbackdata</B></FONT>
+    </TD><TD valign=top>
+      <font color=#404040></font>
+    </TD></TR>
+    <TR><TD colspan=3><I><FONT color=black>);</FONT></I></TD></TR>
+  </TABLE>
+        Called for each track provided by a music provider.
+
+</p>
+<p>
+  <a name=FSBufferPlayFlags>
+  <font color=#D07070 size=+1>FSBufferPlayFlags</font>
+  <br>
+  <TABLE border=0 cellspacing=0 cellpadding=4 bgcolor=#F0F0F0>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSPLAY_NOFX</font>
+    </TD><TD valign=top>
+      <font color=#404040>No effects are applied. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSPLAY_LOOPING</font>
+    </TD><TD valign=top>
+      <font color=#404040>Playback will continue at the beginning of the buffer as soon as the end is reached. There's no gap produced by concatenation. Only one looping playback at a time is supported by the simple playback. See also <i>CreatePlayback()</i>. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSPLAY_CYCLE</font>
+    </TD><TD valign=top>
+      <font color=#404040>Play the whole buffer for one cycle,  wrapping at the end. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSPLAY_REWIND</font>
+    </TD><TD valign=top>
+      <font color=#404040>Play reversing sample order. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FSPLAY_ALL</font>
+    </TD><TD valign=top>
+      <font color=#404040>All of these. </font>
+    </TD></TR>
+  </TABLE>
+        Flags for simple playback using <i><a href="IFusionSoundBuffer_Play.html"><a href="IFusionSoundBuffer_Play.html">IFusionSoundBuffer::Play()</a></a></i>.
+
+  <br>
+</p>
+<p>
+  <a name=FMBufferCallbackResult>
+  <font color=#D07070 size=+1>FMBufferCallbackResult</font>
+  <br>
+  <TABLE border=0 cellspacing=0 cellpadding=4 bgcolor=#F0F0F0>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FMBCR_OK</font>
+    </TD><TD valign=top>
+      <font color=#404040>Continue. </font>
+    </TD></TR>
+    <TR><TD width=32>&nbsp;</TD><TD valign=top>
+      <font color=#40A040>FMBCR_BREAK</font>
+    </TD><TD valign=top>
+      <font color=#404040>Stop loading. </font>
+    </TD></TR>
+  </TABLE>
+        Result of a FMBufferCallback.
+
+  <br>
+</p>
+
+</BODY>
+</HTML>

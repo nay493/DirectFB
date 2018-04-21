@@ -1,0 +1,1057 @@
+commit 385bff4d75432e0e598e9dd986459ae7936fbc02
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Mar 29 19:50:17 2014 +0100
+
+    version: 1.0.4
+
+commit bf93b941ff5510a301b1c7c66f5a23cdd055b506
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Mar 29 19:05:12 2014 +0100
+
+    DFBTestSimpleFont: Fix crash with font height (+1)
+
+commit 1592387d29f4d5ce1096c7f4d66b3a712d6b20d1
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Mar 29 12:19:07 2014 +0100
+
+    DFBTestSimple: Remove 'override' statements
+
+commit c1e68262a533694d8420b6584e1df7405d00242b
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Mar 17 18:24:31 2014 +0100
+
+    1.0.3
+
+commit 29a9d0de1809edd4684038fec2fb254b10e7da0f
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Mar 17 18:12:19 2014 +0100
+
+    DFBTestSimpleFont: Add new test for font rendering
+
+commit e2ce0804ecb7707665ce1d40f998567c1b8572f3
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Mar 17 18:11:52 2014 +0100
+
+    DFBTestSimple: Use override statement
+
+commit b41102193feceb94ad9d35f0607bb85e6e0c7cfa
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Mar 17 18:09:30 2014 +0100
+
+    Config: Add min/max/mod constructor for iterated config ranges
+
+commit e1a2002ff6f11fe2e0036f70042fad9ecdc3e96f
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Mar 17 18:08:30 2014 +0100
+
+    configure: Add -std=c++0x
+
+commit 627300e3f6af924866ba79abfa7613fb1142b36c
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Mar 17 18:07:47 2014 +0100
+
+    Util: Add DSPF_ABGR
+
+commit 1a7e3e1490ebfc9f2f9931b0dd11a0a671a82a2c
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Mar 17 18:06:07 2014 +0100
+
+    DFBTestRenderBlit: Fix c++0x (c++11) issue
+
+commit e103fe8802f16843df80f96d21218a08b3ea051e
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Mar 7 16:30:14 2014 +0100
+
+    Config: Fix compiler issue with push_back() call, fix min/max twist
+
+commit 43497cb1f1035617119a0502dec07f480e4dd928
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Mar 7 16:29:38 2014 +0100
+
+    Util: Add CompareBuffers() without list of points (compare whole buffer)
+
+commit 944511c7d0b0d1d98832f7ea1d60a1d45c60bab7
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Mar 6 14:25:47 2014 +0100
+
+    Makefile: Add all test sources to EXTRA_DIST
+
+commit 2f8029e0b50ddb088409c516e0c1e9947a846251
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Oct 18 10:55:25 2013 +0200
+
+    1.0.1
+
+commit a20e9340832903890ad7b85f7005bceb25441b72
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Oct 18 10:54:51 2013 +0200
+
+    increase timeout
+
+commit daaa594fc02f8fa53daf4e262532a51b4a953760
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Oct 18 09:51:40 2013 +0200
+
+    DFBfx: fix build
+
+commit f8dbd62d0c6711faf9fdf504f63e03f23ea7348e
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Sep 4 16:57:20 2013 +0200
+
+    Util: Follow dfb_convert_to_argb API change
+
+commit 4f2b4b96ca63f62dad0943ec24b28fa626173842
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Jul 30 02:47:31 2013 +0200
+
+    DFBTestSimple: fix string assignment
+
+commit 857193ccb7816f6829007fbee0f01379ea68a550
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Jul 12 12:03:33 2013 +0200
+
+    add EXTRA_DIST, somehow needed
+
+commit 43911eaa175ded051112008d32bf0f934fe3af1a
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Jul 12 12:03:02 2013 +0200
+
+    version 1.0.0
+
+commit 8566a6c13543812efa3e8cb57031b2002c2895d1
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Jul 12 12:02:41 2013 +0200
+
+    use normal Insignia executable name if link does not exist
+
+commit 2c0438d805083dfcb6ce00d1fda7bfaf125c9e42
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Jul 1 12:38:34 2013 +0200
+
+    DFBTestWindowCreate: fix for loop for 'delays' in configs
+
+commit c9fd33ef10cc6a59f17016cbe7db014526ed4a70
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Jul 1 12:37:48 2013 +0200
+
+    Insignia: Send signal 30 (stack dump), then after few seconds kill with SIGKILL.
+
+commit 09fc41b89b8f9a892efa4433e661cad8906f9d1d
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Jun 30 11:26:15 2013 +0200
+
+    Options: FIx display of duration value.
+
+commit f71a06f3cc1fdc96412df337e2dc7df312243f8e
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Jun 30 09:45:04 2013 +0200
+
+    DFBTestSurfaceFrameTimeMulti: more tolerant timing
+
+commit 1801c5d9ea44954dde8b449fe4e1bff77ca20cf6
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Jun 30 09:44:34 2013 +0200
+
+    Util: add us->ms printing macro PRINT_US_MS
+
+commit 83f832708285e0dd1d6f1a756e2e5274842304fe
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Jun 23 22:32:28 2013 +0200
+
+    Insignia: fix indices
+
+commit d04cbaa28e5c1a4be202993e75b54b4683652fa2
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Jun 23 22:12:32 2013 +0200
+
+    InsigniaRun: Change strace option from -T to -ST
+
+commit 542e3996268adee215e32e23b86e905b5109dec9
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Jun 23 22:08:57 2013 +0200
+
+    InsigniaRun: add option -T support
+
+commit 4d669766c93b56650d451d7dc9611e0e536c5d15
+Merge: 9bbf631 554ffcb
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Jun 23 22:05:55 2013 +0200
+
+    Merge branch 'master' of git+ssh://git.directfb.org/git/directfb/extras/Insignia
+
+commit 9bbf631c9612d0c4425c36552bc0dd6bad3bc2cd
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Jun 23 22:05:30 2013 +0200
+
+    Insignia: Add option -T to start with a testrun, useful after system crash
+
+commit 554ffcbdb60c98994c94c4ff3e34c5a83bfbc98e
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Jun 23 22:04:50 2013 +0200
+
+    Insignia: Increase timeout before killing test processes.
+
+commit 4b51146598d835aef540296a3c9351d9f3d8a4d9
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Jun 23 12:43:23 2013 +0200
+
+    Insignia: increase time out
+
+commit 9229d7e5d348b508ac14a07ba593f36a4db83a31
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Jun 23 12:30:57 2013 +0200
+
+    Insignia: preliminary process killing on timeout
+
+commit 95b43f2d2642e600c24afd57616a91aacb6a4a79
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Jun 22 02:56:54 2013 +0200
+
+    Insignia: Many updates and two new tests for GetFrameTime.
+
+commit de2ddcf0aa8cf8c1fbf48c9c717433a55ddf68c9
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri May 10 04:25:41 2013 +0200
+
+    Insignia: cleanup utils and dump buffers in all compare functions, clean up blitting source image, fix clipping test
+
+commit 120f75dff360cbda2319c437daba3ded20bb6dc9
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Apr 30 04:23:38 2013 +0200
+
+    main: Fix crash with LD_LIBRARY_PATH not being set.
+
+commit 04c624437b1a4a20fb75c6a5c67136ec05b65453
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Apr 22 12:22:02 2013 +0200
+
+    DFBTestBlitting: Use App::Data().
+
+commit f89cc09262b87c7a741fd4e62cb3a4fd9658fee3
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Apr 22 12:21:46 2013 +0200
+
+    Revert "debug"
+    
+    This reverts commit 0cb21d5c0e7c480bf0f6f3ffa877879e1c0738d0.
+
+commit 0cb21d5c0e7c480bf0f6f3ffa877879e1c0738d0
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Apr 22 11:18:52 2013 +0200
+
+    debug
+
+commit 6ec769ca1dd58b5ea23b5630f5a4dca05dbbea3b
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Apr 21 14:53:36 2013 +0200
+
+    DFBTestBlitting: Use App::Data().
+
+commit 35e1be89557760a63b193710665a28ad07cdfa6d
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Apr 21 14:48:55 2013 +0200
+
+    Options: Add -S to seta sysroot, prefix to all data files.
+
+commit fd87dd73fe1db88623cb1cf8abf923a969415e0b
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Apr 21 13:31:58 2013 +0200
+
+    DFBTestSurfaceCreate: Check for stopped().
+
+commit c307c5d1d543897bd8631264d25d7ce02e430a4c
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Apr 21 10:31:05 2013 +0200
+
+    Options: Add -o to limit number of configs per test module, new summary logs with error count.
+
+commit 1468c534dea198f771f54be4a2403e3ab2507220
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Apr 14 04:01:56 2013 +0200
+
+    DFBTestInit: Simplify using DFBTestSimple and add two delays in config.
+
+commit a7852f4a787b5483e25df0c481b8fb4da689c405
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Apr 14 03:58:56 2013 +0200
+
+    InsigniaConfig: Add ConfigTypeAll<int>.
+
+commit b493f549f229e2450fdbf4d765e3d8c91b64d390
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Apr 14 03:57:16 2013 +0200
+
+    Insignia: Master master mode with forking by releasing interface before running test in child process.
+
+commit ea91593746fdd1299fa1594cccbdd150e837638f
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Apr 13 19:48:48 2013 +0200
+
+    DFBTestWindowCreate: reduce number of configs
+
+commit 121f58c1922fcecbc0eb6080fc7dbc428d30de9f
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Apr 13 19:22:26 2013 +0200
+
+    DFBTestWindowCreate: check for test being stopped
+
+commit 7871296db56479c142c8dff701a62bf4c2bcadef
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Apr 13 18:21:03 2013 +0200
+
+    DFBTestMulti03/04: Add two more tests.
+    
+    Signed-off-by: Denis Oliver Kropp <dok@directfb.org>
+
+commit 27f64db64ba13059d983044f2b785ad04ed7c7af
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Apr 13 18:14:00 2013 +0200
+
+    Insignia: When MODULEDIR fails to open, try deriving from LD_LIBRARY_PATH.
+
+commit be18df1032920497af4af37610230f7d3c9b3cfb
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Apr 13 18:01:37 2013 +0200
+
+    DFBTestMulti02: Fix windowed option, fix copy'n'paste in buffers_master option.
+    
+    Signed-off-by: Denis Oliver Kropp <dok@directfb.org>
+
+commit 2fb612919ed68884f8def904fd702b5607e8724f
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Apr 13 17:59:56 2013 +0200
+
+    Test: Improve slave shutdown handling.
+    
+    Signed-off-by: Denis Oliver Kropp <dok@directfb.org>
+
+commit 5041ff8b720712fbe9df2423d894530bea63b06d
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Apr 13 17:59:01 2013 +0200
+
+    Insignia: Remove useless linux/fusion.h include.
+    
+    Signed-off-by: Denis Oliver Kropp <dok@directfb.org>
+
+commit 62b80b07a3eafcba26fdbc6ce9bb066ebd49b1d4
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Mar 30 18:17:07 2013 +0100
+
+    Insignia: Further enhancements, fixes, new tests...
+
+commit 3f0bb4227466ba81318596bddc25e053e7f19f03
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Mar 5 21:40:01 2013 +0100
+
+    InsigniaRun: Fix arg0 in help strings.
+
+commit b135191d70eab4a536d0fd7fecc284478c86f789
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Mar 5 21:30:49 2013 +0100
+
+    fix makefile for InsigniaRun
+
+commit d6c5cec108e840b7099cca68a5b617fe8e443eeb
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Mar 5 21:17:38 2013 +0100
+
+    Insignia: New features!
+    
+    - Multi app tests with number of processes to be fork()ed, master and slaves
+    	- Communication between all Test processes (instances) via pipes!
+    	- Test instances can send packets to other instances, e.g. to signal completion
+    	  or send information like Surface IDs from slaves to master etc.
+    - Parallel Test runs, so that up to eight masters with their slaves are running in
+      all eight available Fusion worlds, maybe we should increase to 16 or 32 to allow more Tests
+      to run in parallel for quick tests
+    - Many log files are created, per Test run, per process, ...
+    - Successful runs delete the detail logs per default, but it can be disabled
+    - In addition to each Test having its configs, there are main configs used to run the Tests,
+      e.g. run all tests once with task-manager and once without or more combinations.
+    
+    cyto [~/DFB/Insignia] Insignia --help
+    
+    Insignia [options]
+    
+      Options:
+        -t <Test Name>             Run specified test (otherwise all)
+        -q                         Suppress messages
+        -l                         Write messages to Insignia_log.txt
+        -m                         Don't fork master process, for debugging
+        -C <name>[=<value>][,...]  Add configuration to use for running tests
+        -c <filename>              Load configurations from file (one per line)
+        -e                         Exit when a test failed
+        -k                         Keep success logs
+        -p                         Run tests parallel
+        -u                         User stops tests (may not work with all modules)
+        -s <uint>                  Set seed for random number generator (default 0)
+    
+    There's also a script that further automates the configuration management by using the
+    shell expansion for combinations of all kinds of options
+    
+    cyto [~/DFB/Insignia] ./InsigniaRun.sh -h
+    
+    Insignia Run v0.1
+    
+        Usage
+                InsigniaRun.sh [options] [tests]
+    
+        Options
+                -p -k -e -m                    See 'Insignia -h'
+    
+                -G                             Run in gdb (to debug actual test process, use -m also)
+    
+                -O         <options>           Append DirectFB options to the global config
+                -C         <conf>              Append config string to generator (use shell expansion)
+                -Cno       <option>            Append '{no-,}$option for both yes and no being tested'
+                -Ca                            Append '{no-,}always-indirect'
+                -Cs                            Append '{no-,}secure-fusion'
+                -Ct                            Append '{no-,}task-manager'
+                -Cd                            Append 'log-delay-rand-loops={0,10,100,1000,10000}'
+                -Cw                            Append 'wm={default,sawman}'
+                -CX        <filter> <conf>     Append $conf only where generated config string contains $filter
+                -CXtmsc                        Append 'software-cores={1,4,8}' if ',task-manager' is contained,
+                                                like using '-CX ,task-manager software-cores={1,4,8}'
+    
+        Tests
+                DFBTestBlitting
+                DFBTestClipping
+                DFBTestFX
+                DFBTestInterlocks
+                DFBTestMulti01
+                DFBTestMulti02
+                DFBTestPrimary
+                DFBTestRender
+                DFBTestRenderBlit
+                DFBTestSurfaceCreate
+                DFBTestTempSurface
+                DFBTestWindowCreate
+    
+    cyto [~/DFB/Insignia] ./InsigniaRun.sh -Ct -p -Ca -Cw DFBTestMulti02
+    
+    InsigniaRun.sh -Ct -p -Ca -Cw DFBTestMulti02
+    
+      TEST Insignia Options:    -p
+      TEST Config Main:         system=dummy
+      TEST Config [  0]:        ,no-task-manager,no-always-indirect,wm=default
+      TEST Config [  1]:        ,no-task-manager,no-always-indirect,wm=sawman
+      TEST Config [  2]:        ,no-task-manager,always-indirect,wm=default
+      TEST Config [  3]:        ,no-task-manager,always-indirect,wm=sawman
+      TEST Config [  4]:        ,task-manager,no-always-indirect,wm=default
+      TEST Config [  5]:        ,task-manager,no-always-indirect,wm=sawman
+      TEST Config [  6]:        ,task-manager,always-indirect,wm=default
+      TEST Config [  7]:        ,task-manager,always-indirect,wm=sawman
+      TEST Name   [  0]:        DFBTestMulti02
+      TEST Directory:           /home/dok/DFB/Insignia/TEST_Insignia_2013-03-03_21-11-21
+    
+           COMMAND:   Insignia_____________________________________________
+                         -p
+                         --dfb:system=dummy
+                         -C ,no-task-manager,no-always-indirect,wm=default
+                         -C ,no-task-manager,no-always-indirect,wm=sawman
+                         -C ,no-task-manager,always-indirect,wm=default
+                         -C ,no-task-manager,always-indirect,wm=sawman
+                         -C ,task-manager,no-always-indirect,wm=default
+                         -C ,task-manager,no-always-indirect,wm=sawman
+                         -C ,task-manager,always-indirect,wm=default
+                         -C ,task-manager,always-indirect,wm=sawman
+                         -t DFBTestMulti02
+    
+    Register module 'DFBTestPrimary'
+    Register module 'DFBTestInterlocks'
+    Register module 'DFBTestClipping'
+    Register module 'DFBTestRender'
+    Register module 'DFBTestMulti02'
+    Register module 'DFBTestBlitting'
+    Register module 'DFBTestTempSurface'
+    Register module 'DFBTestRenderBlit'
+    Register module 'DFBTestSurfaceCreate'
+    Register module 'DFBTestWindowCreate'
+    Register module 'DFBTestMulti01'
+    Register module 'DFBTestFX'
+    
+    This is how the process tree looks with these options:
+    
+    27995 pts/2    S+     0:00          |       \_ Insignia {0/8}
+    27996 pts/2    S+     0:00          |           \_ 0.159499994848.DFBTestMulti02 [1/8] 67/189
+    10013 pts/2    Dl+    0:00          |           |   \_ (1/5) DFBTestMulti02
+    10014 pts/2    Sl+    0:00          |           |   \_ (2/5) DFBTestMulti02
+    10015 pts/2    Sl+    0:00          |           |   \_ (3/5) DFBTestMulti02
+    10016 pts/2    Sl+    0:00          |           |   \_ (4/5) DFBTestMulti02
+    10017 pts/2    Sl+    0:00          |           |   \_ (5/5) DFBTestMulti02
+    27997 pts/2    S+     0:00          |           \_ 1.159495181425.DFBTestMulti02 [2/8] 66/189
+     9983 pts/2    Sl+    0:00          |           |   \_ (1/5) DFBTestMulti02
+     9984 pts/2    Dl+    0:00          |           |   \_ (2/5) DFBTestMulti02
+     9985 pts/2    Rl+    0:00          |           |   \_ (3/5) DFBTestMulti02
+     9986 pts/2    Rl+    0:00          |           |   \_ (4/5) DFBTestMulti02
+     9987 pts/2    Sl+    0:00          |           |   \_ (5/5) DFBTestMulti02
+    27998 pts/2    S+     0:00          |           \_ 2.159488334178.DFBTestMulti02 [3/8] 66/189
+     9888 pts/2    Sl+    0:00          |           |   \_ (1/5) DFBTestMulti02
+     9889 pts/2    Dl+    0:00          |           |   \_ (2/5) DFBTestMulti02
+     9890 pts/2    Dl+    0:00          |           |   \_ (3/5) DFBTestMulti02
+     9891 pts/2    Dl+    0:00          |           |   \_ (4/5) DFBTestMulti02
+     9892 pts/2    Sl+    0:00          |           |   \_ (5/5) DFBTestMulti02
+    27999 pts/2    S+     0:00          |           \_ 3.159491595859.DFBTestMulti02 [4/8] 65/189
+     9953 pts/2    Sl+    0:00          |           |   \_ (1/5) DFBTestMulti02
+     9954 pts/2    Dl+    0:00          |           |   \_ (2/5) DFBTestMulti02
+     9955 pts/2    Dl+    0:00          |           |   \_ (3/5) DFBTestMulti02
+     9956 pts/2    Dl+    0:00          |           |   \_ (4/5) DFBTestMulti02
+     9957 pts/2    Sl+    0:00          |           |   \_ (5/5) DFBTestMulti02
+    28000 pts/2    S+     0:00          |           \_ 4.159500156164.DFBTestMulti02 [5/8] 62/189
+    10025 pts/2    Dl+    0:00          |           |   \_ (1/4) DFBTestMulti02
+    10026 pts/2    Sl+    0:00          |           |   \_ (2/4) DFBTestMulti02
+    10027 pts/2    Sl+    0:00          |           |   \_ (3/4) DFBTestMulti02
+    10028 pts/2    Sl+    0:00          |           |   \_ (4/4) DFBTestMulti02
+    28001 pts/2    S+     0:00          |           \_ 5.159486500501.DFBTestMulti02 [6/8] 61/189
+     9848 pts/2    Sl+    0:01          |           |   \_ (1/4) DFBTestMulti02
+     9849 pts/2    Sl+    0:00          |           |   \_ (2/4) DFBTestMulti02
+     9850 pts/2    Sl+    0:00          |           |   \_ (3/4) DFBTestMulti02
+     9851 pts/2    Sl+    0:00          |           |   \_ (4/4) DFBTestMulti02
+    28002 pts/2    S+     0:00          |           \_ 6.159489512582.DFBTestMulti02 [7/8] 62/189
+     9922 pts/2    Dl+    0:00          |           |   \_ (1/4) DFBTestMulti02
+     9923 pts/2    Sl+    0:00          |           |   \_ (2/4) DFBTestMulti02
+     9924 pts/2    Dl+    0:00          |           |   \_ (3/4) DFBTestMulti02
+     9926 pts/2    Sl+    0:00          |           |   \_ (4/4) DFBTestMulti02
+    28004 pts/2    S+     0:00          |           \_ 7.159479467207.DFBTestMulti02 [8/8] 61/189
+     9798 pts/2    Sl+    0:01          |               \_ (1/4) DFBTestMulti02
+     9799 pts/2    Sl+    0:00          |               \_ (2/4) DFBTestMulti02
+     9800 pts/2    Sl+    0:00          |               \_ (3/4) DFBTestMulti02
+     9801 pts/2    Sl+    0:00          |               \_ (4/4) DFBTestMulti02
+    
+    These are all processes! I'm modifying the argv[0]
+    
+    Of course, each of those also has different threads...
+    
+    In the filesystem end up the overviews and failing test runs:
+    
+    cyto [~/DFB/Insignia] l TEST_Insignia_2013-03-03_21-20-39
+    total 592K
+    drwxr-xr-x 2 dok dok 4.0K Mar  3 21:20 158345652581_EXCEPTION_DFBTestMulti02_6-13
+    -rw-r--r-- 1 dok dok 275K Mar  3 21:25 DFBTestMulti02_log.txt
+    -rw-r--r-- 1 dok dok 312K Mar  3 21:25 TEST_Insignia_log.txt
+    
+    cyto [~/DFB/Insignia/TEST_Insignia_2013-03-03_21-20-39] grep -C3 EXCEPTION DFBTestMulti02_log.txt
+    158314671315  [   4/8]    13/189  Success       Number of processes 2 [] duration 1000000us  || DISPLAY_CLIENT GetFrameTime(..) buffers(1,1)   no-task-manager always-indirect wm=sawman
+    158318748151  [   8/8]    12/189  Success       Number of processes 2 [] duration 1000000us  || DISPLAY_SIMPLE GetFrameTime(..) buffers(3,3)   task-manager always-indirect wm=sawman
+    158324987781  [   6/8]    12/189  Success       Number of processes 2 [] duration 1000000us  || DISPLAY_SIMPLE GetFrameTime(..) buffers(3,3)   task-manager no-always-indirect wm=sawman
+    158345652581  [   6/8]    13/189  EXCEPTION     Number of processes 2 [] duration 1000000us  || DISPLAY_CLIENT GetFrameTime(..) buffers(1,1)   task-manager no-always-indirect wm=sawman
+    158328735472  [   1/8]    14/189  Success       Number of processes 2 [] duration 1000000us  || DISPLAY_CLIENT GetFrameTime(..) buffers(1,2)   no-task-manager no-always-indirect wm=default
+    158329772449  [   2/8]    14/189  Success       Number of processes 2 [] duration 1000000us  || DISPLAY_CLIENT GetFrameTime(..) buffers(1,2)   no-task-manager no-always-indirect wm=sawman
+    158333156562  [   3/8]    14/189  Success       Number of processes 2 [] duration 1000000us  || DISPLAY_CLIENT GetFrameTime(..) buffers(1,2)   no-task-manager always-indirect wm=default
+    
+    Just check the directory with the testrun (158345652581) at the front:
+    
+    cyto [~/DFB/Insignia/TEST_Insignia_2013-03-03_21-20-39] l 158345652581_EXCEPTION_DFBTestMulti02_6-13/
+    total 20K
+    -rw-r--r-- 1 dok dok 8.2K Mar  3 21:20 DFBTestMulti02__0_158345652581.dfblog
+    -rw-r--r-- 1 dok dok  978 Mar  3 21:20 DFBTestMulti02__1_158345652581.dfblog
+    -rw-r--r-- 1 dok dok  682 Mar  3 21:20 DFBTestMulti02_main_158345652581.txt
+    
+    cyto [~/DFB/Insignia/TEST_Insignia_2013-03-03_21-20-39/158345652581_EXCEPTION_DFBTestMulti02_6-13] cat DFBTestMulti02_main_158345652581.txt
+    
+    Number of processes 2 [] duration 1000000us  || DISPLAY_CLIENT GetFrameTime(..) buffers(1,1)
+    
+      -> EXCEPTION
+    
+    cyto [~/DFB/Insignia/TEST_Insignia_2013-03-03_21-20-39/158345652581_EXCEPTION_DFBTestMulti02_6-13] cat DFBTestMulti02__0_158345652581.dfblog
+    
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~| DirectFB 1.7.0 |~~~~~~~~~~~~~~~~~~~~~~~~~~
+            (c) 2012-2013  DirectFB integrated media GmbH
+            (c) 2001-2013  The world wide DirectFB Open Source Community
+            (c) 2000-2004  Convergence (integrated media) GmbH
+          ----------------------------------------------------------------
+    
+    (*) DirectFB/Core: Multi Application Core. (2013-03-03 04:18) [ DEBUG ][ TRACE ]
+    (*) Direct/Memcpy: Using libc memcpy()
+    (*) Fusion/SHM: Using MADV_REMOVE (3.5.0.0 >= 2.6.19.2)
+    (*) Direct/Thread: Started 'Fusion Dispatch' (30409) [MESSAGING - OTHER/0] <8392704>...
+    (*) Direct/Thread: Started 'Fusion Deferred' (30410) [MESSAGING - OTHER/0] <8392704>...
+    (*) DirectFB/Input: Hot-plug detection enabled with Input Hub Driver
+    (*) Direct/Thread: Started 'Virtual Input' (30411) [INPUT - OTHER/0] <8392704>...
+    (*) DirectFB/Input: Virtual Input 1.7 (Convergence GmbH)
+    (*) DirectFB/Genefx: MMX detected and enabled
+    (*) DirectFB/Graphics: MMX Software Rasterizer 0.7 (directfb.org)
+    (*) Direct/Thread: Started 'Dummy Display' (30412) [OUTPUT - OTHER/0] <8392704>...
+    (*) DirectFB/Core/WM: SaWMan 0.2 (directfb.org)
+    (*) SaWMan/Config: Parsing config file '/opt/dfb/etc/sawmanrc'.
+    (*) SaWMan/Config: Parsing config file '/home/dok/.sawmanrc'.
+    (*) Direct/Thread: Started 'Task Manager' (30413) [CRITICAL - OTHER/0] <8392704>...
+    (*) Direct/Thread: Started 'Genefx/0' (30414) [DEFAULT - OTHER/0] <8392704>...
+    (*) Direct/Thread: Started 'Genefx/1' (30415) [DEFAULT - OTHER/0] <8392704>...
+    (*) Direct/Thread: Started 'Genefx/2' (30416) [DEFAULT - OTHER/0] <8392704>...
+    (*) Direct/Thread: Started 'Genefx/3' (30417) [DEFAULT - OTHER/0] <8392704>...
+    (*) Direct/Thread: Started 'Genefx/4' (30418) [DEFAULT - OTHER/0] <8392704>...
+    (*) Direct/Thread: Started 'Genefx/5' (30419) [DEFAULT - OTHER/0] <8392704>...
+    (*) Direct/Thread: Started 'Genefx/6' (30420) [DEFAULT - OTHER/0] <8392704>...
+    (*) Direct/Thread: Started 'Genefx/7' (30421) [DEFAULT - OTHER/0] <8392704>...
+    (*) SaWMan: Initializing stack 0x5280010ac200 for tier 0x5280024d4000, 0x0, layer 0, context 0x5280000a0000 [655416]...
+     (!!!)  *** UNIMPLEMENTED [_dfb_layer_region_surface_listener] *** [layer_region.c:1154]
+    (*) Direct/Trace: loading symbols of '/opt/dfb/lib/libdirectfb-1.7.so.0'...
+    (*) Direct/Trace: loading symbols of '/opt/dfb/lib/libfusion-1.7.so.0'...
+    (*) Direct/Trace: loading symbols of '/opt/dfb/lib/libsawman-1.7.so.0'...
+    (*) Direct/Trace: loading symbols of '/opt/dfb/lib/directfb-1.7-0/wm/libdirectfbwm_sawman.so'...
+    (*) Direct/Trace: running 'nm -nC /opt/dfb/lib/directfb-1.7-0/wm/libdirectfbwm_sawman.so'...
+    (*) Direct/Trace: loading symbols of '/opt/dfb/lib/lib++dfb-1.4.so.2'...
+    (*) Direct/Trace: running 'nm -nC /opt/dfb/lib/lib++dfb-1.4.so.2'...
+    (*) Direct/Trace: loading symbols of '/opt/dfb/lib/Insignia/DFBTestMulti02.Io'...
+    (*) Direct/Trace: running 'nm -nC /opt/dfb/lib/Insignia/DFBTestMulti02.Io'...
+    (*) Direct/Trace: loading symbols of '/opt/dfb/lib/libinsignia.so.0'...
+    (*) Direct/Trace: running 'nm -nC /opt/dfb/lib/libinsignia.so.0'...
+    (*) Direct/Trace: loading symbols of '(1/2) DFBTestMulti02'...
+    (*) Direct/Trace: loading symbols of '(1/2) DFBTestMulti02'...
+    (-) [27995: -STACK- 'Main Thread']
+      #0  0x7ff11a957a42 in _dfb_layer_region_surface_listener () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #1  0x7ff11a0df5bb in process_globals () from /opt/dfb/lib/libfusion-1.7.so.0 [0x7ff11a0c3000]
+      #2  0x7ff11a0dd540 in fusion_reactor_dispatch_channel () from /opt/dfb/lib/libfusion-1.7.so.0 [0x7ff11a0c3000]
+      #3  0x7ff11a0dec90 in fusion_reactor_dispatch () from /opt/dfb/lib/libfusion-1.7.so.0 [0x7ff11a0c3000]
+      #4  0x7ff11a96cea9 in dfb_surface_dispatch () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #5  0x7ff11a97036c in dfb_surface_pool_notify () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #6  0x7ff11a977a44 in dfb_surface_allocation_decouple () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #7  0x7ff11a97c97e in dfb_surface_buffer_deallocate () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #8  0x7ff11a97c831 in dfb_surface_buffer_decouple () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #9  0x7ff11a971326 in dfb_surface_reconfig () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #10 0x7ff11a950aae in dfb_layer_context_reallocate_surface () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #11 0x7ff11a94b8fb in dfb_layer_context_set_configuration () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #12 0x7ff114f4e19f in set_config () from /opt/dfb/lib/libsawman-1.7.so.0 [0x7ff114f11000]
+      #13 0x7ff114f4f92c in sawman_process_updates () from /opt/dfb/lib/libsawman-1.7.so.0 [0x7ff114f11000]
+      #14 0x7ff1155c00bc in wm_update_stack () from /opt/dfb/lib/directfb-1.7-0/wm/libdirectfbwm_sawman.so [0x7ff1155ab000]
+      #15 0x7ff11a9a81d2 in dfb_wm_update_stack () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #16 0x7ff11a99bf9a in dfb_windowstack_repaint_all () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #17 0x7ff1155b823b in wm_set_active () from /opt/dfb/lib/directfb-1.7-0/wm/libdirectfbwm_sawman.so [0x7ff1155ab000]
+      #18 0x7ff11a9a2ec9 in dfb_wm_set_active () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #19 0x7ff11a94a4da in dfb_layer_context_activate () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #20 0x7ff11a952a65 in dfb_layer_activate_context () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #21 0x7ff11a9527a5 in dfb_layer_get_primary_context () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #22 0x7ff11a8acca4 in DirectFB::ILayer_Real::GetPrimaryContext(DFBBoolean, __DFB_CoreLayerContext**) () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #23 0x7ff11a8aab1f in CoreLayer_GetPrimaryContext () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #24 0x7ff11a88c8af in InitIDirectFB_Async () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #25 0x7ff11a88ca56 in IDirectFB_Construct () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #26 0x7ff11a88e1ef in DirectFBCreate () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #27 0x7ff11bd13610 in DirectFB::Create() () from /opt/dfb/lib/lib++dfb-1.4.so.2 [0x7ff11bd05000]
+      #28 0x7ff11923ae00 in DFBTestMulti02::Initialize(unsigned int) () from /opt/dfb/lib/Insignia/DFBTestMulti02.Io [0x7ff119235000]
+      #29 0x7ff11bf3f560 in Insignia::App::runTestInstance(Insignia::Test&, Insignia::Test::Setup&) () from /opt/dfb/lib/libinsignia.so.0 [0x7ff11bf35000]
+      #30 0x7ff11bf40f70 in Insignia::App::runTest(Insignia::Test&, int) () from /opt/dfb/lib/libinsignia.so.0 [0x7ff11bf35000]
+      #31 0x7ff11bf45ba0 in Insignia::App::RunTest(std::string, int) () from /opt/dfb/lib/libinsignia.so.0 [0x7ff11bf35000]
+      #32 0x7ff11bf4a780 in Insignia::App::RunTests() () from /opt/dfb/lib/libinsignia.so.0 [0x7ff11bf35000]
+      #33 0x004015f0 in ?? () from (1/2) DFBTestMulti02 [0x400000]
+    
+    (*) Direct/Thread: Started 'Task/0' (30430) [DEFAULT - OTHER/0] <8392704>...
+    (*) Direct/Thread: Started 'Task/1' (30431) [DEFAULT - OTHER/0] <8392704>...
+    (*) Direct/Thread: Started 'Task/2' (30432) [DEFAULT - OTHER/0] <8392704>...
+    (*) Direct/Thread: Started 'Task/3' (30433) [DEFAULT - OTHER/0] <8392704>...
+    (*) SaWMan/Init: Layer  0:  640x480, ARGB, options: 0
+    (*) SaWMan/Init: Border 0:  640x480, ARGB, options: 8
+    
+    (*)   read...
+    (*) Core/Resource: Adding ID 2 - '/opt/dfb/bin/Insignia'
+    (!) [Task/1          9896.650] (30431) *** Assertion [(allocation)->magic == D_MAGIC("CoreSurfaceAllocation")] failed *** [surface_pool.c:1011 in dfb_surface_pool_unlock()]
+    (-) [30431: -STACK- 'Task/1']
+      #0  0x7ff11a9885ae in dfb_surface_pool_unlock () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #1  0x7ff11a8b7db2 in DirectFB::DisplayTask::Run() () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+      #2  0x7ff11a8f8c83 in DirectFB::TaskThreads::taskLoop(__D_DirectThread*, void*) () from /opt/dfb/lib/libdirectfb-1.7.so.0 [0x7ff11a803000]
+    
+    (-) [Task/1           9896.650,518] (30431) Direct/Trap:               Raising signal 5 from Assertion...
+    (-) [Task/1           9896.650,542] (30431) Direct/Trap:               ...tgkill(5) on ourself returned, maybe blocked, calling abort()!
+    
+    cyto [~/DFB/Insignia/TEST_Insignia_2013-03-03_21-20-39/158345652581_EXCEPTION_DFBTestMulti02_6-13] cat DFBTestMulti02__1_158345652581.dfblog
+    
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~| DirectFB 1.7.0 |~~~~~~~~~~~~~~~~~~~~~~~~~~
+            (c) 2012-2013  DirectFB integrated media GmbH
+            (c) 2001-2013  The world wide DirectFB Open Source Community
+            (c) 2000-2004  Convergence (integrated media) GmbH
+          ----------------------------------------------------------------
+    
+    (*) DirectFB/Core: Multi Application Core. (2013-03-03 04:18) [ DEBUG ][ TRACE ]
+    (*) Direct/Memcpy: Using Generic 64bit memcpy()
+    (*) Fusion/SHM: Using MADV_REMOVE (3.5.0.0 >= 2.6.19.2)
+    (*) Direct/Thread: Started 'Fusion Dispatch' (30434) [MESSAGING - OTHER/0] <8392704>...
+    (*) Direct/Thread: Started 'Fusion Deferred' (30435) [MESSAGING - OTHER/0] <8392704>...
+    (*) DirectFB/Genefx: MMX detected and enabled
+    (*) DirectFB/Graphics: MMX Software Rasterizer 0.7 (directfb.org)
+    (*) SaWMan/Config: Parsing config file '/opt/dfb/etc/sawmanrc'.
+    (*) SaWMan/Config: Parsing config file '/home/dok/.sawmanrc'.
+    
+    With debug enabled, of course, these logs contain the debug messages of each process.
+    
+    One more example:
+    
+    25429 pts/2    S+     0:00          |       \_ Insignia {4/12}
+    25430 pts/2    S+     0:00          |           \_ 0.169791239936.DFBTestBlitting [1/1] 68/620
+    31983 pts/2    Dl+    0:00          |           |   \_ (1/1) DFBTestBlitting
+    25431 pts/2    S+     0:00          |           \_ 1.169792227601.DFBTestClipping [1/1] 67/180
+    31992 pts/2    Dl+    0:00          |           |   \_ (1/1) DFBTestClipping
+    25434 pts/2    S+     0:00          |           \_ 4.169770867028.DFBTestMulti01 [1/1] 6/8
+    31494 pts/2    Sl+    0:01          |           |   \_ (1/7) DFBTestMulti01
+    31495 pts/2    Sl+    0:00          |           |   \_ (2/7) DFBTestMulti01
+    31496 pts/2    Sl+    0:00          |           |   \_ (3/7) DFBTestMulti01
+    31497 pts/2    Sl+    0:00          |           |   \_ (4/7) DFBTestMulti01
+    31499 pts/2    Sl+    0:00          |           |   \_ (5/7) DFBTestMulti01
+    31500 pts/2    Sl+    0:00          |           |   \_ (6/7) DFBTestMulti01
+    31501 pts/2    Sl+    0:00          |           |   \_ (7/7) DFBTestMulti01
+    25435 pts/2    S+     0:00          |           \_ 5.169784956261.DFBTestMulti02 [1/1] 10/189
+    31873 pts/2    Dl+    0:00          |           |   \_ (1/2) DFBTestMulti02
+    31874 pts/2    Sl+    0:00          |           |   \_ (2/2) DFBTestMulti02
+    25439 pts/2    S+     0:00          |           \_ 7.169769206519.DFBTestRender [1/1] 8/180
+    31452 pts/2    Rl+    0:03          |           |   \_ (1/1) DFBTestRender
+    25659 pts/2    S+     0:00          |           \_ 6.169776013942.DFBTestRenderBlit [1/1] 8/180
+    31672 pts/2    Dl+    0:02          |           |   \_ (1/1) DFBTestRenderBlit
+    25898 pts/2    S+     0:00          |           \_ 2.169792234114.DFBTestSurfaceCreate [1/1] 43/128
+    31993 pts/2    Dl+    0:00          |           |   \_ (1/1) DFBTestSurfaceCreate
+    27625 pts/2    S+     0:00          |           \_ 3.169792204515.DFBTestWindowCreate [1/1] 35/256
+    31990 pts/2    Dl+    0:00          |               \_ (1/1) DFBTestWindowCreate
+    
+    From:
+    
+    cyto [~/DFB/Insignia] ./InsigniaRun.sh -p
+    
+    InsigniaRun.sh -p
+    
+      TEST Insignia Options:    -p
+      TEST Config Main:         system=dummy
+      TEST Directory:           /home/dok/DFB/Insignia/TEST_Insignia_2013-03-03_21-32-36
+    
+           COMMAND:   Insignia_____________________________________________
+                         -p
+                         --dfb:system=dummy
+    
+    /dev/fusion0:
+    /dev/fusion0:
+    Register module 'DFBTestPrimary'
+    Register module 'DFBTestInterlocks'
+    Register module 'DFBTestClipping'
+    Register module 'DFBTestRender'
+    Register module 'DFBTestMulti02'
+    Register module 'DFBTestBlitting'
+    Register module 'DFBTestTempSurface'
+    Register module 'DFBTestRenderBlit'
+    Register module 'DFBTestSurfaceCreate'
+    Register module 'DFBTestWindowCreate'
+    Register module 'DFBTestMulti01'
+    Register module 'DFBTestFX'
+    
+    always-indirect
+    
+    always-indirect
+    always-indirect
+    always-indirect
+    
+    always-indirect
+    
+    always-indirect
+    SRC_PREMULTIPLY
+    always-indirect
+    SRC_PREMULTIPLY
+    always-indirect
+    
+    BLEND_COLORALPHA SRC_PREMULTCOLOR
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTCOLOR
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTIPLY
+    always-indirect
+    always-indirect
+    COLORIZE
+    always-indirect
+    COLORIZE
+    always-indirect
+    COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    always-indirect
+    COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTCOLOR
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTCOLOR
+    always-indirect
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    
+    always-indirect
+    always-indirect
+    
+    always-indirect
+    SRC_PREMULTIPLY
+    always-indirect
+    SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTCOLOR
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTCOLOR
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTIPLY
+    always-indirect
+    always-indirect
+    always-indirect
+    COLORIZE
+    always-indirect
+    COLORIZE
+    always-indirect
+    COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTCOLOR
+    always-indirect
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTCOLOR
+    always-indirect
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    
+    always-indirect
+    always-indirect
+    
+    always-indirect
+    
+    always-indirect
+    SRC_PREMULTIPLY
+    always-indirect
+    SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTCOLOR
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTCOLOR
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTIPLY
+    always-indirect
+    always-indirect
+    COLORIZE
+    always-indirect
+    COLORIZE
+    always-indirect
+    COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTCOLOR
+    always-indirect
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTCOLOR
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    
+    always-indirect
+    always-indirect
+    
+    always-indirect
+    
+    always-indirect
+    SRC_PREMULTIPLY
+    always-indirect
+    SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTCOLOR
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTCOLOR
+    always-indirect
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTIPLY
+    always-indirect
+    always-indirect
+    COLORIZE
+    always-indirect
+    COLORIZE
+    always-indirect
+    COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTCOLOR
+    always-indirect
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTCOLOR
+    always-indirect
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTIPLY
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    always-indirect
+    
+    always-indirect
+    
+    always-indirect
+    
+    always-indirect
+    SRC_PREMULTIPLY
+    always-indirect
+    SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTCOLOR
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTCOLOR
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTIPLY
+    always-indirect
+    always-indirect
+    COLORIZE
+    always-indirect
+    COLORIZE
+    always-indirect
+    always-indirect
+    COLORIZE SRC_PREMULTIPLY
+    COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    always-indirect
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTCOLOR
+    always-indirect
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTCOLOR
+    always-indirect
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    
+    always-indirect
+    
+    always-indirect
+    
+    always-indirect
+    SRC_PREMULTIPLY
+    always-indirect
+    SRC_PREMULTIPLY
+    always-indirect
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTCOLOR
+    BLEND_COLORALPHA SRC_PREMULTCOLOR
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTIPLY
+    always-indirect
+    always-indirect
+    COLORIZE
+    always-indirect
+    COLORIZE
+    always-indirect
+    COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTCOLOR
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTCOLOR
+    always-indirect
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    
+    always-indirect
+    
+    always-indirect
+    always-indirect
+    
+    always-indirect
+    
+    always-indirect
+    SRC_PREMULTIPLY
+    always-indirect
+    SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTCOLOR
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTCOLOR
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA SRC_PREMULTIPLY
+    always-indirect
+    always-indirect
+    always-indirect
+    COLORIZE
+    always-indirect
+    COLORIZE
+    always-indirect
+    COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    COLORIZE SRC_PREMULTIPLY
+    always-indirect
+    BLEND_COLORALPHA COLORIZE SRC_PREMULTCOLOR
+    always-indirect
+
+commit b9d70fa6e4203784b58dd14b2ee8b11be1691541
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Mar 5 21:16:55 2013 +0100
+
+    remove INSTALL
+
+commit 082c86a0b6a4809109cfea73a83bda7d934efdcf
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Jun 9 06:18:25 2012 +0200
+
+    DFBTestFX: Remove non-working ARGB4444 test, remove sleeps.
+
+commit c5bf901c123e04a68be946233fd0992f238cc39a
+Merge: de1c70e 535f8ac
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Jun 9 06:18:11 2012 +0200
+
+    Merge branch 'master' of git+ssh://git.directfb.org/git/directfb/extras/Insignia
+    
+    Conflicts:
+    	tests/DFBTestBlitting.cpp
+
+commit de1c70e0a42b723e05d5044bb1a6c22d6c879ee7
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Jun 9 06:17:10 2012 +0200
+
+    DFBTestBlitting: remove sleeps and other debug cruft
+
+commit 535f8aca11ba3f2b0c247635b113bfa2dd3e4ed1
+Author: Andreas Shimokawa <andi@directfb.org>
+Date:   Tue Jun 5 15:17:29 2012 +0200
+
+    change sleep(20000) to sleep(1), remove exit in case of failure
+
+commit 012fd94b40913d8bee4437290af04f5d57e58712
+Author: Andreas Shimokawa <andi@directfb.org>
+Date:   Tue Jun 5 12:55:42 2012 +0200
+
+    use constructor for DFBPoint, not initializer
+
+commit b8144232ffaa78ecb2c1456b7580c2efbcff41ac
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Jun 5 12:17:48 2012 +0200
+
+    Make: Remove generated Io.rules from git.
+
+commit 7d677351c10fd6f6104559d6afe76874c17e09ac
+Merge: 4eb824a bb5a983
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Jun 5 12:17:06 2012 +0200
+
+    Merge branch 'master' of git+ssh://git.directfb.org/git/directfb/extras/Insignia
+
+commit 4eb824aab5409089074bc76391dc6ea29e3edf1d
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Jun 5 12:16:47 2012 +0200
+
+    Makefile: Do not overwrite CPPFLAGS.
+
+commit bb5a983f42023133f6488fffff291c0f4b570cb6
+Author: Andreas Shimokawa <andi@directfb.org>
+Date:   Mon Jun 4 21:01:50 2012 +0200
+
+    also include CFLAGS in CXXFLAGS
+
+commit 21d8ca20a978eba267e2d79a5718e512b72d2684
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Jun 3 23:32:39 2012 +0200
+
+    add .gitignore
+
+commit 3e93f3fc46b833e8c9a6a0b9caaf222399fa20a2
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Jun 3 23:27:10 2012 +0200
+
+    Insigna initial commit

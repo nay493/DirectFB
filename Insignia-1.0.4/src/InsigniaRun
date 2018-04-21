@@ -1,0 +1,236 @@
+#!/bin/bash -e
+
+INSIGNIARUN_NAME="$0"
+INSIGNIARUN_COMMAND="$@"
+
+
+
+if test -z "$1" || test "$1" == "-h" || test "$1" == "--help"; then
+
+cat << EOF
+
+Insignia Run v0.1
+
+  Usage (at least one option or test must be given)
+
+            $INSIGNIARUN_NAME [options] [tests]
+    or
+            $INSIGNIARUN_NAME all
+
+  Options
+EOF
+
+for arg in -{d,e,k,l,m,o,p,s,u,D,K,L,M,S,T}; do
+    Insignia -h 2>&1 | grep "\\$arg"
+done
+
+cat << EOF
+
+    -G                         Run in gdb (to debug actual test process, use -m also)
+    -ST                        Run in strace
+
+    -O         <options>       Append DirectFB options to the global config
+    -C         <conf>          Append config string to generator (use shell expansion)
+    -Cno       <option>        Append '{no-,}\$option for both yes and no being tested'
+    -Ca                        Append '{no-,}always-indirect'
+    -Cl                        Append 'layer-buffer-mode={frontonly,backvideo,triple,backsystem}'
+    -Cs                        Append '{no-,}secure-fusion'
+    -Ct                        Append '{no-,}task-manager'
+    -Cd                        Append 'log-delay-rand-loops={0,10,100,1000,10000}'
+    -Cw                        Append 'wm={default,sawman}'
+    -CX        <filter> <conf> Append \$conf only where generated config string contains \$filter
+    -CXtmsc                    Append 'software-cores={1,4,8}' if ',task-manager' is contained,
+                               like using '-CX ,task-manager software-cores={1,4,8}'
+
+  Tests
+$(Insignia -h 2>&1 | grep ' DFBTest' | sed 's,^,        ,' )
+EOF
+
+exit 0
+fi
+
+
+
+
+TEST_DATE=`date +%Y-%m-%d_%H-%M-%S`
+TEST_DIR="$(pwd)/TEST_Insignia_$TEST_DATE"
+
+
+mkdir "$TEST_DIR"
+cd "$TEST_DIR"
+
+
+declare -a TESTS
+declare -a CONFIGS
+
+declare -a XCONFS_FILTERS
+declare -a XCONFS_STRINGS
+
+DFBOPTS=system=dummy
+
+CONFSTRING=""
+DEBUG_COMMAND=""
+
+while test -n "$1"; do
+    if [ "$1" == "all" ]; then
+        break
+    fi
+
+    P=$1
+    OPT=${P:0:2}
+    ARG=${P:2}
+
+    if [ "$OPT" == "-h" ] || [ "$OPT" == "-p" ] || [ "$OPT" == "-k" ] || [ "$OPT" == "-l" ] || [ "$OPT" == "-e" ] || [ "$OPT" == "-m" ] || [ "$OPT" == "-K" ] || [ "$OPT" == "-M" ] || [ "$OPT" == "-u" ]; then
+        OPTIONS[${#OPTIONS[@]}]="$1"
+
+    elif [ "$OPT" == "-d" ] || [ "$OPT" == "-o" ] || [ "$OPT" == "-s" ] || [ "$OPT" == "-D" ] || [ "$OPT" == "-L" ] || [ "$OPT" == "-S" ] || [ "$OPT" == "-T" ]; then
+        OPTIONS[${#OPTIONS[@]}]="$OPT"
+        if test -z "$ARG"; then
+            shift
+            ARG="$1"
+        fi
+        OPTIONS[${#OPTIONS[@]}]="$ARG"
+
+    elif [ "$OPT" == "-G" ]; then
+        DEBUG_COMMAND="gdb --args "
+
+    elif [ "$OPT" == "-O" ]; then
+        if test -z "$ARG"; then
+            shift
+            ARG="$1"
+        fi
+        DFBOPTS="$DFBOPTS,$ARG"
+
+    elif [ "$OPT" == "-ST" ]; then
+        DEBUG_COMMAND="strace "
+
+    elif [ "$1" == "-Cno" ]; then
+        if test -z "$ARG"; then
+            shift
+            ARG="$1"
+        fi
+        CONFSTRING="$CONFSTRING,{no-,}$ARG"
+
+    elif [ "$1" == "-Ca" ]; then
+        CONFSTRING="$CONFSTRING,{no-,}always-indirect"
+    elif [ "$1" == "-Cl" ]; then
+        CONFSTRING="$CONFSTRING,layer-buffer-mode={frontonly,backvideo,triple,backsystem}"
+    elif [ "$1" == "-Cd" ]; then
+        CONFSTRING="$CONFSTRING,log-delay-rand-loops={0,10,100,1000,10000}"
+    elif [ "$1" == "-Cs" ]; then
+        CONFSTRING="$CONFSTRING,{no-,}secure-fusion"
+    elif [ "$1" == "-Ct" ]; then
+        CONFSTRING="$CONFSTRING,{no-,}task-manager"
+    elif [ "$1" == "-Cw" ]; then
+        CONFSTRING="$CONFSTRING,wm={default,sawman}"
+
+    elif [ "$1" == "-CX" ]; then
+        shift
+        XCONFS_FILTERS[${#XCONFS_FILTERS[@]}]="$1"
+        shift
+        XCONFS_STRINGS[${#XCONFS_STRINGS[@]}]="$1"
+
+    elif [ "$1" == "-CXtmsc" ]; then
+        XCONFS_FILTERS[${#XCONFS_FILTERS[@]}]=",task-manager"
+        XCONFS_STRINGS[${#XCONFS_STRINGS[@]}]="software-cores={1,4,8}"
+
+    elif [ "$OPT" == "-C" ]; then
+        if test -z "$ARG"; then
+            shift
+            ARG="$1"
+        fi
+        CONFSTRING="$CONFSTRING,$ARG"
+
+    else
+        TESTS[${#TESTS[@]}]="$1"
+    fi
+
+    shift
+done
+
+
+echo "CONFSTRING '$CONFSTRING'"
+
+for c in $(eval echo -n $CONFSTRING); do
+    ADDON=""
+
+    for (( f=0; $f<${#XCONFS_FILTERS[@]}; f=$f+1 )); do
+        if [[ "$c" == *${XCONFS_FILTERS[$f]}* ]]; then
+            ADDON="$ADDON,${XCONFS_STRINGS[$f]}"
+        fi
+    done
+
+echo "c '$c'"
+echo "ADDON '$ADDON'"
+    for cc in $(eval echo -n $c$ADDON); do
+        CONFIGS[${#CONFIGS[@]}]="$cc"
+    done
+done
+
+
+
+declare -a OPT_CONFIGS
+declare -a OPT_TESTS
+
+
+
+if test -z "$DEBUG_COMMAND"; then
+    TEE_COMMAND="tee TEST_Insignia_log.txt"
+else
+    TEE_COMMAND="cat"
+fi
+
+(
+echo "#"
+echo "# $INSIGNIARUN_NAME $INSIGNIARUN_COMMAND"
+echo "#"
+echo "#  TEST Insignia Options:    ${OPTIONS[@]}"
+echo "#  TEST Config Main:         $DFBOPTS"
+
+
+n=0
+for c in "${CONFIGS[@]}"; do
+    echo "#  TEST Config [$(printf %3d ${n})]:        $c"
+    OPT_CONFIGS[${#OPT_CONFIGS[@]}]="-C"
+    OPT_CONFIGS[${#OPT_CONFIGS[@]}]="$c"
+    (( n=$n+1 ))
+done
+
+n=0
+for t in "${TESTS[@]}"; do
+    echo "#  TEST Name   [$(printf %3d ${n})]:        $t"
+    OPT_TESTS[${#OPT_TESTS[@]}]="-t"
+    OPT_TESTS[${#OPT_TESTS[@]}]="$t"
+    (( n=$n+1 ))
+done
+
+
+echo "#  TEST Directory:           $TEST_DIR"
+echo "#"
+echo "#"
+
+
+INSIGNIA=Insignia_____________________________________________
+
+which ${INSIGNIA} > /dev/null || INSIGNIA=Insignia
+
+INSIGNIA_COMMAND_LINE="${INSIGNIA} ${OPTIONS[@]} --dfb:${DFBOPTS} ${OPT_CONFIGS[@]} ${OPT_TESTS[@]}"
+
+
+echo -e "#       COMMAND:  ${DEBUG_COMMAND} ${INSIGNIA_COMMAND_LINE// \-/\\n                     -}"
+echo "#"
+echo "#"
+echo "#"
+
+sleep 2
+
+sh -c "
+	cat /proc/fusion/*/fusionees 2>/dev/null | cut -d\\( -f2 | cut -d\\) -f1 | xargs kill -15 2>/dev/null
+	sleep 1
+	cat /proc/fusion/*/fusionees 2>/dev/null | cut -d\\( -f2 | cut -d\\) -f1 | xargs kill -9  2>/dev/null
+	sleep 1
+	${DEBUG_COMMAND} ${INSIGNIA_COMMAND_LINE}
+	"
+
+) 2>&1 | $TEE_COMMAND #| grep -v '\\(\-\\)'
+

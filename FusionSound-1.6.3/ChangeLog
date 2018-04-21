@@ -1,0 +1,3207 @@
+commit aee3b3009814b5f376ce63e1fb099540232fb0a2
+Author: Andreas Shimokawa <andi@directfb.org>
+Date:   Tue Jan 15 14:47:14 2013 +0100
+
+    build: fix fusionsound alsa driver warnings
+
+commit cb34ce9b51f4b5e4c27c5c7cb5f205839947d02e
+Author: Andreas Shimokawa <andi@directfb.org>
+Date:   Tue Jan 15 14:31:56 2013 +0100
+
+    build: fix fusionsound related warnings
+
+commit eb2cab3111eda408b6d6f5460d7f9e1f7f46e5ca
+Author: Andreas Shimokawa <andi@directfb.org>
+Date:   Mon Jan 14 13:51:49 2013 +0100
+
+    drivers: fix build of drivers other than dummy driver
+
+commit 611c76c19444ccdc743a2806da5a41e0094251d2
+Author: Andreas Shimokawa <andi@directfb.org>
+Date:   Mon Jan 14 12:18:48 2013 +0100
+
+    update changelog
+
+commit 8c234a18f0b799694303fef83949b99d8a455f15
+Author: Andreas Shimokawa <andi@directfb.org>
+Date:   Mon Jan 14 12:18:03 2013 +0100
+
+    Set version to 1.6.3, update NEWS
+
+commit 5c2e86cbbda3821e151424a878f23df0626fc077
+Author: Marek Pikarski <mass@directfb.org>
+Date:   Thu Oct 25 13:34:09 2012 +0200
+
+    musicprovider: ffmpeg: add some debug
+
+commit c61ce48a33b16364c1d8bc668094ba5327c334c4
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Jan 11 16:36:25 2013 +0100
+
+    configure: use PKG_CHECK_MODULES to allow setting from outside
+
+commit c9e8997a66f47bb173f012072e8747d5b2729ec2
+Author: Andreas Shimokawa <andi@directfb.org>
+Date:   Fri Dec 21 14:08:14 2012 +0100
+
+    build: build dummy driver
+
+commit 061e6031b5428abb0265d0f779aab987ed154a9d
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Dec 21 03:29:05 2012 +0100
+
+    fusionsound: Fix crash in dummy driver when no driver is set.
+
+commit 7b00ec19275661923cde460e4609ec2519d6192a
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Dec 21 03:28:25 2012 +0100
+
+    fusionsound: Fix warnings about set but unused variable caps.
+
+commit c50bf354bcb1a5ea0be7298e3e510dd6a631c7f4
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Dec 20 19:18:53 2012 +0100
+
+    fusionsound: add dummy driver
+
+commit 32b1c1ba00f2d6e92f7eedc567c61d9e68eb2507
+Author: Andreas Shimokawa <andi@directfb.org>
+Date:   Wed Dec 19 13:26:30 2012 +0100
+
+    fusionsound/core: fix deadlock during shutdown
+
+commit 32fc719529c073187c8266ffa0f35c9aea98d622
+Author: Andreas Shimokawa <andi@directfb.org>
+Date:   Tue Oct 9 18:47:38 2012 +0200
+
+    Revert "version: 1.7.0"
+    
+    This reverts commit d9eefa4b1385787662f630d90ec4bf3993df606f.
+
+commit d9eefa4b1385787662f630d90ec4bf3993df606f
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Oct 8 13:56:25 2012 +0200
+
+    version: 1.7.0
+
+commit fcc8c40f6d62a81b744ae932c88535806194b517
+Author: Andreas Shimokawa <andi@directfb.org>
+Date:   Thu Sep 20 18:00:00 2012 +0200
+
+    update changelog
+
+commit 24bfc66feedca623297f00a2cf8a5251d7021c1a
+Author: Andreas Shimokawa <andi@directfb.org>
+Date:   Thu Sep 20 17:59:42 2012 +0200
+
+    update news, version 1.6.2
+
+commit 56d9ff5069ef6444e5bcbf4f0bc29ad365a80d01
+Author: Andreas Shimokawa <andi@directfb.org>
+Date:   Thu Sep 13 14:16:59 2012 +0200
+
+    force non-secure fusion until after entering the arena
+
+commit 95353d75f294bf6e2f0f24c64b303a528b04d903
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Sep 3 22:35:07 2012 +0200
+
+    FFMpeg: use avcodec_decode_audio3 from version 52 onwards
+
+commit 0c37a279b09601aaf6f33fb08a422e00394ac1c3
+Author: Andreas Shimokawa <andi@directfb.org>
+Date:   Mon Sep 3 14:43:22 2012 +0200
+
+    ffmpeg: support newer versions of libav/ffmpeg, fix proble to accept m4a and mp3
+
+commit 4e6bccb29861ad2da92f2eed27e2b06b311317f8
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Aug 31 15:12:26 2012 +0200
+
+    core: force non-secure fusion
+
+commit fdba32622afa256e5dbbac4702d63845cb2b3ee7
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Aug 23 12:14:32 2012 +0200
+
+    meter: Add simple volume meter for console.
+
+commit 574a75c0452e9cb8b61042fdb7c6a6f7eace839f
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Aug 23 12:13:03 2012 +0200
+
+    IFusionSound: Add GetMasterFeedback() for live output volume measurement.
+
+commit 7213da1e32c2e13d1ce198675b4b2a11da18f487
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Jun 14 18:28:11 2012 +0200
+
+    1.6.0
+
+commit 14d5cb38c8cefb42cdce55f804a3bf0b5aa49e0b
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Jun 14 18:27:24 2012 +0200
+
+    core: Add playback_internal.h to Makefile.am.
+
+commit a42b716dce6795f85ee7baf68362e8fb39030420
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Jun 14 18:27:08 2012 +0200
+
+    fsproxy: Fix Voodoo API usage.
+
+commit 5a10c8cc1d425dff4b2a9f419829ad988483e3ac
+Author: Andreas Shimokawa <andi@directfb.org>
+Date:   Wed Apr 11 17:39:43 2012 +0200
+
+    configure: fix --without-voodo switch (was a copy and paste bug)
+
+commit 114a3757869a48296ebb528540168d4f4b9893ff
+Author: Andreas Shimokawa <andi@directfb.org>
+Date:   Wed Apr 11 16:09:33 2012 +0200
+
+    compile fixes
+
+commit 6c9f3e777453b0cdbdf3e1db57ae4bfd7dd922d5
+Author: Ville Syrjala <syrjala@sci.fi>
+Date:   Tue Oct 21 16:17:17 2008 +0300
+
+    ffmpeg: Follow ffmpeg changes
+
+commit 541c817e7a67dbfcedee42031d28e4e55201f57f
+Author: Ville Syrjala <syrjala@sci.fi>
+Date:   Tue Oct 21 19:05:28 2008 +0300
+
+    Function prototype cleanups.
+
+commit 06adfb61dbb994cddebfcfd061a2ff6b9c1f8e76
+Author: Ville Syrjala <syrjala@sci.fi>
+Date:   Tue Oct 21 19:04:25 2008 +0300
+
+    examples: Follow LiTE changes
+
+commit 215457b66c687a64af1bd7e27f5df28bc9c51853
+Author: Ville Syrjala <syrjala@sci.fi>
+Date:   Tue Oct 21 16:17:46 2008 +0300
+
+    Fix build with LDFLAGS="-Wl,-no-undefined".
+
+commit c4f770e74db0be45941c52da3a50073a3e99dff7
+Author: Ville Syrjala <syrjala@sci.fi>
+Date:   Tue Oct 21 16:04:00 2008 +0300
+
+    configure: Use -Wno-inline with -fno-inline.
+
+commit f7902f04b817d88e9cb011dff51d0dc4bdb4de04
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Mar 11 18:03:00 2008 +0100
+
+    Converted a D_INFO() to D_DEBUG().
+
+commit 36a11168e160a078b76efec16135dd026e5df041
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Mar 11 12:24:46 2008 +0100
+
+    Added CoreSoundDevice::HandleFork(), called upon fork() to free/duplicate local resources.
+
+commit 079300371560da8be5c79b1c61bf01eadd9b37f0
+Merge: e8a67fa e70270e
+Author: Denis Oliver Kropp <dok@shizo.directfb.home>
+Date:   Thu Mar 6 17:06:48 2008 +0100
+
+    Merge branch 'master' of git+ssh://git.directfb.org/git/directfb/core/FusionSound
+
+commit e8a67fa9044160c68579ef2a32f8575aae45d158
+Author: Denis Oliver Kropp <dok@shizo.directfb.home>
+Date:   Thu Mar 6 17:06:40 2008 +0100
+
+    [fsdump] Dump running playbacks.
+
+commit e70270e44777ca1b3f0edafbdc5b92d19a1067c4
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Feb 29 16:09:07 2008 +0100
+
+    Fixed types conversion.
+
+commit 3195b24014b5678b934db021a6958fcae9c09bb9
+Author: Denis Oliver Kropp <dok@shizo.directfb.home>
+Date:   Thu Feb 28 14:56:34 2008 +0100
+
+    [fusionsound] Follow API changes, removing remaining dependencies on <directfb.h>.
+
+commit 4da26ca6eaa0bc9ff4f3bf6b8114bc8fc3cd8411
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Feb 19 18:18:01 2008 +0100
+
+    Revert previous change.
+
+commit cf2dfe37c7ae9d9611e830c91d544b612f478ddf
+Author: Denis Oliver Kropp <dok@shizo.directfb.home>
+Date:   Sat Feb 16 16:25:18 2008 +0100
+
+    [configure] Added option "--enable-trace" to add "-finstrument-functions -fno-inline" for traces.
+    
+    Also changed DIRECT_FORCE_DEBUG to DIRECT_ENABLE_DEBUG which only gives warnings and continues
+    without debugging if it's not supported by the libdirect build (without debug support).
+
+commit 780a5d4b05600c2895031aae8bed91094904657c
+Merge: ba5da12 82410ee
+Author: Denis Oliver Kropp <dok@shizo.directfb.home>
+Date:   Mon Feb 11 16:31:28 2008 +0100
+
+    Merge branch 'master' of git+ssh://git.directfb.org/git/directfb/core/FusionSound
+
+commit 82410ee31acf7f079b81b357221f7059e9278642
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Feb 11 12:40:23 2008 +0100
+
+    ChangeLog for 1.1.1.
+
+commit ca79f495002e641fedfebab1d549da18e3c9b6c3
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Feb 11 12:39:54 2008 +0100
+
+    NEWS for 1.1.1
+
+commit ba5da121a3e376f9b575d1706dfad79acd3f1051
+Merge: 5b1abe9 7c469e7
+Author: Denis Oliver Kropp <dok@shizo.directfb.home>
+Date:   Fri Feb 8 08:30:27 2008 +0100
+
+    Merge branch 'master' of git+ssh://git.directfb.org/git/directfb/core/FusionSound
+
+commit 7c469e766ec8fb205fc8d348ec7c4001fe63cdf3
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Feb 6 15:35:54 2008 +0100
+
+    [cdda] Fixed snprintf() related vulnerability.
+
+commit 8d7d1165985ba2f1d944eee77f1495709bd80d3c
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Feb 5 11:26:42 2008 +0100
+
+    Fixed bug in wave driver (returning DFB_TRUE instead of DFB_OK).
+
+commit 5b1abe9a13e1beb6597a18ba992c31f51ad6f9dd
+Merge: 600b498 5feced8
+Author: Denis Oliver Kropp <dok@shizo.directfb.home>
+Date:   Sat Feb 2 05:39:21 2008 +0100
+
+    Merge branch 'master' of git+ssh://git.directfb.org/git/directfb/core/FusionSound
+
+commit 5feced875bddaac074c031241257fe91aa81aad7
+Author: Ville Syrjala <syrjala@sci.fi>
+Date:   Wed Jan 30 22:36:04 2008 +0200
+
+    Set ACLOCAL_AMFLAGS
+
+commit 56a32d86d97baeee096db4613bc75f41514814ca
+Author: Ville Syrjala <syrjala@sci.fi>
+Date:   Wed Jan 30 18:10:23 2008 +0200
+
+    Fix build and install problems when srcdir != builddir.
+
+commit 22c3de73250efa3ab369e836ee7c97d52e41cf86
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jan 30 14:58:07 2008 +0100
+
+    [fsplay] Set volume/pitch unit to 1/32. Display volume/pitch status when changed.
+
+commit b80b2b614730ea2f4729aab472cdd89566625ab4
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jan 30 12:27:47 2008 +0100
+
+    [providers] Fixed issue where playback->status = FINISHED but PlayTo() resets it to STOP before checking whether stream needs to be rewinded.
+
+commit 6f14080f5e00b843dcaf947208bc3e66ee6bbf69
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jan 30 11:44:11 2008 +0100
+
+    Check for libtimidity al least version 0.1.0.
+
+commit d0e7b36cdc35cf11d5d0ed01f596fa62d59432d9
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Jan 29 11:55:28 2008 +0100
+
+    [fsplay] Initialize media->tracks.
+
+commit 600b498052851a7107418e3a5dac7a7f5dfa8669
+Merge: 275b501 6dfc69b
+Author: Denis Oliver Kropp <dok@shizo.directfb.home>
+Date:   Tue Jan 29 10:49:58 2008 +0100
+
+    Merge branch 'master' of git+ssh://git.directfb.org/git/directfb/core/FusionSound
+
+commit 6dfc69be5e2e61b2a90f4e57c839dd889a2a119d
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jan 28 21:42:42 2008 +0100
+
+    [fsplay] Prevent endless loops.
+
+commit d2da636b4627e27767ab39e0b61d50e5d157173c
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jan 28 21:30:53 2008 +0100
+
+    [fsplay] Allow switching to the previous media, too.
+             Do not wait on the stream if playback was paused.
+
+commit 8e10e3359d5c96e21b8e181f9b52d33b75ba3b13
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jan 28 19:08:24 2008 +0100
+
+    [fsplay] Supports switching to the previous track.
+             Seek to percentual position by pressing [0-9].
+
+commit b239a9fb01d2f2a2129121a6f1c449c11463b36b
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jan 28 19:06:13 2008 +0100
+
+    [playlist] Release the previous provider when the track changes.
+
+commit 51d23ab36cf516e7960b42dd78f0b2216ae4e0c2
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jan 28 17:32:21 2008 +0100
+
+    [fplay] Completely removed usage of atexit() and signal().
+
+commit 21ec9ac19cf9f8213ef6dc782d3a5af6e3ca4f64
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jan 28 17:30:31 2008 +0100
+
+    [providers] Avoid locking when destroying the interface.
+
+commit 458274bf569df20672dd2170f614320cf5f90ca0
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jan 28 16:35:38 2008 +0100
+
+    [fsplay] Temporarily reset the pitch to 1 to stop a paused playback.
+    Do not handle SIGTERM.
+
+commit 275b501e51f6a674a19befab691fa7083fc7e846
+Merge: 7b0882a 7699bf9
+Author: Denis Oliver Kropp <dok@shizo.directfb.home>
+Date:   Mon Jan 28 12:55:16 2008 +0100
+
+    Merge branch 'master' of git+ssh://git.directfb.org/git/directfb/core/FusionSound
+
+commit 7699bf933bbd567af116a7a92357bbcd326699bf
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jan 28 12:32:01 2008 +0100
+
+    Entering development version 1.1.1.
+    Added IFusionSoundMusicProvider::WaitStatus(), waits until playback reaches the specified status.
+
+commit fb7affa6271a56a1257cf07bc1ce5575dc5d78ec
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Jan 27 21:36:32 2008 +0100
+
+    [music_loader] Accidentally forced the number of channels to 6.
+
+commit d293864d22f03b48d74c3a54d958a9147b6fc7e5
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Jan 27 15:08:57 2008 +0100
+
+    Fixed a bug that, on SIGINT, caused fsplay to jump to the next track instead of quitting.
+
+commit f4aec9bc58459fe8c613e1c323eea042b57e9383
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Jan 27 13:41:35 2008 +0100
+
+    Changed build options --enable-<music provider> to --with-<music provider>.
+
+commit 911f9871a74de4e3c9a7854e6201ab73c98e6e73
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Jan 27 13:27:18 2008 +0100
+
+    [timidity] Set the status to FMSTATE_STOP when buffer callback returns FMBCR_BREAK.
+
+commit d51c1b271662c49c000d0524643802b584e1fdea
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Jan 26 21:47:48 2008 +0100
+
+    [playlist] Skip xml comments.
+
+commit d27155c6f3d9bc2df7a21c6649ad89e9970fc52a
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Jan 26 21:47:03 2008 +0100
+
+    [vorbis] Return the amount of read data in "size" units in ov_read_callback().
+
+commit bc660448f5acb4fb4c6f7839a4f5776502a62fe8
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Jan 26 21:45:12 2008 +0100
+
+    Return 0 seconds in the default implementation of GetPos() and GetLength().
+
+commit 5f2edb4b13189a08221a779a0e77f857ef672a59
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Jan 26 19:52:11 2008 +0100
+
+    Rewritten the Timidity provider using the last libtimidity (http://timidity.sf.net).
+    Removed internal copy of the old libtimidity.
+
+commit 4b5fb3a89e4852ca85a6b8c70ab88c3b882d2d9f
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Jan 26 13:36:00 2008 +0100
+
+    [playlist] Dropped .rpm extension (might be a RedHat package instead of a RealPlayer playlist).
+
+commit e59d9da09ee1845b49a42d2e28602003fcda36b5
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Jan 25 23:27:34 2008 +0100
+
+    [playlist] Add ASX and XSPF support. Download the whole playlist before parsing.
+
+commit 7b0882ad9c4588383d1fc4dde29d23cde6b56666
+Merge: 3bf19d0 ec27bfd
+Author: Denis Oliver Kropp <dok@shizo.directfb.home>
+Date:   Tue Jan 22 07:46:39 2008 +0100
+
+    Merge branch 'master' of git+ssh://git.directfb.org/git/directfb/core/FusionSound
+
+commit 3bf19d0ace5ddc385c3137e4fac6566ff4ef402f
+Author: Denis Oliver Kropp <dok@shizo.directfb.home>
+Date:   Tue Jan 22 00:06:32 2008 +0100
+
+    Don't dismiss the skirmish if fusion_skirmish_wait() fails.
+    
+    Only when DFB_OK is returned, the lock is still held.
+
+commit ec27bfde42364b11c05d6946ecfe0b93bdc61444
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jan 21 12:51:37 2008 +0100
+
+    [drivers] Enable Close-On-Exec flag on file descriptors.
+
+commit de356722f048fa582b0e65b9856d6dad3bb8a620
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Jan 20 15:17:20 2008 +0100
+
+    [wave] On suspend, close the output file only if it is not a fifo.
+
+commit 948633660c5132c0b8e5049519c14232f4d36d18
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Jan 20 15:16:31 2008 +0100
+
+    [alsa] Autodetect the pcm device name according to the channelmode.
+
+commit fd72b94e9bb34e203f8e62dae18d46d4308b97e9
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Jan 20 12:21:02 2008 +0100
+
+    [music-providers] Limit the returned number of channels to FS_MAX_CHANNELS.
+    
+    [ffmpeg] Added AAC to the list of supported formats.
+
+commit aa227cb3bcbbd97c0c6fdc0b515f7dc48df196f1
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Jan 18 22:27:06 2008 +0100
+
+    Welcome 1.1.0.
+
+commit 59bcf65d1d9e23a9e6a167a829809ed52e486b43
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Jan 18 21:51:33 2008 +0100
+
+    [module] Added support for remote sessions and fixed a memory leak.
+
+commit 98fa657e65c459e2106fc805e2e361b357737b18
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Jan 18 21:37:57 2008 +0100
+
+    Link voodoo modules to libfusionsound.
+
+commit 2741ed9c07c19ab160a1fb7aa1a1b9e9af9143cb
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Jan 18 21:21:36 2008 +0100
+
+    [ffmpeg] Fixed incorrect timestamp computation.
+    
+    Also added ac3 to the list of supported formats.
+
+commit 6814c2a7e3c79a3d08bd8cfe9564baa254ca7d00
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Jan 18 21:18:26 2008 +0100
+
+    [dpack] Avoid confusing conditions in the codec documentation.
+
+commit b9218d63ed2fde7de3591abc7c0880514eb7f3d4
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Jan 18 19:57:35 2008 +0100
+
+    Preparing NEWS for FusionSound-1.1.0.
+
+commit 3635f0b3dd207441ffe57ebd90a92efc7e193a65
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Jan 18 19:35:13 2008 +0100
+
+    Revert version to 1.1.0.
+    
+    Forgot that the last released version was 1.0.0.
+
+commit 1bdbcfbe065bbdf452808a8190701425160c2841
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Jan 18 16:30:01 2008 +0100
+
+    [dpack] Added support for channel coupling (can increase compression by 20%).
+
+commit aea664ac2771ef885bf018018fda9b6fe0916603
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu Jan 17 12:46:38 2008 +0100
+
+    [ffmpeg] When packet timestamp isn't available, compute the current time using the packet length.
+
+commit 4a98d44d644a6de5f9e1bdc7e81cf2ba70617e18
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jan 16 23:14:07 2008 +0100
+
+    Updated manual page.
+
+commit 670f2629c13ae87b1e043bc2b3e8ea6ba3c2f081
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jan 16 23:04:39 2008 +0100
+
+    Removed duplicate options from help string.
+
+commit 23b2018e6c5b26f778bfefd371f255c0499cfbec
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jan 16 22:08:24 2008 +0100
+
+    [fsplay] Added keybindings to control the playback speed.
+    Fixed also a bug that prevented the player from automatically quitting at the end of playback when running in quiet mode.
+
+commit a785c8cd9e26021450946a6d7811e7b4ad0162f4
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jan 16 19:39:14 2008 +0100
+
+    [fsproxy] Added some options: --help, --version and --keep-alive.
+
+commit f04cabe4db506012a53316f77e11a8af57af87a9
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jan 16 19:15:10 2008 +0100
+
+    [dpack] Split large blocks in packets of 576 frames (+1-5% compression).
+
+commit 4fcf61b6be1e38c4b1b735d272494b1e922b8ce2
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jan 16 19:12:42 2008 +0100
+
+    [ffmpeg] Fixed S16 -> S32 conversion.
+
+commit 89cb1bd8ed3e58cf9ebc498e99b361f0bb37a1a8
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jan 16 19:04:38 2008 +0100
+
+    [ffmpeg] Free the previous packet after seeking and before returning from the thread.
+
+commit fa913a8cc8d6682529e80adfbf9c5bcd44662956
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jan 16 18:41:47 2008 +0100
+
+    Modified the decoding loop to make it work with FLAC.
+
+commit fcc6b9cd1faafb9f1b2b8dcd856b3f04b2f20820
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jan 16 15:36:19 2008 +0100
+
+    Fixed a thread safety issue in set_master_volume()/get_master_volume().
+    Also silenced some warnings.
+
+commit 2ab9a2276b697ae6ffae44f7af1cc4b4a51bd300
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jan 16 15:23:27 2008 +0100
+
+    Fixed bug in av_read_callback().
+    
+    The buffer position was not advanced upon successful reading.
+
+commit 7fd0997d1f9aeaf4fecfbff0403c19f7fb12d397
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jan 16 15:19:37 2008 +0100
+
+    Provided a fread() compatible behavior to ov_read_callback().
+    
+    This is done by clearing the remaining part of the buffer when the requested amount of data was not completely provided.
+
+commit 3d48a22aec47298b0ca7a3f2d499c9ba9bd5c7b2
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Jan 15 17:50:00 2008 +0100
+
+    Avoid getting/setting the master volume when the device is suspended.
+
+commit 1468c40bcc1343ac89dc5012f6934f50bcdf4f4b
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Jan 15 15:16:42 2008 +0100
+
+    Oops, there was an error in the documentation.
+
+commit 54a21f522e6624e51eb15da9b249db2bdbedc978
+Author: Denis Oliver Kropp <dok@shizo.directfb.home>
+Date:   Tue Jan 15 13:23:10 2008 +0100
+
+    Added missing "int n".
+
+commit ac0213c72c3f30a03523674e80548f772a65883e
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Jan 15 10:32:02 2008 +0100
+
+    This could really be the 1.2.0, but actually is 1.1.1.
+
+commit 4cac752a820a7c974f8dd14b235cc8a6eb84b6ef
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Jan 15 10:30:56 2008 +0100
+
+    Added options "[no]-dma" and "remote-compression=(none|dpack)".
+
+commit fa7385212c1fa8cc5f87ba16df6c92092c4fa2aa
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Jan 15 10:29:41 2008 +0100
+
+    Here comes Voodoo Sound!
+    
+    Implements all FusionSound methods and supports compression.
+
+commit 0171e0ef38156490a866c4884339e0e15a3cb97e
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Jan 15 10:20:48 2008 +0100
+
+    Do not limit buffer length to 10s.
+
+commit a2370e435fc53fecdaa40f32c2e7896e067d40d4
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Jan 15 10:19:23 2008 +0100
+
+    Follow API changes.
+    Fixed mono/stereo to dolby conversion.
+
+commit 8a68447144202466635e9a6aa12b2b086e5ff412
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Jan 15 10:17:42 2008 +0100
+
+    Advancing FusionSound API.
+    
+    Main API
+    --------
+    
+    Added IFusionSound::GetLocalVolume()/SetLocalVolume() to set a local volume level applying to the playbacks created by the process.
+    
+    Added IFusionSound::Suspend()/Resume() to suspend/resume fusionsound.
+    
+    Added IFusionSoundStream::Access()/Commit(), implementing direct memory access to the ring buffer.
+    
+    Modified behaviour of IFusionSoundMusicProvider::GetBufferDescription(), the length refers to the whole track now.
+    
+    Internal API
+    ------------
+    
+    Implemented Direct Memory Access to the output device.
+    CoreDevice::Write() is replaced by CoreDevice::GetBuffer()/CommitBuffer().
+    Actually real DMA is only supported by the ALSA driver.
+    
+    Added CoreDevice::Suspend()/Resume().
+    
+    fs_device_initialize() takes a CoreSoundDeviceConfig as argument, now.
+    
+    Added fs_core_set_local_volume/get_local_volume() and fs_core_suspend/resume().
+    
+    Removed fs_core_start().
+    
+    Fixed Mono/Stereo to Dolby conversion: previously fusionsound was simply ignoring the center channel, causing the output signal to be moved to the left (indeed, center=0 means left and center=1 means right).
+
+commit 28008724a187727fb059048928d1ccb47153400a
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Jan 15 10:05:03 2008 +0100
+
+    Added option -d, --depth to force output format depth.
+
+commit 71e343d4297969728e30527f8ff94207a73e36b9
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jan 2 14:22:54 2008 +0100
+
+    Added option -q, --quiet.
+    Avoid deinitializing fusionsound from a signal handler.
+
+commit 6a569389285314d8f04aefab3fa3c7d1c7055e5d
+Author: Denis Oliver Kropp <dok@shizo.directfb.home>
+Date:   Sun Dec 23 08:03:27 2007 +0100
+
+    FREEDOM: FusionSound does not require DirectFB anymore.
+    
+    libdirect and libfusion are enough to use FusionSound now.
+    
+    Use SYSCONFDIR and call direct/fusion_config_set() as a fallback for fs_config_set().
+    
+    Cleanups.
+
+commit 1d3fcb565694f3bd7510c95e5dd4e8aca6f64968
+Author: Denis Oliver Kropp <dok@shizo.directfb.home>
+Date:   Sun Dec 23 07:33:00 2007 +0100
+
+    EXAMPLES: Fixed usleep(0).
+
+commit 33121c277d500fd260138994eccdc2ed11925679
+Author: Denis Oliver Kropp <dok@shizo.directfb.home>
+Date:   Mon Dec 17 18:07:42 2007 +0100
+
+    Install HTML docs, thanks to Guillem Jover!
+
+commit 5ac147696de31087cdb8bae3834a28947c5194c6
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Dec 1 13:00:26 2007 +0100
+
+    Avoid stopping and restarting playback when destination stream/buffer is the same as the previous one and playback is already running.
+
+commit 345fd7f2f729634210b815fceeebb6b6c3f955ad
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Dec 1 12:32:57 2007 +0100
+
+    Removed redundant locks in fs_core_add_playback()/remove_playback().
+
+commit 9bcf26f9757576f4f01beb328216f9287b459bc0
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Nov 19 16:02:35 2007 +0100
+
+    Execute START call in ONEWAY mode.
+
+commit 3c5205da0eae6ff2e13eb03358de2e1d98bb51d7
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Nov 19 12:05:46 2007 +0100
+
+    Define "attribute_deprecated=;" only for ffmpeg music provider.
+
+commit 76e7b3f96d07a3cdaccc55e5d154e4c9d9764f4e
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Nov 5 12:31:38 2007 +0100
+
+    Fixed thread safety issue in add_playback()/remove_playback().
+    If there aren't active playbacks, do not usleep() in the sound thread,
+    use fusion_skirmish_wait() instead.
+
+commit bbb2e1327af2c5b65f1e34ce4d8368f51e165ee6
+Author: Denis Oliver Kropp <dok@shizo.(none)>
+Date:   Thu Oct 18 22:19:01 2007 +0200
+
+    Use SNDCTL_DSP_GETOSPACE during initialization to print a message with the max output delay.
+
+commit f882f8fbf3bd2e7cae8125821a65b638c2baafa3
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu Oct 18 14:47:10 2007 +0200
+
+    Do not start the sound mixer thread on initialization but when the first playback is created
+    (this is done by calling fs_core_start() from fs_playback_create()).
+
+commit 88e349c27c9598e59824c5a399be8a48a5372c3f
+Author: Denis Oliver Kropp <dok@shizo.(none)>
+Date:   Wed Oct 17 13:33:52 2007 +0200
+
+    Check for FSSDF_CHANNELMODE instead of FSBDF_CHANNELMODE.
+    
+    Fixes bogus invalid argument errors.
+
+commit 805adae57b1b64e9b0f745abe2cc63f874645b7f
+Author: Denis Oliver Kropp <dok@shizo.zion.home>
+Date:   Thu Oct 4 13:48:01 2007 +0200
+
+    Use new avcodec_decode_audio2().
+
+commit 106dd677197c15dad53342e4965e43f1fc786700
+Author: Denis Oliver Kropp <dok@shizo.zion.home>
+Date:   Mon Sep 17 12:59:44 2007 +0200
+
+    Just warn if SNDCTL_DSP_PROFILE fails.
+
+commit 9fc7ab34883cbadcf98e953193c5b67ef19d514d
+Author: Denis Oliver Kropp <dok@shizo.(none)>
+Date:   Fri Sep 7 14:17:45 2007 +0200
+
+    Fixed warnings.
+
+commit e6b866d086b83b2655121868a611910c241c3714
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Aug 28 23:01:10 2007 +0200
+
+    Applied patch by Ben Combee, fixes a thread safety issue in IFusionSoundStream::Drop().
+
+commit 3a9e5b88bdd791e1915733fc9e7a419447c8f77e
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Aug 28 15:43:54 2007 +0200
+
+    Updated manual page.
+
+commit 1a9dd090a64a4a3cf6565cc5c5be809c889fb2df
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Aug 28 15:43:21 2007 +0200
+
+    Install a cleanup handler for deinit checking.
+    Added option [no-]deinit-check.
+
+commit 6dab45cf1ee2dbc7b3b007880e0176794585b791
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Aug 27 13:56:21 2007 +0200
+
+    Fixed 6 to 3 channels conversion.
+
+commit 8d37d6caa57ab485b0ed8dd8694c40bad185f5d8
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Aug 27 11:58:16 2007 +0200
+
+    Added runtime option [no-]dither (off by default), replacing build option.
+
+commit 6dec1df9996904d82ab1cb29820e0b0f93deda66
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu Aug 23 12:29:37 2007 +0200
+
+    Added a ffmpeg based music provider supporting wma, real audio and flac.
+
+commit eb54deaa948e3bfc0f88fbe845785492880008b5
+Author: Denis Oliver Kropp <dok@shizo.zion.home>
+Date:   Mon Aug 13 01:33:07 2007 +0200
+
+    Added -lm to timidity module.
+
+commit 17c2d7abc40be1ab472ec092b3c63841cac377e1
+Author: Denis Oliver Kropp <dok@shizo.zion.home>
+Date:   Mon Aug 13 01:01:10 2007 +0200
+
+    Build fixes.
+
+commit 7fd60f4bc78cc0a699ccebf9ad83bd47d3addd9d
+Author: Denis Oliver Kropp <dok@shizo.zion.home>
+Date:   Sat Aug 11 15:16:36 2007 +0200
+
+    Fix WAVE loader format chunk read length in example code.
+    
+    Thanks to Carolyn Wales! cswales . gmail com.
+
+commit e352fe2246cb6b3475f7cf0bdfef88e105a64708
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Aug 7 16:39:15 2007 +0200
+
+    Fixed first frame detection for MP3s encoded at high bitrate (> 200Kb/s).
+    Fixed failing assertion in direct_stream_read() caused by attempt to read 0 bytes.
+    Set default buffersize to 100ms.
+
+commit 0b2162b570c8314fd1240b08d6ab4a8d074ccf37
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu Jun 21 10:35:09 2007 +0200
+
+    Reset software volume to FSF_ONE when setting hardware volume succeeds.
+
+commit 9cd2e68b9fbc748ecc02d576e26f76728427ca9f
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jun 20 17:38:26 2007 +0200
+
+    Added IFusionSound::GetMasterVolume()/SetMasterVolume(): change the hardware/global volume level.
+    
+    Added fsvolume, small utility to change the master volume.
+
+commit 3d712fdc4d8081c2e9c20e7b62ac9c3eb7e2878b
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jun 20 17:31:12 2007 +0200
+
+    Removed a TODO (multichannel).
+
+commit 81b9d005b71d1769ac163910bde1c05f636231fe
+Merge: 5e31e90 b17cd4b
+Author: Denis Oliver Kropp <dok@shizo.zion.home>
+Date:   Wed May 30 00:18:07 2007 +0200
+
+    Merge branch 'master' of git+ssh://git.directfb.org/git/directfb/core/FusionSound
+
+commit 5e31e90c1a4a4ae16369f20a6977823875e0e357
+Author: Denis Oliver Kropp <dok@shizo.zion.home>
+Date:   Wed May 30 00:17:34 2007 +0200
+
+    Follow API changes.
+
+commit b17cd4bd7812ab70576ee3cafd449d0c3de4f2c6
+Author: Ville Syrjala <syrjala@sci.fi>
+Date:   Fri May 18 18:33:15 2007 +0300
+
+    Make it build when $(top_builddir) != $(top_srcdir).
+
+commit 06122e78c87fd56edbf0f1dc94c043a5876bd864
+Author: Ben Combee <bcombee@www.directfb.org>
+Date:   Thu May 17 05:05:42 2007 +0200
+
+    memset argument order was backwards, so never cleared context structure
+    
+    
+    via git-CVS emulator
+
+commit b893060128eea3953a8b036c8e9f1d68e3ff0d93
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed May 16 10:45:40 2007 +0200
+
+    When waiting on conditions, install a cleanup handler that automatically unlocks the mutex. This way calls can be safely canceled.
+
+commit a9f77eccfae9a551a16297c167aefa783af741b4
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue May 15 21:33:03 2007 +0200
+
+    By default, if the master must exit and there are still slaves playing,
+    the master forks and waits until all playbacks are finished before quitting
+    (yes, this was the original behaviour but it didn't work previously).
+    
+    Added option [no-]wait to specify whether or not the master must wait the slaves (in the latter case, slaves will be terminated).
+    
+    Require DirectFB 1.1.0.
+
+commit d283867aa57c941e9a66caacb063941254814b57
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat May 12 18:02:42 2007 +0200
+
+    Added missing files/extensions.
+
+commit 869938111ddc0a9c427a7c9db3c10af58a45e661
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat May 12 18:00:37 2007 +0200
+
+    Updated man page.
+
+commit a14fefd2983fce15b81e9fb15bcd22ee86f22418
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat May 12 18:00:00 2007 +0200
+
+    Provided a way to define the channels configuration.
+    
+    Introduced a field in stream and buffer descriptions that define the channels
+    configuration (see FSChannelMode). When set, this field overrides the 'channels' field.
+    
+    Replaced internal references to generic channels by appropriate FSChannelMode(s).
+    
+    Added options "channelmode" to define the channels configuration of the output device.
+    
+    Moved downmixing levels stuff to CorePlayback (set via fs_playback_set_downmix()).
+
+commit 4f1bddec190fd64b20f362c88dcdd4c52972f2f7
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri May 11 16:24:04 2007 +0200
+
+    Moved .cvsignore(s) to .gitignore(s).
+
+commit 23c67327a584655f7dae5566b30006380d97546a
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri May 11 16:21:07 2007 +0200
+
+    Follow changes (i.e. implemeted support for multichannel streams).
+
+commit 96227156df100c836f785397e38a095a2803aba3
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri May 11 16:15:26 2007 +0200
+
+    FusionSound 1.1.0 is here and plays in Dolby Surround!
+    
+    Implemented support for up to 6 channels (Surround 5.1) sources
+    (see the header for better explanation of the channels mapping).
+    If you only need support for mono/stereo sources, you can
+    pass --disable-multichannel to configure to avoid building the new code
+    (thus saving space and memory).
+    
+    Added IFusionSoundPlayback::SetDownmixLevels() to set the downmixing levels
+    of the center and rear channels (in case the output device only supports mono/stereo).
+    
+    Added fusionsound_limits.h, containing some definitions about mixing limitations.
+
+commit b4ed3cb07dbc6f0185d6ec3f211ba5d88a1091f2
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri May 11 15:25:21 2007 +0200
+
+    Allocate IFusionSoundPlayback upon first call to GetPlayback() and return the same
+    interface upon subsequent calls.
+
+commit 6f0ba0c9b7c396e7bd344a3f57bb01ef7aee13a8
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri May 11 15:20:19 2007 +0200
+
+    Clamp volume level between 0 and 64.
+
+commit 99188dbd3369de5c2eb5e1d933a97e2aaf3db07b
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri May 11 15:17:59 2007 +0200
+
+    Fixed a memory leak.
+
+commit c72361fa3c6f1714eb3b7dd42e4ddc759361a790
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Apr 17 18:41:41 2007 +0200
+
+    1.0.0.
+
+commit ccc7d3cc6524c818a367bd1bbb2fd32dfe3e7380
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Apr 17 18:41:07 2007 +0200
+
+    Preparing NEWS for 1.0.0.
+
+commit 86929650ad96d29f400e00aaa38f02740a55a820
+Author: Ville Syrjala <syrjala@sci.fi>
+Date:   Mon Apr 16 01:51:40 2007 +0300
+
+    Use D_ARRAY_SIZE() macro where appropriate.
+
+commit c38f2083968b2525cc851f3378842adab06c88c0
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Apr 15 14:28:40 2007 +0200
+
+    Improved noise shaping filter's precision.
+
+commit 1238bb75b7c49e9294b1797aacb960aacf42fd4f
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Apr 6 12:45:04 2007 +0200
+
+    Added option --without-tools.
+    Option --enable-examples changed to --without-examples.
+
+commit bd6c1efb0ff8b9ccedb48c1aa7bd09dc124f4a1e
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Apr 6 12:44:09 2007 +0200
+
+    Added fsplay, a command line player.
+
+commit 8974e2762077220000508221b5df41d7c1dc7aff
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Mar 23 10:51:46 2007 +0100
+
+    Round samples when dithering is disabled.
+
+commit 1e739b4344f11a9f5ef07ba3dd34617df2924636
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Mar 21 17:18:51 2007 +0100
+
+    Fixed DirectFB version check.
+
+commit d791aa9722eb7f2874d25e44d6d79a674dd3df8b
+Author: Ville Syrjala <syrjala@sci.fi>
+Date:   Tue Mar 20 20:10:22 2007 +0200
+
+    Handle suspend.
+
+commit 2a0fc3dc805693ad93ea8a86047607bdcfcf6a1e
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Mar 10 14:20:49 2007 +0000
+
+    Cleanup.
+
+commit 81def9a4744075955bb8c9ba64bd030aa2fca431
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Mar 9 14:53:38 2007 +0000
+
+    Update the "pending" parameter from Write() instead of FillBuffer().
+
+commit a16f4cabd01090d31629112cc567cb0b543f82e2
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Mar 9 14:52:04 2007 +0000
+
+    Finally fixed the garbage-with-large-output-buffer problem:
+    repeat last sample instead of interpolating with "dirty" data.
+
+commit 8e6da98ae68b7b71474980a53bd5808a480b2f98
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Mar 7 09:55:42 2007 +0000
+
+    When upsampling buffer's data, repeat last sample instead of wrapping at the end.
+
+commit 35328a33115ce399ff61e32e56ab04a308d67412
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Mar 5 16:24:36 2007 +0000
+
+    Fixed two assertions about volume level.
+
+commit 2687fe5ba276953d2f9e953f7c133be3c2d7551a
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Mar 5 15:07:08 2007 +0000
+
+    Enable using Tremor (Ogg/Vorbis integer decoder). Good for embedded devices.
+
+commit 1d0608f9f01c5056330b1adb5707a298a7c63f8d
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Mar 3 19:23:34 2007 +0000
+
+    Ready for 1.0.0-rc1?
+
+commit 6974ad85c3d4bb46a56b05917e63c19262c2aa6f
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Mar 3 19:23:04 2007 +0000
+
+    Skip unknown chunks before data.
+
+commit ebe6af205bf395ef0bad25efe353e5b848604dcb
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Mar 3 17:18:32 2007 +0000
+
+    Dowmix stereo to mono before converting to output format and
+    round samples before conversion.
+
+commit c8459f05443072a4d9ba2af0052542e9ebebec01
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Mar 3 13:55:36 2007 +0000
+
+    Fixed conversion to S24 mono.
+
+commit 7fd3fcfc6a5392807480fe1da8bde7d93ad8dd93
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Mar 2 10:54:36 2007 +0000
+
+    Allow adjusting the volume level by pressing v/V.
+
+commit 075b85b3a4fb3e3eef1ee93b2102bd041fa16ca3
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Mar 2 10:52:54 2007 +0000
+
+    Clamp floats before outputting them.
+
+commit 2efe2e91db10e6af6547fedcee1b5ec77ec5158e
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Feb 21 13:40:29 2007 +0000
+
+    Updated ChangeLog.
+
+commit 13f26a924d1029305179fc6ebc1b6f81a2300174
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Feb 21 13:39:12 2007 +0000
+
+    Preparing NEWS for 1.0.0.
+
+commit 25b913a1535e486bbeadc362effdf7f9439f0fd7
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Feb 21 13:34:29 2007 +0000
+
+    Replaced a __u8 by u8.
+
+commit 900a5179698bcc20430b371f0e76c24337892aa3
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Feb 20 10:59:01 2007 +0000
+
+    Update the amount of pending frames while filling the buffer.
+    Include the amount of pending frames in the presentation delay.
+
+commit 79d15046cef22a8e4198ed3846c8dc87bdc28a41
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Feb 19 10:54:31 2007 +0000
+
+    Alway read the requested amount in ov_read_callback().
+    Ignore the return value of ov_halfrate() when we are not halrating.
+
+commit 6ae51ba5e7ad4a82820989d9a4c8b2f5f9994947
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Feb 16 13:23:37 2007 +0000
+
+    Some updates to IFusionSoundPlayback's summary.
+
+commit b8b076ab1f31ae7110978b83975e244ce1c8db4b
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Feb 16 11:38:42 2007 +0000
+
+    Moved fsmaster to tools/.
+
+commit 9f4ecc7c6aee046d3e0b50bbcfd8fec812fbd159
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Feb 14 11:44:03 2007 +0000
+
+    Added a signal handler for SIGTERM.
+    Register signal handlers after FusionSoundCreate().
+
+commit c8eb4bcac56fc4507995ec5398864967b86d8c22
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Feb 14 11:42:18 2007 +0000
+
+    Fixed bug in fs_buffer_mixto(): must return DFB_BUFFEREMPTY either when
+    the amount of max_samples is equal to the amount of remaining samples.
+
+commit 377f8baa659b3d86e4b7d2eb9c067bc2356fd824
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Feb 13 14:22:03 2007 +0000
+
+    Display information about buffer's channels/format/samplerate/size.
+
+commit 1c277767636c370983b92de2cf5a74e528ece8bb
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Feb 13 12:04:41 2007 +0000
+
+    Added options quiet, [no-]debug, [no-]trace (for simplicity).
+
+commit 0113064935b400098b1ba3bfd7b3a1e00a59afd7
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Feb 13 12:02:12 2007 +0000
+
+    Unload unused modules.
+
+commit 90c997678466f71b3c07641ba293f70ce783466f
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Feb 13 12:01:13 2007 +0000
+
+    Fixed static build of libfusionsound.
+
+commit 0331a6ca362323ecfc28c4cdac95353e0b82ba96
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Feb 12 15:18:44 2007 +0000
+
+    Do not fail if frequency is higher than 48KHz.
+
+commit 8ed6eb9ad790a03062e896407f1513ad4889969b
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Feb 12 15:17:12 2007 +0000
+
+    Samplerate must be at least 100Hz.
+
+commit d8f96f0398ba03c04209c1c884e9477868c31e40
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Feb 12 15:16:13 2007 +0000
+
+    Prevent division by 0.
+
+commit 51bae80d1d5e683fa080668224f3037cbd841830
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Feb 12 15:14:56 2007 +0000
+
+    Definitively improved the noise shaping filter: using the following
+    5 coefficients FIR filter { 2.0, -2.125, 1.85, -1.39, 0.69 }, about
+    all noise gets pushed over 20KHz, with a sensitive reduction in the
+    1KHz-4Khz band and around 12KHz.
+
+commit d6eccc0dc2c6750420a660069dc3ee3c850713f8
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Feb 11 17:35:41 2007 +0000
+
+    Still improvements in the noise shaping filter:
+    using the 3rd order FIR filter {1.75, -1.5, 0.75}, far from perfection
+    but of course better than the previous one {1.0, -0.5, 0.5}.
+
+commit c87e7a4a4d744361cb7b56813981f61895ae2186
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Feb 9 15:17:36 2007 +0000
+
+    Fixed error in the noise shaping code: error from previous sample must not
+    be computed in the error of current sample.
+
+commit ccff1e38b6efe7510992f6a481abaee67aa2951f
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Feb 9 11:24:12 2007 +0000
+
+    Do not rely on default samplerate and sampleformat.
+
+commit dad0004b8fec8520fab8824ead3d8a4435cbe2fe
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Feb 9 11:23:00 2007 +0000
+
+    Changed a coefficient in the noise shaping function (1/4 * E(x(n-2)) -> 1/8 * E(x(n-2))).
+
+commit 8da473d57b207124fb6b646240b86a5cab4dcb05
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu Feb 8 11:36:50 2007 +0000
+
+    Improved noise shaping filter, using the following function:
+    y(n) = x(n) + 1/2 * E(x(n-1)) - 1/4 * E(x(n-2)) + 1/8 * E(x(n-3)) + dither.
+
+commit 1fcd59a4bf5337a678bc7873ec06bb31d157081d
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Feb 7 13:47:18 2007 +0000
+
+    Flush output stream after seeking.
+    Do not retain the DirectStream, simply duplicate the file descriptor.
+
+commit 1ed87fd1093e4e113290ec9970e7d4a1b18e9aca
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Feb 7 11:00:17 2007 +0000
+
+    Flush output stream after seeking.
+
+commit 9b6b9a7e9e8111f72427a73b0a9b20ec4a958b0e
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Feb 7 10:59:12 2007 +0000
+
+    Support FMCAPS_HALFRATE.
+
+commit 1982300dc0d1e260d68799db2bb16086311a6312
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Feb 7 10:57:14 2007 +0000
+
+    Added FMCAPS_HALFRATE, meaning that the music provider supports decoding
+    samples at half original rate (this doesn't imply resampling).
+
+commit fd442d792405184d27dff42bbb2f93e2181000af
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Feb 6 14:16:44 2007 +0000
+
+    Fixed wrong float noise computation.
+
+commit 8b78166441be1296047abce0fcb7922d25667037
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Feb 6 11:27:11 2007 +0000
+
+    Removed "(noise shaping)" from the description of enable-dithering option
+    (actually noise shaping is not support when ieee-floats are enabled).
+
+commit 8ca7e7c717fbf871e79b0ea36bf75b403bbb598a
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Feb 6 11:24:09 2007 +0000
+
+    Avoid using ifusionsound_singleton (might be NULL).
+
+commit 2020ca3f10e5caf7bfe1c3026b9ecdc4320cc544
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Feb 6 11:22:45 2007 +0000
+
+    Implemented simple float dithering (without noise shaping).
+
+commit ea448e4acf16c4914293373fde7697b671085e59
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Feb 5 14:23:06 2007 +0000
+
+    Updated ChangeLog.
+
+commit 6ce2536806c0402b42ecb8f292143c82c334d916
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Feb 5 14:21:03 2007 +0000
+
+    Mark the release as 1.0.0.
+
+commit 05aaf9be6bdcc4929fb0b7f32b4e05372137dc9c
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Feb 5 14:19:46 2007 +0000
+
+    Refresh after 20ms.
+
+commit ff2e86b36c0cc9621c346e6988a48ee8c2678da0
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Feb 5 14:18:48 2007 +0000
+
+    Use a 10ms buffer by default.
+
+commit 9fa020e4da793ccb49d969a7bddb3b1280a64ceb
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Feb 5 14:15:17 2007 +0000
+
+    Always output S32.
+
+commit 8de0d2f6a1aeef961847e7055731b4260549d8f9
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Feb 5 14:13:55 2007 +0000
+
+    Dither channels separately using a per-channel profile.
+
+commit ebf80585fd5307ca63aa683c23c45e467d97fa3b
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Feb 4 18:40:13 2007 +0000
+
+    Added option --enable-dithering to enable Dithering/NoiseShaping (disabled by default).
+
+commit 4ef9c8f2a40f8cb980665fc35de550afebd3e3dc
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Feb 4 18:38:35 2007 +0000
+
+    Implemented Noise Shaping (i.e dithering + re-shaping of noise frequency contour).
+
+commit c31c0fe29d358d6289f0234132dccdc4f7a289ce
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Feb 3 11:40:44 2007 +0000
+
+    Distribute autogen.sh.
+
+commit 2c4b187738f7f2ee569ca0ac0c7a7fbf5cc1d72f
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Feb 3 11:29:56 2007 +0000
+
+    Updated ChangeLog.
+
+commit 351df3a748c31877d4d865f170871eb1b9508412
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Feb 2 11:33:06 2007 +0000
+
+    Allow changing playback direction.
+
+commit 2212f56c7c6fe61c9a620b577c8a3dd1d7ab2f3d
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Feb 2 11:32:07 2007 +0000
+
+    Using 14 fractal bits for pitch is safe.
+
+commit 386debf2291365a9ca3d18680d8198477bff7d2d
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Feb 2 11:31:05 2007 +0000
+
+    Specify that FSSF_FLOAT is in native endian, too.
+
+commit 8c01508497c71f5ca6c5d4de30195465ee62aff4
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu Feb 1 14:10:43 2007 +0000
+
+    Set the type of the mixer thread to DTT_OUTPUT instead of DTT_CRITICAL,
+    otherwise the mixer thread slows down the fusion dispatching process.
+
+commit da0bf5c3cc23cac144d5ff9443cb0d97438d1afc
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu Feb 1 14:08:43 2007 +0000
+
+    Giant optimizations:
+     - avoid premultipling volume by linear weight
+     - use a faster averaging function
+    (twice faster than before).
+
+commit e5debeeda2b4d122f20425c9b78a4fa0f7466247
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Jan 30 10:46:49 2007 +0000
+
+    Plan to add a compressed sample format (maybe ADPCM).
+
+commit 9852fc546e60898f5ca2b222102607a4c8892cc5
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Jan 30 10:44:31 2007 +0000
+
+    Fixed buffer's length limit (should be 0x07ffffff, not 0x0fffffff).
+
+commit 0ea92e8734ff2642500cdd7275ca97f4a7043956
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jan 29 17:30:47 2007 +0000
+
+    Added convenience definitions FS_PITCH_BITS, FS_PITCH_ONE.
+
+commit 65aa4c0738d1cfef8067936d21e028369096cf26
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jan 29 15:29:07 2007 +0000
+
+    Follow changes.
+
+commit d57e6a76154021c401b2204f31faff3f458ad3e5
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jan 29 15:20:47 2007 +0000
+
+    Increased the number of fractal bits used for the pitch to 12 (higher precision).
+
+commit a7c0f3ebd6465827a1575942b1205df6c4bd6b45
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jan 29 13:29:26 2007 +0000
+
+    Always output data in little-endian byte order.
+
+commit e15fb7eb842a4ecc2c4ade885625a0fa1b51ceee
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jan 29 11:23:52 2007 +0000
+
+    Added fs_core_device_config() to get the actual device configuration.
+    
+    Refer to device configuration (instead of config) to set the default parameters
+    during buffer/stream creation.
+
+commit ee0cb9089f2cca3a0081a46a41a088572ce196d3
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jan 29 11:19:52 2007 +0000
+
+    Samplerate defaults to 48000 now.
+
+commit a25d685339071136739f21055f1f7423461812ec
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jan 29 11:18:31 2007 +0000
+
+    Redefined FS_SOUND_DEVICE_INFO_NAME_LENGTH to 96 (instead of 256).
+
+commit fb21f0fd0afa0270f6bb3c37abb3be22a24e18cf
+Author: Ville Syrjala <syrjala@directfb.org>
+Date:   Wed Jan 24 23:13:53 2007 +0000
+
+    Fix version check for automake-1.10.
+
+commit 6ba98d1ea7144bcaffbb050b3654d9ad85448fc5
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Jan 12 10:17:09 2007 +0000
+
+    Modified IFusionSoundStream::Drop() to not call Flush() internally.
+    The previous behaviour can be obtained by calling Drop() and then Flush().
+
+commit f3fd381f5392898bd4da2d840a7dbeb4239fbc5a
+Author: Ville Syrjala <syrjala@directfb.org>
+Date:   Mon Jan 8 17:04:41 2007 +0000
+
+    Don't touch the ret_interface pointer unless the method succeeded.
+
+commit 856c9f63d190338b030e55714b878212928611da
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jan 8 13:43:10 2007 +0000
+
+    Removed unused methods.
+
+commit 1954e5081abc1ec8a12cf8e8acc127fba184a2b2
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jan 8 13:41:54 2007 +0000
+
+    Provide a default implementation of EnumTracks(), GetTrackID() and SelectTrack()
+    for music providers supporting only one physical stream.
+
+commit fc9d60d1f249c2b46e392ecf257e1a28561b8073
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Dec 22 13:43:33 2006 +0000
+
+    Fixed wrong license header. Must be GPL.
+
+commit 9dd6d265ee396002f144b49290de36edd66d48bc
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Dec 7 21:24:43 2006 +0000
+
+    Removed unused local core pointer from shared structure.
+
+commit 2f01705aa6e063da858fea3e9886180259066a06
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Dec 7 21:24:05 2006 +0000
+
+    Enable shm pool debugging based on debugshm not debug option.
+
+commit c8ddebca5437d9b4423e09782b231b358029ce5f
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu Nov 23 11:13:24 2006 +0000
+
+    Allocate mixing and output buffers on the heap (prevent undiscoverable bugs).
+
+commit e2c0d2ec582478a494d7f9d107150b588b0db02a
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu Nov 23 10:10:23 2006 +0000
+
+    Fixed a wrong computation.
+
+commit 6c9535a0fad1b28807b8a1ad3b94481fe644f83c
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Nov 22 13:11:49 2006 +0000
+
+    Flush the stream after seeking.
+    Set the default stream/buffer size to the size of a block (1152 frames).
+
+commit cb412409eb11865187f58b31d28a8438e9b1cf36
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Nov 11 16:53:35 2006 +0000
+
+    Added type "s24" for faster conversion of FSSF_S24.
+
+commit 0ac9813b1aa7b15042a679766ee452020a2cbfbf
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Nov 11 16:51:46 2006 +0000
+
+    Added fusionsound-internal.pc.
+
+commit 6fc367a4a3f3a073accc2f752342fef3f6dcd965
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Oct 16 13:27:54 2006 +0000
+
+    Fix types.
+
+commit d82b5e706205619b4189ae1f36e4095683e5b9c5
+Author: Ville Syrjala <syrjala@directfb.org>
+Date:   Tue Oct 10 00:15:58 2006 +0000
+
+    Fix stdbool.h warnings.
+
+commit 24d03e133387994dcd12ab7f1951f9b323d9c3f0
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Oct 9 11:03:23 2006 +0000
+
+    Fixed attributes parsing.
+    Honour the "clip-begin" attribute of SMIL playlists.
+
+commit ec1696faa2aef0230ecd34f13813d775dba9e016
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Oct 8 17:48:07 2006 +0000
+
+    Added support for detection by content.
+    Extract meta information from M3U and RAM playlists.
+
+commit e1a7e6417f520234ef753fdcfb38757f69ab75e1
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Oct 4 10:04:36 2006 +0000
+
+    Allow to specify "none" as driver.
+
+commit 530f038300ba7a3a562be87879dc5f9ce1335e49
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Oct 4 10:03:01 2006 +0000
+
+    Check for stdbool.h.
+
+commit ab9ef10ea25c66c35a4e4265b3878987849c6c2a
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Sep 28 00:41:59 2006 +0000
+
+    New tool fsdump a la dfbdump, initial version, showing buffers with their
+    reference counter and buffer length.
+
+commit 71ef4648be61cc78f2f6f4d620a3f3c6b7124f5e
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Sep 28 00:39:55 2006 +0000
+
+    ignore
+
+commit cc6d22c27888b628cf8163bd8091e881e3204673
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Sep 28 00:39:34 2006 +0000
+
+    Added fs_core_enum_buffers() and fs_core_enum_playbacks().
+
+commit 76f5a6c3a56cea78d0a955d43aaa0b57e93ded93
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Sep 28 00:39:05 2006 +0000
+
+    Moved IFusionSound_data definition to header.
+
+commit 4d6396f53dd236c9ed6d6b4765ef4e4c9fef2952
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Sep 25 08:57:56 2006 +0000
+
+    Use ov_open_callbacks() instead of ov_open().
+
+commit b134ebd639de00e86667f25b34311bd3b843d2ce
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Sep 17 13:11:03 2006 +0000
+
+    Support detection by mimetype.
+
+commit f319f04c67525d85a9ebd03d618036cc66b635bc
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Sep 16 13:27:59 2006 +0000
+
+    Do not build a local playlist, use EnumTracks() to iterate through tracks instead.
+
+commit 16f8285bcee81bbd49483645f3745e71c9f2c97a
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Sep 16 13:26:26 2006 +0000
+
+    Added music provider for playlists.
+    Supports M3U, RAM, PLS and SMIL.
+
+commit b419f083b8c0f1439a9ea6e5378aad68a6d3606f
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Aug 23 08:54:57 2006 +0000
+
+    Set FSF_DECIBITS to 23 to prevent negative overflow (case 64+64).
+
+commit b4db88243af5ae00f3822f027288f2d088f85a3f
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Aug 22 10:34:05 2006 +0000
+
+    Don't keep status based on notifications, but use a new function called
+    fs_playback_get_status() to sychronously query the actual value. This fixes
+    Wait() returning immediately when directly called after Start().
+    
+    The notification is still used to wake up the waiters.
+
+commit de6d2b6cf7e4e45abbb8d040192e5d1b0a8fdd44
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Aug 21 09:39:14 2006 +0000
+
+    Compare buffertimes instead of buffersizes.
+
+commit 96edae09e8ec294c4740c42a9d0b97097c31ad46
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Aug 14 10:45:19 2006 +0000
+
+    Display ReplayGain information.
+
+commit 6df535c5ec5a8da409b8ece1cbdb98ac6c958201
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Aug 14 10:41:53 2006 +0000
+
+    Do not set replaygain information by default.
+
+commit 0ff81d61ab565c8e236b53fcb14a72919e419362
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Aug 14 10:40:41 2006 +0000
+
+    Added replaygain_album to FSTrackDescription.
+
+commit ab28191c202e8b4acdf2cf69ed2982cefc0ecd6d
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Aug 14 10:38:53 2006 +0000
+
+    Option "buffersize" renamed "buffertime".
+
+commit 2cdbf5f763da31c3edc566b9ea5c04753da228f4
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Aug 12 16:27:03 2006 +0000
+
+    Limit buffersize to 5 seconds.
+
+commit 3d165402ebb0d4959d587c67623f70bdd66ede38
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Aug 12 11:08:30 2006 +0000
+
+    Added replaygain to FSTrackDescription.
+
+commit fa004f8b4d4ccf6c943e1dc47bee4351ddd2ff36
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Aug 11 14:44:40 2006 +0000
+
+    Added example about loading tracks into a buffer using music providers.
+
+commit ad20b2d8deeebc754eeaee25324f88ad09f436e6
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Aug 11 14:40:54 2006 +0000
+
+    Follow changes.
+
+commit c05a886eb507e343aa589580266474a8becf5d23
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Aug 11 14:39:16 2006 +0000
+
+    New option --enable-linear-filter to enable linear resampling
+    (previously it was enabled by --enable-precision).
+
+commit 874cb8ccd0ebd6009a23ba81c635df1bbfc024e9
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Aug 11 14:37:04 2006 +0000
+
+    Increased number of fractal bits in __fsf to 24.
+    Because of that, volume ranges from 0 to 64.
+    
+    Removed IFusionSoundBuffer::SetPan() and FSPLAY_PAN.
+    Use IFusionSoundPlayback to do that.
+    
+    Added IFusionSoundBuffer::SetPosition():
+    set the pointer position for subsequent playback or lock for access.
+    
+    Added FSPLAY_CYCLE: play whole buffer once, wrapping at the end.
+    
+    Modified IFusionSoundBuffer::Lock():
+    (otionally) returns available space in frames or bytes.
+    
+    Limit buffer's length to 0xfffffff frames to prevent negative overflow.
+
+commit 5b6ae67585820bc941659af698b710d5c7e13a20
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu Aug 10 19:25:45 2006 +0000
+
+    Handle zero pitch.
+
+commit bf50877013ae397fc1abc1e31b783226da748d1b
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu Aug 10 16:19:13 2006 +0000
+
+    Cast long to long long.
+
+commit bb6936dd9541016b5cab361f00981688d43a6486
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu Aug 10 16:05:29 2006 +0000
+
+    Added support for backward playback, enabled by IFusionSoundPlayback::SetDirection() or by the playback flag FSPLAY_REWIND.
+
+commit 5fc27305f24926b6f04ef909e51a49db9687bfb1
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu Aug 10 15:58:33 2006 +0000
+
+    Always save 16 bits from source when multiplying in 32bit mode.
+
+commit f658109f1775ba803f79516ce38e6ef1bdcad9ef
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Aug 8 18:01:16 2006 +0000
+
+    Added IFusionSound::GetDeviceDescription().
+
+commit 0a5ad230dd5d493c07836709350d79655020d3c6
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Aug 8 13:16:36 2006 +0000
+
+    Added IFusionSoundStream::Drop().
+    This method behaves like Flush(), but it also discards pending input data.
+
+commit 75bf358035c9552df342a12ed0d8f275b4c03ea5
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Aug 8 13:11:31 2006 +0000
+
+    Flush mixing buffer at the end of playback.
+
+commit 38afe8ecfde2a1406b67df283be5ec99cfab488d
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Aug 8 13:09:12 2006 +0000
+
+    Ignore return value from snd_pcm_delay().
+
+commit 6d44544da51837354225fae15af47f42a900fb8e
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Aug 7 15:53:53 2006 +0000
+
+    Driver::OpenDevice() fills a device description containing name and capabilities
+    (actually only DCF_WRITEBLOCKS, used by OSS driver).
+    
+    Store playback pitch in 6:10 format (instead 8:8) to improve resample precision.
+    As a consequence of this change, pitch ranges from 0.0 to 64.0 now.
+
+commit 9f861457a34e74a535c1e1958b544d5f43496e50
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Aug 7 15:44:21 2006 +0000
+
+    AC_CHECK_TYPE(long) replaced by AC_CHECK_SIZEOF(long).
+
+commit 7a6fd4a749236d4f63fa1b1bc52d478f1ed2519a
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Aug 5 16:55:24 2006 +0000
+
+    No longer limit the amout of output buffered frames.
+
+commit effef5033cb6aa1e3da88ac746cc27aab273ad71
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Aug 5 16:01:22 2006 +0000
+
+    Fill output buffer before sending it to the output device.
+
+commit 5ea1d770ad503b88b83a42a58bea8273f5e81356
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Aug 5 15:58:58 2006 +0000
+
+    Disable software resampling.
+    Return hardware buffersize only when it's smaller than requested buffersize.
+
+commit 1a7a377688ca10e5367c85a354ab79ff10a7dc40
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Aug 5 07:46:52 2006 +0000
+
+    Added [no-]banner.
+
+commit 560d85a7b0eaa65ef2d03bd4ec7cbc72bacaf372
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Aug 4 15:47:32 2006 +0000
+
+    Added option [no-]banner (by default it's dfb_config->banner).
+
+commit 16b0985a46ddb434d2361671f4bf40151af56a41
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Aug 4 15:45:19 2006 +0000
+
+    Fixed FusionSoundInit() prototype.
+
+commit d2d5c719e5ffd92386da54b637dcbdd9c7710389
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Aug 1 15:02:53 2006 +0000
+
+    Removed return value from fs_device_write().
+
+commit 1915a4e419d9e973e7a13a13b29e35eabe162f7e
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Jul 23 10:34:08 2006 +0000
+
+    Option --enable-quality renamed --enable-precision. This is the last.
+
+commit 9159ead57a7eba88099d716ac392a74c36b7eb24
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu Jul 20 13:29:08 2006 +0000
+
+    Changed music provider infrastructure to use a DirectStream.
+    Additionally to the filename, Probe Context contains the header field (64 bytes) and the DirectStream itself.
+    The Construct function takes a filename and a DirectStream as arguments.
+
+commit 972cdb1232870640e6cf989730eab4c5071bf0f9
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu Jul 20 13:21:38 2006 +0000
+
+    Option --enable-accuracy (FS_ENABLE_ACCURACY) renamed --enable-quality (FS_ENABLE_QUALITY).
+
+commit d7a89a665b14d52f1778937fc617dae3a7f89ed6
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Jul 16 14:40:45 2006 +0000
+
+    Use SNDCTL_DSP_GETOSPACE instead of SNDCTL_DSP_GETODELAY, since the latter
+    is a linux extension.
+
+commit 2a73e97ceee77d153684e551fcf941c453856cb4
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Jul 16 12:33:54 2006 +0000
+
+    Added WAVE output driver: dumps stream to a wave file.
+
+commit fe86907f5d577b572038024779cafebed606ddd6
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Jul 16 12:32:26 2006 +0000
+
+    Update fs_config->session to match the actual world index.
+
+commit 45d532648b35fb387c9f90cf6628789c76a216b7
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Jul 14 10:28:22 2006 +0000
+
+    Added fusionsoundrc manual page.
+
+commit a793e6f8bb325797ce9a70d5cc551f839f91509f
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Jul 14 10:26:39 2006 +0000
+
+    Added 'Multi-channel output' to the TODO list.
+
+commit 4b94d5e7bc44529fa50e7730c17e53ce0b12aa09
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Jul 14 10:26:02 2006 +0000
+
+    Wrote down some text.
+
+commit 7fae55698e92ca313267b2dc96028e6db4d9b818
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jul 12 07:30:07 2006 +0000
+
+    FSSF_S24 is SND_PCM_FORMAT_S24_3*E, not SND_PCM_FORMAT_S24.
+
+commit 24a30e6008df93526306e80e108ac2fe47e0286a
+Author: Ville Syrjala <syrjala@directfb.org>
+Date:   Tue Jul 11 20:35:34 2006 +0000
+
+    Handle write errors.
+
+commit aca0f791328ea42be0772cd33d83ef8dc934a141
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Jul 11 16:47:00 2006 +0000
+
+    Use IFusionSoundStream::GetDescription() to be sure that all fields are set.
+
+commit ff16bcbb0e5602aee3026262efa72d7558c95d11
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Jul 11 16:42:10 2006 +0000
+
+    Added support for loadable device drivers.
+    
+    Renamed src/misc/fs_config* src/misc/sound_conf*.
+    
+    Added options: "driver" (selects the driver to load)
+                   "buffersize" (specify default buffersize in ms)
+    
+    Install internal header too allow building external drivers.
+
+commit a571c96e6cfc8972da73988197ba740c5c1cee94
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jul 10 20:12:34 2006 +0000
+
+    Fixed bug in PlayTo*(): first frame whithin track must be 0, not track::start.
+
+commit 791c32b1c401b228e95b725907d4a5c18a1c763a
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jul 10 17:10:17 2006 +0000
+
+    'l' toggles reaping current track.
+
+commit 2e368fc83fc9e6cd5a9c84504d9534c09563c176
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jul 10 17:08:56 2006 +0000
+
+    Added IFusionSoundMusicProvider::GetStatus() and
+          IFusionSoundMusicProvider::SetPlaybackFlags().
+    
+    Moved music provider stuff to src/media/ifusionsoundmusicprovider.c.
+
+commit 24a600204d12332961ec9a0cf70251cbb821e73b
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jul 10 12:55:00 2006 +0000
+
+    SPACE switches to next track, Q quits immediatly.
+
+commit 92ba6c3e048d43e68f455738551a5ae0303818bb
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Jul 10 12:52:16 2006 +0000
+
+    Added FSSF_FLOAT:
+    usefull for decoders that output floating-point uncompressed data.
+    
+    Always store FSSF_S24 in native endian order.
+
+commit 736b3a066096f351ff5cfa03203b34cd9d5411cc
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Jul 9 14:18:59 2006 +0000
+
+    Removed assertion "data->filled >= notification->num" bacause
+    the condition may fail if the system is too slow to notify
+    playback advance (too many threads, for example).
+
+commit 0a003ba5bfe2b6daf5d1a983106b31afc9865051
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Jul 9 14:11:31 2006 +0000
+
+    Enabled accuracy by default on x86 and ppc.
+    Entered 0.9.26 development version.
+
+commit 974c21df178473e8663a4f9c68d55473f0a1db5c
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue May 2 22:26:52 2006 +0000
+
+    New changelog.
+
+commit 490b185cf4f638716f648c1abff473d1377db907
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Apr 10 15:54:52 2006 +0000
+
+    Fixed CDDB discid computation.
+    Search for CDDB disc data iterating through all categories.
+
+commit 81477d006c4142a8150e37ac763cc6dc1351529d
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Mar 26 18:47:43 2006 +0000
+
+    Fixed a typo.
+
+commit b2e52e6489275c45e3bca08823f895ce4b4f9e5b
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Feb 25 12:13:39 2006 +0000
+
+    Don't abort if SNDCTL_DSP_PROFILE fails.
+
+commit baa7438abcf2fe7c161ad66ab8838019b7c6c5b6
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Feb 25 03:03:48 2006 +0000
+
+    Added "-I$(top_builddir)/include".
+
+commit b8358482bd41f201b55712e9a57d9752173e5913
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Feb 22 08:28:50 2006 +0000
+
+    Follow fusion_enter() API change.
+    
+    Thanks to Rob Kramer <robk@starhub.net.sg> for spotting!
+
+commit 91fcf956887c31f2c817f98d5df77ca17fcb6abb
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Feb 10 11:28:28 2006 +0000
+
+    Use direct_log_printf() instead of fprintf().
+
+commit 4cc37c7667b7a1bc9d463f5c9e04670e96cc0d74
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Feb 2 19:13:07 2006 +0000
+
+    Use debugging mechanisms of a debug-disabled-but-supported libdirect.
+    
+    Follow API change for shared memory pool.
+
+commit 568b45dde6918cc26d3795c1f410a3a18e3a2fb5
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jan 18 09:53:59 2006 +0000
+
+    Generate a wave.
+
+commit 01fc8ebc2f160c3008136b5b894c4d406365ee39
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jan 18 09:53:02 2006 +0000
+
+    Splitted each mixing function into two separate functions for mono and stereo.
+
+commit 1065b58cda8e566931808199f4871b380f27e7c7
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Jan 17 11:32:57 2006 +0000
+
+    Optimizations.
+
+commit b553c1b2c1bbc6792f97446b7b208c7714715408
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Jan 17 07:38:19 2006 +0000
+
+    Accept files with extension mp1 and mp2, too.
+
+commit cb5f54c3e96f50f0d5a607a95637aafddd5f6448
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Jan 17 07:36:53 2006 +0000
+
+    Added a prototype function for mixing buffers (contained in sound_mix.h).
+    
+    When accuracy is enabled, upsampling is done using linear filtering.
+
+commit 433907fe6d8ced6f75fa6dd6e97b0eb40d02ba02
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu Jan 12 17:02:00 2006 +0000
+
+    Set default buffersize to 200ms.
+    
+    Fixed wrong copyright header.
+
+commit 7d260583de3f59cc0944cc491fc5fe8129b74955
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu Jan 12 17:01:02 2006 +0000
+
+    Use ov_bitrate() or ov_bitrate_instant() to query the birate.
+    
+    Set default buffersize to 200ms.
+    
+    Fixed wrong copyright header.
+
+commit 4ddcb5e3009187b4df9b692ad32a52a1c4c2fdea
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Jan 6 16:58:03 2006 +0000
+
+    Removed fsf_round*() macros.
+    
+    __fsf defaults to signed long.
+
+commit 0dbf0aa73ae101b18b5f9cb9743487882cf63024
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Jan 6 16:57:02 2006 +0000
+
+    Open device in non-blocking mode.
+    
+    No longer round samples before conversion.
+
+commit 834eb2825b64e2d2599211f8b77ec1971a713fa0
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Dec 13 16:16:38 2005 +0000
+
+    Version number and better <TITLE> usage.
+
+commit 5d6d9c658d97fe24e1e026e1e749f23155418432
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Nov 23 14:21:01 2005 +0000
+
+    Replaced DIRECT_UTIL_RECURSIVE_PTHREAD_MUTEX_INITIALIZER by PTHREAD_MUTEX_INITIALIZER.
+
+commit 6f278f22e9d165394b3018d3f3b1e7260dae4a38
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Nov 7 09:03:07 2005 +0000
+
+    __fsf defaults to long when using fixed floats.
+
+commit 64ff04cf992f82640a438280faf4d4f71fe9f065
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Nov 7 09:00:09 2005 +0000
+
+    PlayTo() restarts playback from the beginning after the stream has reached the end.
+
+commit 48ede577b212a9967e661d7c72a2b1d615b9d0a8
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Nov 7 08:57:35 2005 +0000
+
+    Added FMCAPS_RESAMPLE.
+
+commit e1304064c1510dc2721d802e78a88989a8f46733
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Nov 7 08:55:32 2005 +0000
+
+    Added MusicProviderCapabilities flag FMCAPS_RESAMPLE to indicate that a provider can resample audio.
+
+commit acc37703b05ef5103ffdd36774df8cb7cf98e7db
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Nov 6 20:41:57 2005 +0000
+
+    Added option 'session' (by default it's dfb_config->session+1).
+
+commit c598f6f5ac2b4827b537d3c2db953da21de9fecb
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Nov 6 20:37:55 2005 +0000
+
+    Create a new Fusion World by default:
+    this way the "dfb-slave-but-fs-master" problem is definitively fixed.
+    
+    Register a DirectSignalHandler, needed to shutdown slaves.
+
+commit c3ea47139c0d6da7ff125486ed6015e60182cfc9
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Oct 30 18:28:21 2005 +0000
+
+    Libtool versioning.
+
+commit bb3caa11d87cd14f6b5ae8f117708a70b69146cd
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Oct 29 00:42:29 2005 +0000
+
+    0.9.25
+    
+    Follow API changes for Fusion Worlds and Shared Memory Pools.
+
+commit 0a205b97c76b25ce9461d93cc0360bbb4dedb7d8
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Sep 24 08:57:06 2005 +0000
+
+    Follow direct_stream_seek() change.
+
+commit 31d855e518755add74ee97bba7000985c2f192a6
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Sep 23 13:47:39 2005 +0000
+
+    Less accurate but faster vorbiness test.
+
+commit 66c713bd21a03bc92bd38f2d14ae002575f1616c
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Sep 23 09:57:39 2005 +0000
+
+    Set input stream to non-blocking mode (actually necessary for remote streams).
+
+commit a46ff28c50ae9f1b954935b28170aa6e851e776f
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Sep 21 16:18:12 2005 +0000
+
+    Added some keybinding for controlling playback:
+     s = Stop
+     p = Play
+     + = Seek (+15 seconds)
+     - = Seek (-15 seconds)
+     q = Quit
+
+commit 92163cf719464ea979e072027d022cbe17a60f32
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Sep 21 16:16:11 2005 +0000
+
+    Removed file access test in CreateMusicProvider().
+
+commit 28e5086bf4168084a079e5ad656de3d8f240f54d
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Sep 21 16:15:03 2005 +0000
+
+    Use DirectStream.
+
+commit 3da4efcc51e3ad729005c96008b322b8a952819b
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Aug 24 07:38:28 2005 +0000
+
+    Fixed case statements duplication when AFMT_S24 or AFMT_S32 are not defined in <sys/soundcard.h>.
+
+commit 9f824210bac7dda66ec50d5580a554603f5b29de
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Mon Aug 1 06:06:01 2005 +0000
+
+    Forgot a defined().
+
+commit 4f83789be65fce789b4ef7c51fd639154aa7e0a4
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Jul 31 09:50:30 2005 +0000
+
+    Check for size of long.
+
+commit 62c011d96211ec5feb1f71e73390dbc1f7650e9d
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun Jul 31 09:49:40 2005 +0000
+
+    Enable 64bit multiplications on 64bit machines by default.
+
+commit d923b6857882e36cf486e9cca082e9d2b240dc1b
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Jul 26 16:20:08 2005 +0000
+
+    Use AFMT_QUERY if AFMT_S24_* and AFMT_S32_* are not defined in sys/soundcard.h.
+
+commit 3a3bd8a4422c09685d554d5a6fe0a1787f710c5a
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Jul 2 12:01:46 2005 +0000
+
+    ignore generated header
+
+commit d4f1ade5df81fa394ea0d334cbfe9a299e8db5f1
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Jul 2 11:59:58 2005 +0000
+
+    Added small program which can be run to serve as a FusionSound master.
+    
+    I just put that into my DirectFB session startup to ensure that all
+    other FusionSound programs run as a slave and have their resources
+    cleaned up by this dedicated master application.
+    
+    Otherwise, you might leak some shared resources if you abort the other
+    programs (running as a master) abnormally.
+
+commit b32b306c50d08607f1c20aff426680fc87709001
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Jul 2 11:57:43 2005 +0000
+
+    Follow LiTE API changes.
+
+commit aad227a8cb783b2c9ed8326eb283fc1199726eae
+Author: Andreas Hundt <andi@directfb.org>
+Date:   Tue Jun 28 13:40:24 2005 +0000
+
+    compile fix:
+    struct DFBResult -> static DFBResult.
+
+commit 15a9615bae6712f0f67233731cc7cd0b7f109dce
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Jun 25 14:13:09 2005 +0000
+
+    Moved ioctl CDROM_DRIVE_STATUS to the right place.
+
+commit 89beb795c501210e06e08fafd8f2e8225e3ac705
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Jun 25 10:34:15 2005 +0000
+
+    Mind about multi-track music providers.
+
+commit 391d5a960f3f00be121dae57d67dd416607a0ea0
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Jun 25 10:33:24 2005 +0000
+
+    New CD-DA Music Provider; supported platforms: Linux and FreeBSD.
+    CDDB support is provided by libcddb (http://libcddb.sourceforge.net).
+
+commit cb9fefc7164d36a75d6e99bca3842b985232fcff
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Jun 25 10:30:23 2005 +0000
+
+    Avoid passing NULL pointers to strcasecmp().
+
+commit faa4df995fb3d99c6d4e487e09e1b411cf1f7177
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Jun 25 10:29:13 2005 +0000
+
+    Open file in non-blocking mode during Probe.
+
+commit 83917d03087ef3dc35493885dc85bd75271da80d
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat Jun 25 10:28:19 2005 +0000
+
+    Added FusionSoundCheckVersion(), FusionSoundUsageString() and FusionSoundErrorFatal().
+
+commit ac371db23ea51c72b0ea6ac6d6294a485b21bdd3
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Jun 24 07:37:15 2005 +0000
+
+    Fixed stereo to mono conversion.
+
+commit 2d0bfdf714cdf403b22792adc4d1db073c531752
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri Jun 24 07:36:07 2005 +0000
+
+    Reduced S16 loss of data during multiplication to 1 bit.
+
+commit 7d109ba1dfe27b5b4d168e7d074231f622971f2f
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu Jun 23 09:35:38 2005 +0000
+
+    "dont-catch" is a DirectFB option.
+
+commit 8275b945571e96353ffefc1f19b27756acf7ee8b
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu Jun 23 09:24:45 2005 +0000
+
+    Added myself.
+
+commit e8dd73568d87fe9ef9b062d609e346b00850f7a4
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu Jun 23 09:19:18 2005 +0000
+
+    Separated IFusionSound module from core library:
+    now the module is built apart and can be disabled.
+    
+    Detached FusionSound versioning from DirectFB.
+    
+    Added support for rc-file (fusionsoundrc) and command-line (--fs:) options.
+    Currently supported options: device, sampleformat, samplerate, channels.
+    Sampleformat, samplerate and channels are used for device configuration and
+    as default values for Streams and Buffers.
+
+commit ead73e2dc2e96fca2eacc150c48af5ad10e12089
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu Jun 23 08:53:43 2005 +0000
+
+    Return a buffersize large enough for a quarter of second.
+
+commit d0fa1217c37bc25659254cefa3e4ef01c70faa1e
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jun 22 13:48:26 2005 +0000
+
+    Display information about genre.
+
+commit 2e759a33d1d16bf58b9884b340ce839732473531
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Wed Jun 22 13:47:38 2005 +0000
+
+    Added support for Signed 24 and Signed 32 sample formats.
+    
+    Internal mixing is done converting samples to the range [-1.0 - 1.0].
+    To do this we use a new type: __fsf (FusionSound Float); this can be a
+    IEEE float or a fixed float (selectable during configuration).
+    
+    Added macros to extract informations from sampleformats (index, bits, bytes, depth, signed).
+
+commit 13f28c462a015bb11b084f35f443b6db31f5741c
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue Jun 21 08:48:14 2005 +0000
+
+    New MP3 Music Provider based on libmad.
+    
+    Enter version 0.9.23.
+
+commit b97d0186ebb1c6f5a93c70ba0debe64aabfe953d
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Jun 20 21:27:38 2005 +0000
+
+    Follow lite API change.
+
+commit fa3b28e621c6b4514b7c25a923ebd3285b9df9f0
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Thu May 26 12:30:27 2005 +0000
+
+    Added an example about music provider's playback to a buffer.
+
+commit 3c32ebf49f045045a7915da386bc54cd5438f3d2
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun May 22 20:57:23 2005 +0000
+
+    Pass true to new error_msg parameter of direct_try_open().
+
+commit 4ee4136149a4189e26af2c186cfefe28ae27ac26
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat May 21 13:51:39 2005 +0000
+
+    Forgot to initialize GetBufferDescription() function pointer.
+
+commit c9b42b517538e02c060e680d756c06e436cbaf88
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Fri May 20 16:55:52 2005 +0000
+
+    Changed the IFusionSoundMusicProvider interface:
+     - there is support for multi-tracks streams (EnumTracks(),GetTrackID() and
+       GetTrackDescription to query informations about the tracks, SelectTrack()
+       to select a track for playback);
+     - it's possible to play a track rendering it to a buffer using PlayToBuffer()
+       (PlayTo() becomes PlayToStream());
+     - GetPos() provides end-of-playback notification returning DFB_EOF.
+
+commit cdfafe280f05a00f93c43e1620bfea4c2aad4580
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue May 17 16:58:23 2005 +0000
+
+    New Wave/PCM music provider:
+    supports 8, 16, 24, 32 bits PCM data, big and little endian.
+    
+    Added --enable option for Timidity music provider.
+
+commit f815a3ead190c52b6b9e228f1263bd1a529e4c70
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Tue May 17 16:55:44 2005 +0000
+
+    Allocate temporary buffer dinamically.
+
+commit 53d509ff9aa4744576aea187e980b4ce76cdc4c6
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sun May 15 13:43:11 2005 +0000
+
+    Small optimizations and bugfixes.
+
+commit 1a300bead2e5e5e5c3e089424263fd9f3b75ce1b
+Author: Claudio Ciccani <klan@directfb.org>
+Date:   Sat May 14 11:13:08 2005 +0000
+
+    New Ogg/Vorbis music provider.
+
+commit c230804772b573ffe88137912ecf9906dc00d7f3
+Author: Kent Sandvik <kent@directfb.org>
+Date:   Sat Mar 26 00:28:38 2005 +0000
+
+    lite_new_button() API changed.
+
+commit a461f5a8e047326d00cb2b389a345e7cd6d09468
+Author: Kent Sandvik <kent@directfb.org>
+Date:   Fri Mar 25 23:55:49 2005 +0000
+
+    lite_new_label() and lite_new_slider() APIs changed.
+
+commit 0e14c5959eb35f12b7e75c38ef8b910add82b5e2
+Author: Kent Sandvik <kent@directfb.org>
+Date:   Fri Mar 25 01:36:15 2005 +0000
+
+    lite_new_window() API changed.
+
+commit 02537f1fa0514475bcfba13de9364e8d63fe7ff6
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Feb 24 15:24:07 2005 +0000
+
+    0.9.22
+
+commit 6335fa8fcefd86e03c47cd987857f6d4cb8e7783
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Feb 24 15:22:09 2005 +0000
+
+    Fixed EXTRA_DIST.
+
+commit f12932277e3f4e6d0440450e699fde9980d3d7b5
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Feb 21 07:23:30 2005 +0000
+
+    Use DirectFB's core abi from its header for now.
+
+commit ffec495ee95aaa5b2490efbe3edd44f13f118780
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Feb 17 09:35:10 2005 +0000
+
+    Follow lite API change.
+
+commit 0cccfd4baf653a4695e769e5ec5696ae3f3b9856
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Feb 15 08:32:13 2005 +0000
+
+    Still didn't separate dfb/fs core ABI versions, so have another sync.
+
+commit 5b2b4a9e4e1830474c1c46f14bd848db358928fc
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Feb 12 08:35:41 2005 +0000
+
+    Once more, sync the core abi.
+
+commit 9b07b753c49cec4b13304019ea07708ad5f19b1f
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Feb 12 08:35:07 2005 +0000
+
+    Remove legacy.
+
+commit 2094a2d82c8bc43cc73e04e68cf0596187151b8a
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Dec 22 21:29:35 2004 +0000
+
+    Fixed distcheck.
+
+commit 5eb111f795b25174c24892768a98f906d783116a
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Dec 22 08:08:47 2004 +0000
+
+    Forgot to sync the ABI version ;-(
+
+commit 22891255005bfcdf21e7ea5505d285e80ac0f40c
+Author: Andreas Kotes <count@directfb.org>
+Date:   Mon Nov 22 16:45:11 2004 +0000
+
+    fix after API changes - added name()s to fusion_skirmish_init calls - please check/fix content of name parameter
+
+commit adbe191b46087ee1dff5c7fa3643f4b81bd27f8f
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Nov 9 02:30:47 2004 +0000
+
+    Update core ABI to 23...
+
+commit 6cd476b1e2bed6309d60035acb3ffc269a830774
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun Nov 7 09:46:54 2004 +0000
+
+    FusionResult has been removed.
+
+commit 5e6e317833847a496d920851ec5bd20df7ca12c6
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sat Oct 16 00:13:26 2004 +0000
+
+    Need to keep core abis in sync for now.
+
+commit 6076a651c6d75eb2457d7603cf11bc0b146d7477
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Oct 15 22:47:00 2004 +0000
+
+    Updated to the version of DirectFB.
+
+commit 232321384c2f456994e26512728468f71829d90c
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Jul 28 19:53:44 2004 +0000
+
+    Follow Fusion API change.
+
+commit 713726c48a8a4bba9900e566b4cd143b9dea05e8
+Author: Ville Syrjala <syrjala@directfb.org>
+Date:   Thu Jun 10 01:58:28 2004 +0000
+
+    lite_window_event_loop() returns DFB_TIMEOUT not DFB_OK.
+
+commit b740e708decefd18736759ff01bb55b6e6a9b6a1
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Jun 3 04:33:53 2004 +0000
+
+    Sync core ABI version with DirectFB.
+
+commit e552f4c80764ad1cf73e909bc7613cd763aa24cf
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Jun 1 23:10:09 2004 +0000
+
+    Update ABI version.
+
+commit 00f0a2c81ae49bc156028881cb819e44e3ed33fc
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed May 26 15:05:31 2004 +0000
+
+    Set ABI version to 17 like DFB does.
+
+commit 3cd07de5ec26f61c3ba2165dc0d4f695af63a1cf
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue May 18 22:24:23 2004 +0000
+
+    Follow lite_open() parameter change.
+
+commit cda7f6e4f4c260269df93c8cf57fefa9d22b0178
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue May 18 21:28:46 2004 +0000
+
+    Removed AC_C_CONST.
+
+commit ee5e02abd40219828f3e5c16c5d57b74924a1ef3
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue May 18 14:20:57 2004 +0000
+
+    Fix reinitialization problem.
+
+commit ed740a34ff03e569412e779d743401e567743bec
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Sun May 9 21:46:50 2004 +0000
+
+    Added FusionSoundError() and FusionSoundErrorString().
+
+commit 91ec17c2c996a42bed7b33a44e3b1b63434c1470
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu May 6 13:14:43 2004 +0000
+
+    Remove undefined DFB_LDFLAGS.
+
+commit 3fc5846434222cad17ba8badcd75111e5b270576
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed May 5 19:03:04 2004 +0000
+
+    Use DirectThread.
+
+commit 035d9e6d197e668a5ab5cc5cafc572ab03548f9e
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed May 5 09:48:32 2004 +0000
+
+    Bye bye, DirectFBCreate()  ;)
+
+commit 5d4b552147d44f8d262faebacc49042521e645ec
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed May 5 09:32:48 2004 +0000
+
+    Added libfusionsound providing FusionSoundInit(), FusionSoundSetOption()
+    and FusionSoundCreate() in the manner of the DirectFB variants.
+    
+    No need to initialize DirectFB in order to use FusionSound ;)
+
+commit c88a3c515d2919ce7ca800d61f6a3be379f734d4
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Apr 29 21:37:24 2004 +0000
+
+    Comply with changes in DirectFB/lib/.
+
+commit 23182705c3299d9be9c3f4b6a86509fa01bcf90c
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Apr 5 12:28:28 2004 +0000
+
+    Follow internal changes in DirectFB.
+
+commit 0c3f7e4e4e9bb76eafe0e348bd6b18b057d90efc
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Apr 1 11:01:45 2004 +0000
+
+    Fixed manual pre buffering.
+
+commit ff866083e692da6b55491b118d156f1617513c38
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Apr 1 10:49:02 2004 +0000
+
+    Fixed calculation of presentation delay.
+    
+    Removed obsolete includes, mainly from the DirectFB core.
+
+commit b7ac6cb6310d4ebbb085aa595297d2e394b3d73e
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Mar 30 23:44:10 2004 +0000
+
+    Follow changes.
+
+commit 71687143014bfc60f58f25fce7d49f6085b0890d
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Mar 30 18:57:43 2004 +0000
+
+    Follow internal header and namespace changes in DirectFB.
+
+commit 21266c3962966c9886f482167548413d8411d0d2
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Mar 24 02:47:31 2004 +0000
+
+    Prevent IFusionSoundPlayback::Continue() from starting an empty IFusionSoundStream.
+
+commit d88251548afcb106e420e3b3e7051dad5302a993
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Mar 24 01:50:42 2004 +0000
+
+    Some fixes and cleanups.
+
+commit 86d8fce72fa2893837a77727e96b5dfcf406dd37
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Mar 23 22:00:40 2004 +0000
+
+    Reflect prebuffer amount in GetDescription().
+
+commit 4b57edac280e0a5bf549265f2135da674920da5a
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Mar 16 15:15:25 2004 +0000
+
+    Changed upper mixing block size limit from 16384 to 8192 bytes.
+    Changed maximum mix ahead from 50 ms to 80 ms.
+
+commit 8579fd654f455548d944c9ec0ad09ee0c986a67c
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Mar 16 00:44:16 2004 +0000
+
+    Use device's block size, but min. 4096 and max. 16384 bytes.
+
+commit 95e3c639a5f66f81636376645a472ab497ae9ff7
+Author: Andreas Hundt <andi@directfb.org>
+Date:   Thu Mar 11 16:34:00 2004 +0000
+
+    - added pause/continue button for debugging purposes (Stop()/Continue()) is inaccurate
+
+commit 4998d5b17093b493db4e75cfcda38ef0255b2e46
+Author: Ville Syrjala <syrjala@directfb.org>
+Date:   Wed Mar 3 12:31:31 2004 +0000
+
+    Fixed deadlock between playlist and playback.
+
+commit a2a643f628aa8e6534381cb1edd2279f7aae1fbd
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Feb 27 11:59:04 2004 +0000
+
+    Added some comments.
+
+commit 4f164c8a04699eef6cf905c5679b4d344ff6035d
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Feb 11 09:04:04 2004 +0000
+
+    Use fusion_pthread_recursive_mutex_init() here, too.
+    
+    Added "-D_GNU_SOURCE" to CPPFLAGS.
+
+commit b13b563584195c810687bdb2fd8449f5ce8af9bb
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Feb 10 18:56:47 2004 +0000
+
+    Specify a negative prebuffer amount in the stream description to disable
+    automatic playback at all. Only IFusionSoundPlayback::Continue() which is
+    accessable via IFusionSoundStream::GetPlayback() will start the playback then.
+
+commit 2a5f0a7dd07fe0fc0fc8abe64ba4999388e9b502
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Feb 6 15:29:12 2004 +0000
+
+    Fixed warnings.
+
+commit a1cfb3ace9256852e052476254ad5fcd261a4e8c
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Feb 5 13:01:37 2004 +0000
+
+    Added IFusionSoundStream::Flush() which stops playback and resets the buffer.
+
+commit fab62031d1e076152c165798b7e67ce8fc02d8e0
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Feb 3 17:38:33 2004 +0000
+
+    Changed audio device output buffer size (mix ahead) from 40 to 50 ms.
+
+commit 7e57a202df061ca0d15afa1fa088b3fd940b295b
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Feb 3 01:16:29 2004 +0000
+
+    Detect if device buffer underruns and print a caution message.
+
+commit f79797ba6e98c355f79ad3569e25bca54add2ea6
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Jan 30 15:54:31 2004 +0000
+
+    Use fixed block size of 4096 (~20 ms audio).
+
+commit 4aacc8f082c5994da02a0f9480e573c650a7e8af
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Jan 30 14:34:14 2004 +0000
+
+    (Re)added locking to listeners.
+
+commit 4d1d273e929cd70b9de986b07c12513b10603071
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Jan 29 19:48:39 2004 +0000
+
+    Added IFusionSoundStream::GetPlayback() for advanced playback control for
+    streams, e.g. pitch, volume, pan and manually start or stop.
+
+commit 56352cd1507ddb2bb1ba4a651cb20eb40b1cf940
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Jan 21 20:53:46 2004 +0000
+
+    Revert accidently commited change.
+
+commit 1c98ccd30cf3f75a370e683812473f20ed80229d
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Jan 21 19:09:54 2004 +0000
+
+    Use the sample rate as buffer size if not specified in the stream description.
+
+commit 8431a3f72c46bd5fb641d428e8a1cfff33ad5856
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Jan 21 18:59:50 2004 +0000
+
+    Added parameter "DFBBoolean *playing" to IFusionSoundStream::GetStatus().
+
+commit f2e4d8339e3ae82b896d4540b2a654b635ecf036
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Jan 16 16:38:57 2004 +0000
+
+    Added some more details to the method description:
+    
+    The calculation includes any buffered data (by hardware or driver)
+    as well as the ring buffer status of the stream.
+    
+    Even if the stream is not playing, e.g. due to pre-buffering,
+    the method behaves as if the playback has just been started.
+
+commit c5a620d8aae7e92e4910a853370c446f2abd5512
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Jan 16 16:31:37 2004 +0000
+
+    Added IDirectFBSoundStream::GetPresentationDelay().
+    
+    It returns the amount of time in milli seconds that passes
+    until the last sample stored in the buffer is audible.
+
+commit 16c5c234e7bacde19d90d3f30295dc14d9b6249c
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Jan 12 17:39:18 2004 +0000
+
+    Fixed calculation of "written" samples for triggering the playback.
+
+commit a83a46646d4380656e346a2ecd0c9add7f5dc88f
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Jan 12 17:28:12 2004 +0000
+
+    Fixed FSSDF_ALL, thanks to Michael Hunold <hunold@convergence.de> for reporting.
+
+commit 1aedde2f65bff815277d29e6b7b20dd86d74ff8f
+Author: Andreas Hundt <andi@directfb.org>
+Date:   Thu Jan 8 15:40:40 2004 +0000
+
+    - do not include <malloc.h>
+    - include <sys/soundcard.h> instead of <linux/soundcard.h>, which also works on linux
+    - put #ifdef around SNDCTL_DSP_PROFILE ioctl, which is not available on old version of OSS
+
+commit 4e9250d8003b078b4a395c187c411f2b8101fcde
+Author: Andreas Hundt <andi@directfb.org>
+Date:   Thu Jan 8 15:31:02 2004 +0000
+
+    do not include <malloc.h> which is obsolete. use <stdlib.h> instead
+    (correct me if I am wrong)
+
+commit a4cdae38513fc3ee6584a687060f50530789be3a
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Jan 5 11:33:40 2004 +0000
+
+    Added prebuffer option to the stream description.
+
+commit 0fbdd0743c5db2078f49b7116fb53a8768cc579e
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Oct 29 17:00:18 2003 +0000
+
+    0.9.21
+
+commit 4ab355dcdeea25331c5c2551f82dc267b511e886
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Oct 29 16:59:22 2003 +0000
+
+    Follow internal API change.
+
+commit b965d9941fe9e8cdc18cfa9e14404373291cf085
+Author: Ville Syrjala <syrjala@directfb.org>
+Date:   Sat Oct 25 10:51:12 2003 +0000
+
+    - Free buffer on stop.
+    - Clean up old stuff if PlayTo() called multiple times.
+    - Return DFB_FAILURE if timidty init fails.
+    - Use IFusionSoundStream::GetDescription().
+
+commit c7795d16a9314fbc28dcd4aaa2dcf793208851d0
+Author: Ville Syrjala <syrjala@directfb.org>
+Date:   Sat Oct 25 10:31:00 2003 +0000
+
+    Added IFusionSoundStream::GetDescription().
+
+commit 2e3c8d86a73a0a39c4bdfa57839ed27e2c105476
+Author: Ville Syrjala <syrjala@directfb.org>
+Date:   Fri Oct 24 14:44:10 2003 +0000
+
+    Fixed a compiler warning.
+
+commit c3b00cfc67e549b116061c9e6673aca219c1be82
+Author: Ville Syrjala <syrjala@directfb.org>
+Date:   Fri Oct 24 14:42:22 2003 +0000
+
+    Fixed a few typos.
+
+commit 2b41d1e646de03d7d0fc6d759419fbcea9410f1f
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Oct 24 07:07:14 2003 +0000
+
+    Use SNDCTL_DSP_GETOSPACE instead of calculations.
+
+commit 954864af7c3bc5da087c4fa8c7aeeeae7e7ddb2a
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Oct 24 02:55:24 2003 +0000
+
+    Fixed internal include dir.
+
+commit 92ec6e6885087f026d7d745bac589f4af99ba0bc
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Oct 24 02:45:35 2003 +0000
+
+    Don't write silence to the sound device if nothing is played.
+
+commit 949784d0eb8cad2008bf656788e1d0c7fb23f425
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Oct 24 00:24:36 2003 +0000
+
+    Applied patch from Ville, but changed CONFIG_FILE to "/etc/timidity.cfg"
+    and added an example.
+
+commit be2b92e032d049e40d2ba86fab79a3cab15e6a6d
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Oct 23 21:36:47 2003 +0000
+
+    40 ms mix ahead ;)
+
+commit 27c03e357893942606efc7ad37adf7fcc1ec9c45
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Oct 23 15:09:40 2003 +0000
+
+    Reset timer on buffer underrun.
+
+commit 1546a01bfcf13d531e3f3df6054e8c6a15fbf0af
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Oct 23 12:03:41 2003 +0000
+
+    Corrected OSS usage for rate setting.
+    
+    Use configured rate as resampling target, 44100 was still hardcoded.
+
+commit 9cffbfb18cc028a454501c5cc2d2dbc5f298b94d
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Oct 22 23:30:56 2003 +0000
+
+    Try 48 kHz output first.
+
+commit dfb3c87052886ed50030a8fd07a698e899d2ab9b
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Oct 22 21:55:08 2003 +0000
+
+    60 ms mix ahead
+
+commit ad2cb20d5b3c17464cd7c07d73bc82801390abfc
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Oct 22 19:04:26 2003 +0000
+
+    Mix ahead buffer 50 ms -> 100 ms.
+
+commit 6459c3eca13df8581fa6bbe120f6b062d3c21526
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Oct 22 18:55:49 2003 +0000
+
+    Changed mix ahead buffer size from 50 ms to 150 ms.
+    
+    Changed maximum block size from 1024 to 4096.
+
+commit 06fdf758e54191f811377cfdb467180a4095ebf9
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Oct 21 16:24:15 2003 +0000
+
+    Added "--disable-examples".
+
+commit 969748cffe83694a8ebd6024d59ecb5c3f49ff68
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Oct 20 18:38:52 2003 +0000
+
+    Added option "--without-lite" to disable lite based examples.
+
+commit 37c2c79d452bf7b86f72134388bf833f912a06a2
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Oct 7 08:04:14 2003 +0000
+
+    Build examples after library.
+
+commit 6e71e908840b8b1756769faabc13ab48c473e564
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Oct 7 08:03:47 2003 +0000
+
+    Open sound device write only.
+
+commit 5362d09a6b1dc73d77d7ced41a147d368371f113
+Author: Andreas Hundt <andi@directfb.org>
+Date:   Thu Oct 2 12:31:07 2003 +0000
+
+    check for libtool and run libtoolize --automake, fixes build for me.
+
+commit fb86e136523b63f780186e574856e8d58776de18
+Author: Andreas Hundt <andi@directfb.org>
+Date:   Sat Aug 2 15:52:05 2003 +0000
+
+    updated package version
+
+commit a46d2d50434ba5a640f6140ebc20df0ef2a63709
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Jul 21 13:06:00 2003 +0000
+
+    Generated ChangeLog.
+
+commit 6be1dcd9652c3912beddb6c82d52dace3cf8eaee
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Jul 8 20:43:53 2003 +0000
+
+    Have to use new shared memory macros now.
+
+commit 21ee1df9c12f3a1ea474e868a25313880594901a
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Jul 8 16:58:50 2003 +0000
+
+    Added missing include.
+
+commit ca15d31af864acc5e87a7453344dbb357670c35c
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Mon Jul 7 12:55:58 2003 +0000
+
+    Show live updated playback position.
+
+commit b1c4e3ee62718189a9800cc3ba17653f1c1d2dc3
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Jul 4 18:42:14 2003 +0000
+
+    Removed obsolete hack.
+
+commit 847c204ca983b18218dd1a06d5254485097a534e
+Author: Andreas Hundt <andi@directfb.org>
+Date:   Fri Jul 4 18:34:49 2003 +0000
+
+    fix dependencies
+
+commit 745c3f06ad06ff06d1db8f17f31b1c5ea6ca60f1
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Jul 4 18:03:37 2003 +0000
+
+    Fixed "Volume" label width, set filename as window title.
+
+commit 18ceef9c50f5563c4b178c97844e68c32885b807
+Author: Andreas Hundt <andi@directfb.org>
+Date:   Fri Jul 4 17:53:49 2003 +0000
+
+    debianized
+
+commit 847ef13b28a4c723bb196502d39da5c68513075f
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Jul 4 17:34:38 2003 +0000
+
+    Use moduledirname to preserve the install prefix.
+
+commit a55253c2fcbad89b0f3604fb66c0577b759b5b9f
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Jul 4 17:18:09 2003 +0000
+
+    Added example that uses LiTE, if it's found during configure.
+    It plays a file with IFusionSoundPlayback and has sliders for
+    live control over Pitch, Volume, Pan and Start.
+    
+    Put loader into an extra source file with header.
+
+commit 0b174c9b44887b1a8e0c70c7d1aed2e4ba977810
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Jul 4 17:09:49 2003 +0000
+
+    Fixed seeking via Start().
+
+commit 98be525d35fec1d01f19e7c45a3d2eaecbbad802
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Jul 4 17:07:06 2003 +0000
+
+    Added $(DESTDIR).
+
+commit 6daf49b5c2ce66143dbb5f8c22d7212d58aaa8b0
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Jul 4 01:37:41 2003 +0000
+
+    Removed stuff that prevented warnings that are no longer enabled.
+
+commit d8e1fd9339aea487039201f747c20891f96cd269
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Fri Jul 4 01:19:01 2003 +0000
+
+    Completed API documentation ;)
+
+commit 65bbb3792021f00e902f1692a3341245def29c73
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Jul 3 20:14:20 2003 +0000
+
+    We want hardware/software codec support for streaming.
+
+commit a0da4dd4c3bafb7886741586dfc19f5fe1017733
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Jul 3 20:04:20 2003 +0000
+
+    Clear core playback's running flag if playback ends.
+    
+    Fixes bug when using IFusionSoundPlayback::Continue() without Stop().
+
+commit 8d39e7e3bc07966f5fcc37a62521ae7eeac9f55d
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Jul 3 19:32:41 2003 +0000
+
+    Enhanced functionality of IFusionSoundPlayback::Continue().
+    
+    ...
+    
+    The playback will begin at the position where it stopped, either
+    explicitly by Stop() or by reaching the stop position.
+    
+    If the playback has never been started it uses the default start and
+    stop position which means non-looping playback from the beginning
+    to the end.
+    
+    It returns without an error if the playback is running. This can be used
+    to trigger playback without having to check if it's already running,
+    similar to simple playback via IFusionSoundBuffer::Play(), but rejects
+    multiple concurrent playbacks.
+
+commit 9f46b9aa8a341daa7089b1d420d17284f4878f05
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Jul 3 19:09:16 2003 +0000
+
+    Added IFusionSoundPlayback::GetStatus().
+    
+    Made all parameter references in documentation bold, methods stay italic.
+
+commit 319aa6aa410268b25238a6932a93340af6706416
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Jul 3 16:10:19 2003 +0000
+
+    Made pitch test linear and range from 0.5 to 1.5 only.
+
+commit c245aefd96f7ce47abe7fe2531fe2d882b6e3937
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Jul 3 02:27:39 2003 +0000
+
+    Generate API reference.
+
+commit babed1d65441c28a38905ca3fe55f5d3817c0e79
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Thu Jul 3 01:28:07 2003 +0000
+
+    There two ways of playing a buffer now.
+    
+    The simple playback is still controlled by IFusionSoundBuffer::Play() & Co,
+    but with the limitation to one looping playback at the same time.
+    
+    Advanced playback including live volume, pan and pitch control is available
+    via the new interface IFusionSoundPlayback. It can be retrieved by calling
+    IFusionSoundBuffer::CreatePlayback().
+    Each IFusionSoundPlayback provides one concurrent playback of the buffer
+    and can be started in looping mode or for a limited sample range.
+    
+    Added advanced playback example testing each available feature using the
+    file specified on the command line.
+    
+    Involved minor refactoring and the introduction of "Playback Objects".
+    
+    Ported IFusionSoundBuffer and IFusionSoundStream to use the playback object.
+
+commit 4976374210cb47acee8aadb5dc0a038e93280b8c
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Wed Jul 2 19:08:54 2003 +0000
+
+    Updated CFLAGS setup (-fno-inline in debug mode, -ffast-math, extra warnings).
+    
+    Check for DirectFB-Internal only.
+    
+    Output DFB_CFLAGS from configure.
+
+commit eb53108268d78a9f5979c24b74fd64d646fd32b2
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Jul 1 15:04:18 2003 +0000
+
+    IFusionSoundStream::Wait() now accepts a zero length (of free space) waiting
+    until playback has finished completely.
+
+commit 94732801c4aabb82def6ac6104c31371f307c19e
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Jul 1 01:52:49 2003 +0000
+
+    DA* -> FS*
+
+commit ee09483100e6c500b6cd41e6ca59a44c6f94917b
+Author: Denis Oliver Kropp <dok@directfb.org>
+Date:   Tue Jul 1 01:44:19 2003 +0000
+
+    Avoid heads rollin'...

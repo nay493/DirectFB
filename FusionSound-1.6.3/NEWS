@@ -1,0 +1,275 @@
+1.6.3
+-----
+
+Drivers
+- add dummy driver
+
+Core
+- fix deadlock during shutdown
+
+1.6.2
+-----
+
+IFusionSound
+- Add GetMasterFeedback() for live output volume measurement.
+
+Core
+- force non-secure fusion
+
+Examples
+- meter: Add simple volume meter for console.
+
+IFusionSoundMusicProvider/ffmpeg
+- support newer versions of libav/ffmpeg
+- fix probe to accept m4a,mp4,mp4,mov,3gp,3g2,mj2
+
+1.6.0
+-----
+
+fixes...
+
+
+1.1.1
+-----
+
+API | IFusionSoundMusicProvider
+- Added WaitStatus(), waits until one of the states in the specified mask is reached.
+
+Drivers | WAVE
+- Fixed wrong return value in GetBuffer().
+- On suspend, close the output file only if it is not a fifo.
+- Enable Close-On-Exec flag on the file descriptor.
+
+Drivers | OSS
+- Enable Close-On-Exec flag on the file descriptor.
+
+Drivers | ALSA
+- Autodetect the device name according to the channels configuration.
+
+Music Providers
+- Rewritten Timidity provider against libtimidity 0.1.0 (http://libtimidity.sf.net).
+- Fixed snprintf() related vulnerability in CDDA music provider.
+- Added ASX and XSPF support to the playlist provider.
+- Added AAC to the list of formats supported by the ffmpeg provider.
+- Avoid locking when destroying the interface.
+
+Build Options
+- Changed --enable-<music provider> to --with-<music provider>.
+
+Tools | fsplay
+- Supports switching to the previous track.
+- Set volume and pitch units to 1/32.
+- Removed signal and exit handlers.
+
+
+1.1.0
+-----
+
+Main
+- Implemented support for digital surround (up to 6 channels, 5:1).
+- Implemented network support (i.e. Voodoo Sound).
+
+API
+- Added FSChannelMode, defining channels configuration.
+
+API | IFusionSound
+- Added GetMasterVolume()/SetMasterVolume(). 
+- Added GetLocalVolume()/SetLocalVolume(), specifying a volume level
+  affecting all local playbacks.
+- Added Suspend() and Resume().
+
+API | IFusionSoundStream
+- Added Access() and Commit(), implementing direct access to the ring buffer.
+
+API | IFusionSoundPlayback
+- Added SetDownmixLevels(), specifying the downmixing levels for the 
+  center and rear channels in case of digital surround to stereo/mono conversion.
+
+API | IFusionSoundMusicProvider
+- now GetBufferDescription() returns the total amount of frames in
+  the current track.
+
+Core
+- Implemented Direct Memory Access to the output device.
+- Added a fork+wait behaviour that, instead of killing the
+  slaves on exit, makes the master fork and wait until they
+  have finished playing.
+- Added deinitialization checking.
+
+Mixing Core
+- Implemented conversion from digital surround to stereo/mono and vice versa.
+
+Drivers
+- ALSA supports DMA.
+- Implemented Suspend and Resume.
+
+Music Providers
+- Added FFmpeg music provider, supporting wma, real audio, ac3 and flac.
+- Implemented missing channel conversions.
+
+Network
+- Added network support to FusionSound, i.e. Voodoo Sound.
+- Implemented a fast audio compression method (called DPACK) for
+  remote sessions.
+
+Runtime Options
+- Added option "channelmode", specifying channels configuration.
+- Added option "[no]-wait", specifying whether fusionsound should wait
+  until slaves have finished playing instead of terminating them.
+- Added option "[no]-deinit-check", disabling deinitialization checking.
+- Added option "[no]-dither", enabling dithering.
+- Added option "[no]-dma", enabling DMA (if supported by the driver).
+- Added option "remote", to select the remote session for Voodoo Sound.
+- Added option "remote-compression", to select the compression method for Voodoo Sound.
+
+Build Options
+- Removed "enable-dithering", now enabled runtime.
+- Added "disable-multichannel", builds stereo/mono only.
+- Added "with-voodoo".
+
+Tools
+- Added fsvolume, to query/change the master volume level.
+- Added fsproxy.
+
+
+1.0.0
+-----
+
+Mixing Core
+- Fixed the garbage-with-large-output-buffer problem:
+  repeat last sample instead of interpolating with "dirty" data.
+- Round samples if dithering is disabled.
+- Improved noise shaping filter's precision.
+
+Drivers | ALSA
+- Handles suspend.
+
+Music Providers | Vorbis
+- Optionally supports using Tremor (fixed integer decoder).
+
+Tools
+- Added fsplay, a simple command line player.
+
+
+1.0.0-rc1
+---------
+
+API
+- Added FSSF_FLOAT.
+
+API | IFusionSound
+- Added GetDeviceDescription() to query information about the output device.
+
+API | IFusionSoundBuffer
+- Removed SetPan() and FSPLAY_PAN.
+- Added SetPosition() to set the buffer position indicator for subsequent access or playback.
+- Modified Lock() to return the amount of available space in frames and/or bytes. 
+- Added FSPLAY_CYCLE that plays the buffer for one cycle, wrapping at the end.
+- Added FSPLAY_REWIND that plays the buffer reversing sample order.
+
+API | IFusionSoundStream
+- Added Drop() to discard any pending input data, making Write() return as soon as possible.
+
+API | IFusionSoundPlayback
+- Added SetDirection() to set the direction of playback (FORWARD, BACKWARD).
+- Changed maximum Volume/Pitch level to 64.0.
+
+API | IFusionSoundMusicProvider
+- Added FMCAPS_HALFRATE, meaning that the provider can decode samples at
+  half original rate (this doesn't imply resampling).
+- GetTrackDescription() can return information about the replay gain.
+- FMBufferCallback returns FMBufferCallbackResult to allow aborting playback.
+- Added GetStatus() to query the playback status.
+- Added SetPlaybackFlags().
+
+Core
+- Added support for loadable device drivers.
+- Added object CoreSoundDevice.
+
+Playback Core
+- Don't keep status based on notifications, but use a new function called
+  fs_playback_get_status() to sychronously query the actual value. This fixes
+  Wait() returning immediately when directly called after Start().
+
+Mixing Core
+- Supports mixing samples in reverse order (i.e. rewinding).
+- Supports dithered conversion (with noise shaping) between __fsf and s16/u8.
+- Improved performace of linear upsampling algorithm.
+- Achieves higher precision during resampling.
+- Reduced loss of bits during multiplication when "precision" is disabled. 
+- Dowmix stereo to mono before converting to output format and round samples before conversion.
+  
+Drivers
+- Added ALSA, OSS and Wave drivers.
+
+Music Providers
+- Added a music provider for playlists.
+- Wave Provider can skip unknown chunks before data.
+
+Runtime Options
+- Added option "driver" to specify the driver to use.
+- Added option "buffertime" to specify the output buffer duration.
+- Added options "quiet", "[no-]debug", "[no-]trace", "[no-]banner".
+
+Build Options
+- Option "enable-accuracy" renamed "enable-precision".
+- Added option "enable-linear-filter".
+- Added option "enable-dithering".
+
+
+0.9.25
+------
+
+API | IFusionSoundMusicProvider
+- Added FMCAPS_RESAMPLE.
+
+Core
+- Create a new fusion world by default (this fixes the dfb-slave-but-fs-master problem).
+- Open the output device in non-blocking mode.
+
+Mixing Core
+- Use cpp templates for mixing routines.
+- Supports upsampling with linear interpolation.
+
+Runtime Options
+- Added option "session".
+
+
+0.9.23
+------
+
+API
+- Detached FusionSound versioning from DirectFB.
+- Added FusionSoundCheckVersion().
+- Added FusionSoundErrorFatal().
+- Added FusionSoundUsageString().
+- Added FSSF_S24 and FSSF_S32.
+- Added macros extracting information from FSSampleFormat.
+
+API | IFusionSoundMusicProvider
+- Added support for multi-container formats: EnumTracks() iterates through available
+  tracks, GetTrackDescription() retrieves information about the current track,
+  GetTrackID() and SelectTrack() can be used to select a track for playback.
+- Method PlayTo() renamed PlayToStream().
+- Added GetBufferDescription() and PlayToBuffer().
+
+Mixing Core
+- Introduced __fsf, an internal sampleformat used for mixing that can be either a
+  floating-point or a fixed-point number.
+  
+Music Providers
+- Added Wave, Vorbis, MAD (MPEG Audio Decoder) and CD-DA music providers.
+  
+Runtime Options
+- Initial support for runtime options.
+- Added option "device" to specify the output device.
+- Added options controlling the device configuration 
+  ("samplerate", "sampleformat", "channels").
+  
+Build Options
+- Added option "enable-ieee-float" to enable using floating-point arithmetics 
+  from internal mixing routines.
+- Added option "enable-accuracy", enables using 64bit multiplication on 32bit
+  machines to achieve high precision when using fixed-point arithmentics.
+- Added option "enable-module" to enable building modular version of FusionSound.
+

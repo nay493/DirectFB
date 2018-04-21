@@ -1,0 +1,184 @@
+<HTML>
+<STYLE>
+  <!--
+    A{textdecoration:none}
+  -->
+</STYLE>
+<STYLE type="text/css">
+  A:link, A:visited, A:active { text-decoration: none; }
+</STYLE>
+<HEAD>
+  <TITLE>Index [FusionSound Reference Manual]</TITLE>
+</HEAD>
+<BODY bgcolor=#FFFFFF link=#0070FF vlink=#0070FF text=#404040>
+
+<TABLE width=100% bgcolor=black border=0 cellspacing=1 cellpadding=3>
+  <TR><TD width=30%>
+    <A href="http://www.directfb.org"><IMG border=0 src="directfb.png"></A>
+  </TD><TD align=right>
+    &nbsp;&nbsp;    <A href="index.html"><FONT size=+3 color=white>Reference Manual - 1.6.3</FONT></A>
+  </TD></TR>
+  <TR><TD colspan=2 align=center bgcolor=#303030>
+    <BIG><FONT color=orange>Index Page</FONT></BIG>
+  </TD></TR>
+</TABLE>
+
+<P>
+  <CENTER>
+    <H3>Interfaces</H3>
+    <TABLE width=90% border=0 cellpadding=2>
+    <TR><TD valign=top>
+      <A href="IFusionSound.html">IFusionSound</A>
+    </TD><TD valign=top>
+            Main FusionSound interface.
+
+    </TD></TR>
+    <TR><TD valign=top>
+      <A href="IFusionSoundBuffer.html">IFusionSoundBuffer</A>
+    </TD><TD valign=top>
+            Static sound buffer for playback of smaller samples.
+
+    </TD></TR>
+    <TR><TD valign=top>
+      <A href="IFusionSoundStream.html">IFusionSoundStream</A>
+    </TD><TD valign=top>
+            Streaming sound buffer for playback of large files or real time data.
+
+    </TD></TR>
+    <TR><TD valign=top>
+      <A href="IFusionSoundPlayback.html">IFusionSoundPlayback</A>
+    </TD><TD valign=top>
+            Advanced playback control for static sound buffers.
+
+    </TD></TR>
+    <TR><TD valign=top>
+      <A href="IFusionSoundMusicProvider.html">IFusionSoundMusicProvider</A>
+    </TD><TD valign=top>
+            Rendering music data into a stream.
+
+    </TD></TR>
+  </TABLE></CENTER>
+</P>
+<P>
+  <CENTER>
+    <H3>Types</H3>
+    <TABLE width=90% border=0 cellpadding=2>
+    <TR><TD valign=top>
+      <A href="types.html#FMBufferCallbackResult">FMBufferCallbackResult</A>
+    </TD><TD valign=top>
+            Result of a FMBufferCallback.
+
+    </TD></TR>
+    <TR><TD valign=top>
+      <A href="types.html#FSBufferDescription">FSBufferDescription</A>
+    </TD><TD valign=top>
+            The buffer description is used to create static sound buffers.
+
+    </TD></TR>
+    <TR><TD valign=top>
+      <A href="types.html#FSBufferDescriptionFlags">FSBufferDescriptionFlags</A>
+    </TD><TD valign=top>
+            Each buffer description flag validates one field of the buffer description.
+
+    </TD></TR>
+    <TR><TD valign=top>
+      <A href="types.html#FSBufferPlayFlags">FSBufferPlayFlags</A>
+    </TD><TD valign=top>
+            Flags for simple playback using <i><a href="IFusionSoundBuffer_Play.html">IFusionSoundBuffer::Play()</a></i>.
+
+    </TD></TR>
+    <TR><TD valign=top>
+      <A href="types.html#FSChannelMode">FSChannelMode</A>
+    </TD><TD valign=top>
+            The channel mode provides information about the channels configuration.
+    <br><br>
+      The channel mode instructs FusionSound about the channels configuration.
+      Particulary usefull when you have a stream with 3, 4 or 5 channels; in 
+      these cases, if unspecified, FusionSound assumes STEREO30 for 3 channels,
+      SURROUND40_2F2R for 4 and SURROUND50 for 5.
+
+    </TD></TR>
+    <TR><TD valign=top>
+      <A href="types.html#FSDeviceDescription">FSDeviceDescription</A>
+    </TD><TD valign=top>
+            Description of the sound device.
+
+    </TD></TR>
+    <TR><TD valign=top>
+      <A href="types.html#FSMusicProviderCapabilities">FSMusicProviderCapabilities</A>
+    </TD><TD valign=top>
+            Information about an IFusionSoundMusicProvider.
+
+    </TD></TR>
+    <TR><TD valign=top>
+      <A href="types.html#FSMusicProviderPlaybackFlags">FSMusicProviderPlaybackFlags</A>
+    </TD><TD valign=top>
+            Flags controlling playback of a music provider.
+
+    </TD></TR>
+    <TR><TD valign=top>
+      <A href="types.html#FSMusicProviderStatus">FSMusicProviderStatus</A>
+    </TD><TD valign=top>
+            Information about the status of a music provider.
+
+    </TD></TR>
+    <TR><TD valign=top>
+      <A href="types.html#FSPlaybackDirection">FSPlaybackDirection</A>
+    </TD><TD valign=top>
+            Direction of a playback.
+
+    </TD></TR>
+    <TR><TD valign=top>
+      <A href="types.html#FSSampleFormat">FSSampleFormat</A>
+    </TD><TD valign=top>
+            The sample format is the way of storing audible information.
+    <br><br>
+      16, 24 and 32 bit samples are always stored in <b>native endian</b>.
+      This keeps the library and applications simple and clean. 
+      Always access sample buffers like arrays of 8, 16 or 32 bit integers
+      depending on the sample format, unless data is written with endianness
+      being taken care of. This does not excuse from endian conversion
+      that might be necessary when reading data from files.
+
+    </TD></TR>
+    <TR><TD valign=top>
+      <A href="types.html#FSSoundDriverInfo">FSSoundDriverInfo</A>
+    </TD><TD valign=top>
+            Description of the sound driver.
+
+    </TD></TR>
+    <TR><TD valign=top>
+      <A href="types.html#FSStreamDescription">FSStreamDescription</A>
+    </TD><TD valign=top>
+            The stream description is used to create streaming sound buffers.
+
+    </TD></TR>
+    <TR><TD valign=top>
+      <A href="types.html#FSStreamDescriptionFlags">FSStreamDescriptionFlags</A>
+    </TD><TD valign=top>
+            Each stream description flag validates one field of the stream description.
+
+    </TD></TR>
+    <TR><TD valign=top>
+      <A href="types.html#FSTrackCallback">FSTrackCallback</A>
+    </TD><TD valign=top>
+            Called for each track provided by a music provider.
+
+    </TD></TR>
+    <TR><TD valign=top>
+      <A href="types.html#FSTrackDescription">FSTrackDescription</A>
+    </TD><TD valign=top>
+            Description of a track provided by a music provider.
+
+    </TD></TR>
+  </TABLE></CENTER>
+</P>
+<P>
+  <CENTER>
+    <H3>Definitions</H3>
+    <TABLE width=90% border=0 cellpadding=2>
+  </TABLE></CENTER>
+</P>
+
+</BODY>
+</HTML>

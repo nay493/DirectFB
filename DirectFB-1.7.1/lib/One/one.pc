@@ -1,0 +1,13 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+moduledir=${exec_prefix}/lib/directfb-1.7-1
+moduledirname=directfb-1.7-1
+includedir=${prefix}/include
+
+Name: One
+Description: One IPC library
+Version: 1.7.1
+Requires: direct
+Libs: -L${libdir} -lone
+Cflags: -I${prefix}/include/One

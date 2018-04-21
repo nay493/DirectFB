@@ -1,0 +1,59 @@
+<HTML>
+<STYLE>
+  <!--
+    A{textdecoration:none}
+  -->
+</STYLE>
+<STYLE type="text/css">
+  A:link, A:visited, A:active { text-decoration: none; }
+</STYLE>
+<HEAD>
+  <TITLE>IFusionSoundPlayback [FusionSound Reference Manual]</TITLE>
+</HEAD>
+<BODY bgcolor=#FFFFFF link=#0070FF vlink=#0070FF text=#404040>
+
+<TABLE width=100% bgcolor=black border=0 cellspacing=1 cellpadding=3>
+  <TR><TD width=30%>
+    <A href="http://www.directfb.org"><IMG border=0 src="directfb.png"></A>
+  </TD><TD align=right>
+    &nbsp;&nbsp;    <A href="index.html"><FONT size=+3 color=white>Reference Manual - 1.6.3</FONT></A>
+  </TD></TR>
+  <TR><TD colspan=2 align=center bgcolor=#303030>
+    <TABLE border=0 cellspacing=0 cellpadding=0>
+      <TR><TD nowrap align=right width=50%>
+        <BIG><A href="index.html"><FONT color=#DDDDDD>FusionSound Interfaces</FONT></A>&nbsp;</BIG>
+      </TD><TD nowrap align=left width=50%>
+        <BIG><FONT color=orange>&nbsp;IFusionSoundPlayback</FONT></BIG>
+      </TD></TR>
+    </TABLE>
+  </TD></TR>
+</TABLE>
+
+<p style="margin-left:3%; margin-right:3%;">      <i><b>IFusionSoundPlayback</b></i> represents one concurrent playback and
+      provides full control over the internal processing of samples.
+    <br><br>
+      <b>Commands</b> control the playback as in terms of tape transportation.
+      This includes <b>starting</b> the playback at <b>any position</b> with an
+      optional <b>stop position</b>. The default value of <b>zero</b> causes the
+      playback to stop at the <b>end</b>. A <b>negative</b> value puts the playback
+      in <b>looping</b> mode. <i>Start()</i> does <b>seeking</b> if the playback is
+      already running and updates the stop position. Other methods provide
+      <b>pausing</b>, <b>stopping</b> and <b>waiting</b> for the playback to end.
+    <br><br>
+      <b>Information</b> provided by <i>GetStatus()</i> includes the current
+      <b>position</b> and whether the playback is <b>running</b>.
+    <br><br>
+      <b>Parameters</b> provide <b>live</b> control over <b>volume</b>, <b>pan</b>,
+      <b>pitch</b> (speed factor) and <b>direction</b> of the playback.
+</p><P>
+  <CENTER><TABLE width=93% border=1 rules=groups cellpadding=2 cellspacing=0>
+    <THEAD>
+      <TR><TH colspan=3>Methods of IFusionSoundPlayback</TH></TR>
+    </THEAD>
+    <TBODY>
+    </TBODY>
+  </TABLE></CENTER>
+</P>
+
+</BODY>
+</HTML>

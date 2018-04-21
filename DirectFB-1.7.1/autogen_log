@@ -1,0 +1,546 @@
+
+I am testing that you have the required versions of libtool, autoconf,
+and automake.
+
+checking for libtool >= 1.3.4 ... yes (version 2.4.2)
+checking for autoconf >= 2.13 ... yes (version 2.69)
+checking for automake >= 1.4 ... yes (version 1.14.1)
+
+I am going to run ./configure with no arguments - if you wish 
+to pass any to it, please specify them on the ./autogen.sh command line.
+
+
+
+Running aclocal ...
+Running libtoolize ...
+Running autoconf ...
+Running autoheader...
+Running automake ...
+Running configure --enable-maintainer-mode ...
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking target system type... i686-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether g++ accepts -g... (cached) yes
+checking dependency style of g++... (cached) gcc3
+checking dependency style of gcc... gcc3
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert i686-pc-linux-gnu file names to i686-pc-linux-gnu format... func_convert_file_noop
+checking how to convert i686-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether build environment is sane... yes
+checking for library containing strerror... none required
+checking whether make sets $(MAKE)... (cached) yes
+checking for ANSI C header files... (cached) yes
+checking whether byte ordering is bigendian... no
+checking size of int... 4
+checking size of long... 4
+checking size of long long... 8
+checking for fork... yes
+checking for perl5... no
+checking for perl... /usr/bin/perl
+checking for man2html... no
+checking for fluxcomp... no
+checking Carbon/Carbon.h usability... no
+checking Carbon/Carbon.h presence... no
+checking for Carbon/Carbon.h... no
+checking for X11... no
+checking for X11VDPAU... no
+checking linux/compiler.h usability... no
+checking linux/compiler.h presence... no
+checking for linux/compiler.h... no
+checking linux/unistd.h usability... yes
+checking linux/unistd.h presence... yes
+checking for linux/unistd.h... yes
+checking asm/page.h usability... no
+checking asm/page.h presence... no
+checking for asm/page.h... no
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking for pthread_attr_init in -lpthread... yes
+checking whether PTHREAD_MUTEX_RECURSIVE is declared... yes
+checking whether PTHREAD_RECURSIVE_MUTEX_INITIALIZER_NP is declared... yes
+checking for clock_gettime in -lrt... yes
+checking for dlopen in -ldl... yes
+checking for sys/io.h... yes
+checking stdbool.h usability... yes
+checking stdbool.h presence... yes
+checking for stdbool.h... yes
+checking which fusionsound drivers should be built... all
+checking sys/soundcard.h usability... yes
+checking sys/soundcard.h presence... yes
+checking for sys/soundcard.h... yes
+checking for alsa >= 0.9... no
+checking for libtimidity >= 0.1.0... no
+checking for vorbisfile >= 1.0.0... no
+checking for mad_timer_add in -lmad... no
+checking for library containing sqrt... -lm
+checking whether the binutils support MMX... yes
+checking whether the binutils support SSE... yes
+checking for libvncserver-config... no
+checking for MESA... no
+checking for DRMKMS... no
+checking for jpeg_destroy_decompress in -ljpeg... yes
+checking jpeglib.h usability... yes
+checking jpeglib.h presence... yes
+checking for jpeglib.h... yes
+checking for LIBPNG... yes
+checking for LIBTIFF... no
+checking for jas_image_decode in -ljasper... yes
+checking jasper/jasper.h usability... yes
+checking jasper/jasper.h presence... yes
+checking for jasper/jasper.h... yes
+checking for FREETYPE... yes
+checking for LINOTYPE... no
+checking for LIBWEBP... no
+checking which gfxdrivers should be built... all
+checking GL/gl.h usability... no
+checking GL/gl.h presence... no
+checking for GL/gl.h... no
+checking GL/glx.h usability... no
+checking GL/glx.h presence... no
+checking for GL/glx.h... no
+checking which inputdrivers should be built... all
+checking dbox/fp.h usability... no
+checking dbox/fp.h presence... no
+checking for dbox/fp.h... no
+checking for dbox/fp.h... (cached) no
+checking linux/h3600_ts.h usability... no
+checking linux/h3600_ts.h presence... no
+checking for linux/h3600_ts.h... no
+checking linux/joystick.h usability... yes
+checking linux/joystick.h presence... yes
+checking for linux/joystick.h... yes
+checking linux/input.h usability... yes
+checking linux/input.h presence... yes
+checking for linux/input.h... yes
+checking for struct input_absinfo in linux/input.h... yes
+checking linux/serial.h usability... yes
+checking linux/serial.h presence... yes
+checking for linux/serial.h... yes
+checking linux/sonypi.h usability... yes
+checking linux/sonypi.h presence... yes
+checking for linux/sonypi.h... yes
+checking for TSLIB... no
+checking for TSLIB... no
+checking that generated files are newer than configure... done
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating build-android/Makefile
+config.status: creating directfb-config
+config.status: creating directfb.pc
+config.status: creating directfb-internal.pc
+config.status: creating directfb.spec
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating include/directfb_build.h
+config.status: creating include/directfb_version.h
+config.status: creating include/++dfb/Makefile
+config.status: creating lib/Makefile
+config.status: creating lib/direct/Makefile
+config.status: creating lib/direct/build.h
+config.status: creating lib/direct/direct.pc
+config.status: creating lib/direct/os/Makefile
+config.status: creating lib/direct/os/linux/glibc/Makefile
+config.status: creating lib/fusion/Makefile
+config.status: creating lib/fusion/build.h
+config.status: creating lib/fusion/fusion.pc
+config.status: creating lib/fusion/shm/Makefile
+config.status: creating lib/One/Makefile
+config.status: creating lib/One/one.pc
+config.status: creating lib/voodoo/Makefile
+config.status: creating lib/voodoo/build.h
+config.status: creating lib/voodoo/unix/Makefile
+config.status: creating lib/voodoo/voodoo.pc
+config.status: creating lib/sawman/Makefile
+config.status: creating lib/sawman/sawman.pc
+config.status: creating lib/fusiondale/Makefile
+config.status: creating lib/fusiondale/coma/Makefile
+config.status: creating lib/fusiondale/core/Makefile
+config.status: creating lib/fusiondale/messenger/Makefile
+config.status: creating lib/fusiondale/misc/Makefile
+config.status: creating lib/fusiondale/one/Makefile
+config.status: creating lib/fusiondale/fusiondale.pc
+config.status: creating lib/fusiondale/fusiondale_version.h
+config.status: creating lib/fusionsound/Makefile
+config.status: creating lib/fusionsound/core/Makefile
+config.status: creating lib/fusionsound/drivers/Makefile
+config.status: creating lib/fusionsound/media/Makefile
+config.status: creating lib/fusionsound/misc/Makefile
+config.status: creating lib/fusionsound/fusionsound.pc
+config.status: creating lib/fusionsound/fusionsound-internal.pc
+config.status: creating lib/fusionsound/fusionsound_limits.h
+config.status: creating lib/fusionsound/fusionsound_version.h
+config.status: creating lib/divine/Makefile
+config.status: creating lib/divine/divine.pc
+config.status: creating lib/dvc/Makefile
+config.status: creating lib/++dfb/Makefile
+config.status: creating lib/++dfb/++dfb.pc
+config.status: creating patches/Makefile
+config.status: creating proxy/Makefile
+config.status: creating proxy/compressor/Makefile
+config.status: creating proxy/dispatcher/Makefile
+config.status: creating proxy/requestor/Makefile
+config.status: creating rules/Makefile
+config.status: creating src/Makefile
+config.status: creating src/core/Makefile
+config.status: creating src/display/Makefile
+config.status: creating src/gfx/Makefile
+config.status: creating src/gfx/generic/Makefile
+config.status: creating src/input/Makefile
+config.status: creating src/media/Makefile
+config.status: creating src/misc/Makefile
+config.status: creating src/windows/Makefile
+config.status: creating systems/Makefile
+config.status: creating systems/android/Makefile
+config.status: creating systems/devmem/Makefile
+config.status: creating systems/dummy/Makefile
+config.status: creating systems/fbdev/Makefile
+config.status: creating systems/mesa/Makefile
+config.status: creating systems/drmkms/Makefile
+config.status: creating systems/pvr2d/Makefile
+config.status: creating systems/egl/Makefile
+config.status: creating systems/x11/Makefile
+config.status: creating systems/x11vdpau/Makefile
+config.status: creating systems/osx/Makefile
+config.status: creating systems/sdl/Makefile
+config.status: creating systems/vnc/Makefile
+config.status: creating wm/Makefile
+config.status: creating wm/default/Makefile
+config.status: creating wm/unique/Makefile
+config.status: creating wm/unique/classes/Makefile
+config.status: creating wm/unique/data/Makefile
+config.status: creating wm/unique/devices/Makefile
+config.status: creating wm/sawman/Makefile
+config.status: creating gfxdrivers/Makefile
+config.status: creating gfxdrivers/ati128/Makefile
+config.status: creating gfxdrivers/cle266/Makefile
+config.status: creating gfxdrivers/cyber5k/Makefile
+config.status: creating gfxdrivers/davinci/Makefile
+config.status: creating gfxdrivers/ep9x/Makefile
+config.status: creating gfxdrivers/gp2d/Makefile
+config.status: creating gfxdrivers/gl/Makefile
+config.status: creating gfxdrivers/gles2/Makefile
+config.status: creating gfxdrivers/i810/Makefile
+config.status: creating gfxdrivers/i830/Makefile
+config.status: creating gfxdrivers/mach64/Makefile
+config.status: creating gfxdrivers/matrox/Makefile
+config.status: creating gfxdrivers/neomagic/Makefile
+config.status: creating gfxdrivers/nsc/Makefile
+config.status: creating gfxdrivers/nsc/include/Makefile
+config.status: creating gfxdrivers/nvidia/Makefile
+config.status: creating gfxdrivers/omap/Makefile
+config.status: creating gfxdrivers/pvr2d/Makefile
+config.status: creating gfxdrivers/pxa3xx/Makefile
+config.status: creating gfxdrivers/radeon/Makefile
+config.status: creating gfxdrivers/savage/Makefile
+config.status: creating gfxdrivers/sh772x/Makefile
+config.status: creating gfxdrivers/sis315/Makefile
+config.status: creating gfxdrivers/tdfx/Makefile
+config.status: creating gfxdrivers/unichrome/Makefile
+config.status: creating gfxdrivers/vdpau/Makefile
+config.status: creating gfxdrivers/vmware/Makefile
+config.status: creating inputdrivers/Makefile
+config.status: creating inputdrivers/dbox2remote/Makefile
+config.status: creating inputdrivers/divine/Makefile
+config.status: creating inputdrivers/dreamboxremote/Makefile
+config.status: creating inputdrivers/dynapro/Makefile
+config.status: creating inputdrivers/elo/Makefile
+config.status: creating inputdrivers/gunze/Makefile
+config.status: creating inputdrivers/h3600_ts/Makefile
+config.status: creating inputdrivers/input_hub/Makefile
+config.status: creating inputdrivers/joystick/Makefile
+config.status: creating inputdrivers/keyboard/Makefile
+config.status: creating inputdrivers/linux_input/Makefile
+config.status: creating inputdrivers/lirc/Makefile
+config.status: creating inputdrivers/mutouch/Makefile
+config.status: creating inputdrivers/zytronic/Makefile
+config.status: creating inputdrivers/penmount/Makefile
+config.status: creating inputdrivers/ps2mouse/Makefile
+config.status: creating inputdrivers/serialmouse/Makefile
+config.status: creating inputdrivers/sonypi/Makefile
+config.status: creating inputdrivers/tslib/Makefile
+config.status: creating inputdrivers/ucb1x00_ts/Makefile
+config.status: creating inputdrivers/wm97xx_ts/Makefile
+config.status: creating interfaces/Makefile
+config.status: creating interfaces/ICoreResourceManager/Makefile
+config.status: creating interfaces/IDirectFBFont/Makefile
+config.status: creating interfaces/IDirectFBGL/Makefile
+config.status: creating interfaces/IDirectFBGL/EGL/Makefile
+config.status: creating interfaces/IDirectFBImageProvider/Makefile
+config.status: creating interfaces/IDirectFBImageProvider/mpeg2/Makefile
+config.status: creating interfaces/IDirectFBVideoProvider/Makefile
+config.status: creating interfaces/IDirectFBVideoProvider/video_out_dfb/Makefile
+config.status: creating interfaces/IDirectFBWindows/Makefile
+config.status: creating interfaces/IFusionSound/Makefile
+config.status: creating interfaces/IFusionSoundMusicProvider/Makefile
+config.status: creating interfaces/IWater/Makefile
+config.status: creating data/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/voodoo/Makefile
+config.status: creating tools/Makefile
+config.status: creating examples/fusiondale/Makefile
+config.status: creating examples/fusionsound/Makefile
+config.status: creating examples/++dfb/Makefile
+config.status: creating examples/++dfb/tests/Makefile
+config.status: creating examples/++dfb/tests/data/Makefile
+config.status: creating docs/Makefile
+config.status: creating docs/dfbg.1
+config.status: creating docs/directfb-csource.1
+config.status: creating docs/directfbrc.5
+config.status: creating docs/html/Makefile
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing default commands
+
+Build options:
+  Version                   1.7.1
+  Linux powered             yes
+  Install prefix            /usr/local
+  Config files in           /usr/local/etc
+  Build shared libs         yes
+  Build static libs         no
+  Module directory          ${exec_prefix}/lib/directfb-1.7-1
+  CC                        gcc
+  CXX                       g++
+  LD                        /usr/bin/ld
+  CPPFLAGS                  -D_REENTRANT 
+  CFLAGS                    -Wall -Wstrict-prototypes -Wmissing-prototypes -Wno-strict-aliasing -Werror-implicit-function-declaration -O3 -g2 -ffast-math -pipe  -D_GNU_SOURCE  -std=gnu99 -Werror-implicit-function-declaration
+  CXXFLAGS                  -Wall -Wno-strict-aliasing -g -O2 -O3 -g2 -ffast-math -pipe  -D_GNU_SOURCE 
+  LDFLAGS                   
+  LIBS                      -ldl -lrt -lpthread 
+  DYNLIB                    -ldl
+  RTLIB                     -lrt
+  THREADFLAGS               -D_REENTRANT
+  THREADLIB                 -lpthread
+
+Misc options:
+  Multi Application Core    no
+  Fusion Kernel Device      yes
+  Fusion message size       16384
+  Fluxed args size          1024
+  One (IPC)                 no
+  Voodoo (network support)  no
+  Pure Voodoo (net only)    no
+  DiVine (virtual input)    no
+  FusionDale                no
+  Debug supported           yes
+  Debug enabled             no
+  Trace support             no
+  MMX support               yes
+  SSE support               yes
+  GCC Atomics usage         no
+  Network support           yes
+  Include all strings       yes
+  Software Rendering        yes
+  Smooth SW Scaling         no
+  Dithering                 none
+  Dithering 565             none
+  zlib compression          no                 
+  Using setsockopt          yes
+
+Building Tests              no
+Building Tools              yes
+
+Building System Modules:
+  Linux FBDev support       yes
+  Generic /dev/mem support  yes
+  Mesa/DRM/KMS support      no                 
+  DRM/KMS support           no               
+  PVR2D                     no                
+  EGL                       no                  
+  X11 support               no                  
+  X11/VDPAU support         no             
+  OSX support               no                  
+  SDL support               no                  
+  VNC support               no                  
+
+Building Window Manager Modules:
+  Default                   yes
+  UniQuE                    no
+  SaWMan                    no
+
+Building Image Provider Modules:
+  GIF                       yes
+  JPEG                      yes                 -ljpeg
+  PNG                       yes                  -I/usr/include/libpng12   -lpng12  
+  Imlib2                    no                
+  PNM                       yes
+  SVG                       no                   
+  BMP                       yes
+  WEBP                      no                  
+  JPEG2000                  yes             -ljasper -lm -ljpeg
+  MPEG2                     yes
+  TIFF                      no                  
+
+
+
+Building Video Provider Modules:
+  GIF                       yes
+  Video4Linux               yes (v2: no)
+  MNG                       no                  
+  Gstreamer                 no (v1: no)        
+    with FusionSound        no
+  AviFile                   no
+  Flash                     no
+  Libmpeg3                  no
+  OpenQuicktime             no
+  Xine                      no
+  Xine/VDPAU                no
+  Swfdec                    no
+  FFmpeg                    no
+
+Building Font Modules:
+  FreeType2                 yes                 -I/usr/include/freetype2   -lfreetype  
+  LinoType                  no                  
+  Default font              yes
+
+Building FusionSound        no
+
+Building Graphics Drivers:
+  3Dfx Voodoo               yes
+  ATI Mach64                yes
+  ATI Rage 128              yes
+  ATI Radeon                no
+  Cirrus EP9X               yes
+  Intel i810                yes
+  Intel i830                yes
+  Matrox                    yes
+  NeoMagic                  yes
+  NSC Geode                 yes
+  nVidia                    yes
+  PVR2D                     no
+  PXA 3xx                   yes
+  Renesas R-Car GP2D        no                   
+  Renesas SH7722/SH7723     no
+  S3 Savage                 no
+  SiS 315                   yes
+  TI Davinci                no
+  TI OMAP                   no
+  TVIA CyberPro             no
+  VIA CLE266                no
+  VIA UniChrome             no
+  VMWare                    no
+  VDPAU                     no
+  --
+  OpenGL                    no (GLX: no)
+  OpenGL ES 2.0             no (Mesa:  no, PVR2D: no)
+                                        
+
+  IDirectFBGL-EGL           no        
+
+Building Input Drivers:
+  DBox2 Remote              no
+  DreamBox Remote           no
+  Dynapro Touchscreen       no
+  ELO Touchscreen           no
+  Gunze Touchscreen         no
+  H3600 Touchscreen         no
+  Input Hub                 yes
+  Joystick                  yes
+  Keyboard                  yes
+  Linux Input               yes
+  LiRC                      yes
+  MuTouch touchscreen       yes
+  Zytronic touchscreen      yes
+  PS/2 Mouse                yes
+  Serial Mouse              yes
+  SonyPI Jogdial            yes
+  tslib                     no                  
+  ucb1x00 Touchscreen       no
+  WM97xx Touchscreen        yes
+  
+
+Now type 'make' to compile DirectFB.

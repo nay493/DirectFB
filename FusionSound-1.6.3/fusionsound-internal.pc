@@ -1,0 +1,10 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+moduledir=${exec_prefix}/lib/directfb-1.7-1
+includedir=${prefix}/include/fusionsound-internal
+
+Name: FusionSound-Internal
+Description: Third party module support package for FusionSound.
+Version: 1.6.3
+Requires: fusionsound = 1.6.3
+Cflags: -I${prefix}/include/fusionsound-internal

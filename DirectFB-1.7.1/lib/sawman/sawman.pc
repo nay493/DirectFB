@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SaWMan
+Description: Simple application and Window Manager
+Version: 1.7.1
+Requires: directfb
+Libs: -L${libdir} -lsawman
+Cflags: -I${prefix}/include/sawman
